@@ -1,0 +1,413 @@
+[0.020s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_msgs -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs
+[0.381s] -- The C compiler identification is Clang 18.1.8
+[0.567s] -- The CXX compiler identification is Clang 18.1.8
+[0.584s] -- Detecting C compiler ABI info
+[0.755s] -- Detecting C compiler ABI info - done
+[0.769s] -- Check for working C compiler: /usr/bin/clang-18 - skipped
+[0.770s] -- Detecting C compile features
+[0.771s] -- Detecting C compile features - done
+[0.780s] -- Detecting CXX compiler ABI info
+[0.991s] -- Detecting CXX compiler ABI info - done
+[1.012s] -- Check for working CXX compiler: /usr/bin/clang++-18 - skipped
+[1.013s] -- Detecting CXX compile features
+[1.014s] -- Detecting CXX compile features - done
+[1.032s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.040s] -- Found ament_cmake_core: 1.3.14 (/opt/ros/humble/share/ament_cmake_core/cmake)
+[1.277s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.402s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.433s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.600s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.682s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[1.736s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.284s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.688s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.216s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.256s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.263s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.310s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.311s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.311s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.312s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[3.343s] -- Found PythonExtra: .so  
+[3.579s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.621s] -- Configuring done
+[3.690s] -- Generating done
+[3.710s] -- Build files have been written to: /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs
+[3.725s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_msgs -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs
+[3.729s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs -- -j8 -l8
+[3.799s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.815s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.816s] [  4%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[3.832s] [  4%] Built target ament_cmake_python_copy_roarm_msgs
+[4.234s] running egg_info
+[4.235s] creating roarm_msgs.egg-info
+[4.235s] writing roarm_msgs.egg-info/PKG-INFO
+[4.236s] writing dependency_links to roarm_msgs.egg-info/dependency_links.txt
+[4.236s] writing top-level names to roarm_msgs.egg-info/top_level.txt
+[4.236s] writing manifest file 'roarm_msgs.egg-info/SOURCES.txt'
+[4.240s] reading manifest file 'roarm_msgs.egg-info/SOURCES.txt'
+[4.241s] writing manifest file 'roarm_msgs.egg-info/SOURCES.txt'
+[4.304s] [  4%] Built target ament_cmake_python_build_roarm_msgs_egg
+[4.522s] [  4%] Built target roarm_msgs__rs
+[5.069s] [  4%] Built target roarm_msgs__cpp
+[5.085s] [  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.086s] [  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.086s] [  8%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.106s] [ 12%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_c.dir/rosidl_generator_c/roarm_msgs/srv/detail/move_circle_cmd__functions.c.o[0m
+[5.106s] [ 12%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_c.dir/rosidl_generator_c/roarm_msgs/srv/detail/move_joint_cmd__functions.c.o[0m
+[5.106s] [ 12%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_c.dir/rosidl_generator_c/roarm_msgs/srv/detail/get_pose_cmd__functions.c.o[0m
+[5.107s] [ 13%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_c.dir/rosidl_generator_c/roarm_msgs/msg/detail/servo_status__functions.c.o[0m
+[5.115s] [ 15%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_c.dir/rosidl_generator_c/roarm_msgs/srv/detail/move_line_cmd__functions.c.o[0m
+[5.243s] [ 16%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_c.dir/rosidl_generator_c/roarm_msgs/srv/detail/servo_command_type__functions.c.o[0m
+[5.346s] [ 18%] [32m[1mLinking C shared library libroarm_msgs__rosidl_generator_c.so[0m
+[5.434s] [ 18%] Built target roarm_msgs__rosidl_generator_c
+[5.453s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.453s] [ 22%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.454s] [ 22%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.949s] [ 25%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roarm_msgs/msg/servo_status__type_support.cpp.o[0m
+[5.950s] [ 25%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roarm_msgs/srv/get_pose_cmd__type_support.cpp.o[0m
+[5.950s] [ 26%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roarm_msgs/srv/move_joint_cmd__type_support.cpp.o[0m
+[6.225s] [ 27%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roarm_msgs/msg/detail/servo_status__type_support.cpp.o[0m
+[6.358s] [ 29%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roarm_msgs/msg/servo_status__type_support.cpp.o[0m
+[6.369s] [ 30%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roarm_msgs/msg/detail/dds_fastrtps/servo_status__type_support.cpp.o[0m
+[6.432s] [ 31%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roarm_msgs/srv/get_pose_cmd__type_support.cpp.o[0m
+[6.510s] [ 33%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roarm_msgs/srv/move_joint_cmd__type_support.cpp.o[0m
+[6.596s] [ 34%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roarm_msgs/srv/move_circle_cmd__type_support.cpp.o[0m
+[6.662s] [ 36%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roarm_msgs/srv/move_circle_cmd__type_support.cpp.o[0m
+[6.673s] [ 37%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roarm_msgs/srv/move_line_cmd__type_support.cpp.o[0m
+[6.680s] [ 38%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roarm_msgs/srv/move_line_cmd__type_support.cpp.o[0m
+[6.690s] [ 40%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roarm_msgs/msg/detail/servo_status__type_support.c.o[0m
+[6.697s] [ 41%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roarm_msgs/srv/detail/get_pose_cmd__type_support.c.o[0m
+[6.759s] [ 43%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/roarm_msgs/srv/servo_command_type__type_support.cpp.o[0m
+[6.787s] [ 44%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roarm_msgs/srv/detail/move_joint_cmd__type_support.c.o[0m
+[6.794s] [ 45%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roarm_msgs/srv/detail/move_circle_cmd__type_support.c.o[0m
+[6.796s] [ 47%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roarm_msgs/msg/detail/servo_status__type_support_c.cpp.o[0m
+[6.837s] [ 48%] [32m[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_c.so[0m
+[6.877s] [ 50%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roarm_msgs/srv/detail/move_line_cmd__type_support.c.o[0m
+[6.893s] [ 51%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roarm_msgs/srv/detail/get_pose_cmd__type_support_c.cpp.o[0m
+[6.967s] [ 52%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roarm_msgs/srv/detail/servo_command_type__type_support.c.o[0m
+[7.034s] [ 52%] Built target roarm_msgs__rosidl_typesupport_c
+[7.053s] [ 54%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roarm_msgs/srv/servo_command_type__type_support.cpp.o[0m
+[7.069s] [ 55%] [32m[1mLinking C shared library libroarm_msgs__rosidl_typesupport_introspection_c.so[0m
+[7.177s] [ 55%] Built target roarm_msgs__rosidl_typesupport_introspection_c
+[7.195s] [ 56%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roarm_msgs/srv/detail/move_joint_cmd__type_support_c.cpp.o[0m
+[7.248s] [ 58%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roarm_msgs/srv/detail/get_pose_cmd__type_support.cpp.o[0m
+[7.379s] [ 59%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roarm_msgs/srv/detail/dds_fastrtps/get_pose_cmd__type_support.cpp.o[0m
+[7.408s] [ 61%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roarm_msgs/srv/detail/dds_fastrtps/move_joint_cmd__type_support.cpp.o[0m
+[7.432s] [ 62%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roarm_msgs/srv/detail/move_joint_cmd__type_support.cpp.o[0m
+[7.654s] [ 63%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roarm_msgs/srv/detail/move_circle_cmd__type_support_c.cpp.o[0m
+[7.719s] [ 65%] [32m[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_cpp.so[0m
+[7.783s] [ 66%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roarm_msgs/srv/detail/move_line_cmd__type_support_c.cpp.o[0m
+[7.910s] [ 66%] Built target roarm_msgs__rosidl_typesupport_cpp
+[7.930s] [ 68%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roarm_msgs/srv/detail/dds_fastrtps/move_circle_cmd__type_support.cpp.o[0m
+[8.093s] [ 69%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roarm_msgs/srv/detail/dds_fastrtps/move_line_cmd__type_support.cpp.o[0m
+[8.213s] [ 70%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roarm_msgs/srv/detail/move_circle_cmd__type_support.cpp.o[0m
+[8.412s] [ 72%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roarm_msgs/srv/detail/dds_fastrtps/servo_command_type__type_support.cpp.o[0m
+[8.434s] [ 73%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roarm_msgs/srv/detail/move_line_cmd__type_support.cpp.o[0m
+[8.527s] [ 75%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roarm_msgs/srv/detail/servo_command_type__type_support.cpp.o[0m
+[8.558s] [ 76%] [32mBuilding CXX object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roarm_msgs/srv/detail/servo_command_type__type_support_c.cpp.o[0m
+[9.398s] [ 79%] [32m[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[9.399s] [ 79%] [32m[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[9.538s] [ 80%] [32m[1mLinking CXX shared library libroarm_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[9.570s] [ 80%] Built target roarm_msgs__rosidl_typesupport_fastrtps_cpp
+[9.573s] [ 80%] Built target roarm_msgs__rosidl_typesupport_fastrtps_c
+[9.694s] [ 80%] Built target roarm_msgs__rosidl_typesupport_introspection_cpp
+[9.729s] [ 80%] Built target roarm_msgs
+[9.767s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[11.736s] [ 81%] Built target roarm_msgs__py
+[11.772s] [ 90%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_py.dir/rosidl_generator_py/roarm_msgs/srv/_move_circle_cmd_s.c.o[0m
+[11.772s] [ 90%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_py.dir/rosidl_generator_py/roarm_msgs/srv/_move_line_cmd_s.c.o[0m
+[11.772s] [ 90%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_py.dir/rosidl_generator_py/roarm_msgs/msg/_servo_status_s.c.o[0m
+[11.772s] [ 90%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_py.dir/rosidl_generator_py/roarm_msgs/srv/_get_pose_cmd_s.c.o[0m
+[11.772s] [ 90%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_py.dir/rosidl_generator_py/roarm_msgs/srv/_move_joint_cmd_s.c.o[0m
+[11.772s] [ 90%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_generator_py.dir/rosidl_generator_py/roarm_msgs/srv/_servo_command_type_s.c.o[0m
+[12.090s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/roarm_msgs/libroarm_msgs__rosidl_generator_py.so[0m
+[12.184s] [ 91%] Built target roarm_msgs__rosidl_generator_py
+[12.219s] [ 95%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[12.220s] [ 95%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[12.220s] [ 95%] [32mBuilding C object CMakeFiles/roarm_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[12.515s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/roarm_msgs/roarm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[12.516s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/roarm_msgs/roarm_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[12.522s] [100%] [32m[1mLinking C shared library rosidl_generator_py/roarm_msgs/roarm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[12.628s] [100%] Built target roarm_msgs__rosidl_typesupport_introspection_c__pyext
+[12.628s] [100%] Built target roarm_msgs__rosidl_typesupport_c__pyext
+[12.628s] [100%] Built target roarm_msgs__rosidl_typesupport_fastrtps_c__pyext
+[12.652s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs -- -j8 -l8
+[12.670s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs
+[12.683s] -- Install configuration: ""
+[12.683s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/ament_index/resource_index/rosidl_interfaces/roarm_msgs
+[12.684s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs
+[12.684s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv
+[12.684s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/move_circle_cmd.h
+[12.684s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/get_pose_cmd.h
+[12.684s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/move_line_cmd.h
+[12.685s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/move_joint_cmd.h
+[12.685s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/servo_command_type.h
+[12.685s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail
+[12.685s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__functions.c
+[12.685s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__struct.h
+[12.685s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__type_support.h
+[12.686s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__functions.c
+[12.686s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__struct.h
+[12.686s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__functions.h
+[12.686s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__type_support.h
+[12.686s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__type_support.h
+[12.686s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__functions.c
+[12.687s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__functions.h
+[12.687s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__functions.c
+[12.687s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__struct.h
+[12.688s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__functions.h
+[12.688s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__struct.h
+[12.688s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__functions.c
+[12.688s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__type_support.h
+[12.688s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__type_support.h
+[12.688s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__functions.h
+[12.688s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__functions.h
+[12.689s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__struct.h
+[12.689s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg
+[12.689s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_generator_c__visibility_control.h
+[12.689s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/servo_status.h
+[12.689s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail
+[12.689s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__type_support.h
+[12.690s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__functions.h
+[12.690s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__functions.c
+[12.690s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__struct.h
+[12.690s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/environment/library_path.sh
+[12.690s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/environment/library_path.dsv
+[12.690s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_generator_c.so
+[12.691s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_generator_c.so" to ""
+[12.691s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs
+[12.692s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv
+[12.692s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail
+[12.692s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__rosidl_typesupport_fastrtps_c.h
+[12.692s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__rosidl_typesupport_fastrtps_c.h
+[12.692s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__rosidl_typesupport_fastrtps_c.h
+[12.692s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__rosidl_typesupport_fastrtps_c.h
+[12.692s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__rosidl_typesupport_fastrtps_c.h
+[12.693s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg
+[12.693s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.693s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail
+[12.693s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__rosidl_typesupport_fastrtps_c.h
+[12.693s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_fastrtps_c.so
+[12.693s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[12.693s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs
+[12.693s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv
+[12.694s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail
+[12.694s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__rosidl_typesupport_introspection_c.h
+[12.694s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__rosidl_typesupport_introspection_c.h
+[12.694s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__type_support.c
+[12.694s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__rosidl_typesupport_introspection_c.h
+[12.694s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__type_support.c
+[12.694s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__type_support.c
+[12.694s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__type_support.c
+[12.695s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__rosidl_typesupport_introspection_c.h
+[12.695s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__rosidl_typesupport_introspection_c.h
+[12.695s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__type_support.c
+[12.695s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg
+[12.696s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.696s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail
+[12.696s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__type_support.c
+[12.696s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__rosidl_typesupport_introspection_c.h
+[12.696s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_introspection_c.so
+[12.697s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_introspection_c.so" to ""
+[12.697s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_c.so
+[12.697s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_c.so" to ""
+[12.697s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs
+[12.697s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv
+[12.698s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/move_joint_cmd.hpp
+[12.698s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/get_pose_cmd.hpp
+[12.698s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/move_circle_cmd.hpp
+[12.698s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/servo_command_type.hpp
+[12.698s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail
+[12.698s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__type_support.hpp
+[12.698s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__builder.hpp
+[12.698s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__type_support.hpp
+[12.699s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__struct.hpp
+[12.699s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__traits.hpp
+[12.699s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__struct.hpp
+[12.699s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__struct.hpp
+[12.699s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__traits.hpp
+[12.700s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__builder.hpp
+[12.700s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__type_support.hpp
+[12.700s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__struct.hpp
+[12.700s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__struct.hpp
+[12.700s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__traits.hpp
+[12.700s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__type_support.hpp
+[12.701s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__traits.hpp
+[12.701s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__traits.hpp
+[12.701s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__type_support.hpp
+[12.701s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__builder.hpp
+[12.701s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__builder.hpp
+[12.702s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__builder.hpp
+[12.702s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/move_line_cmd.hpp
+[12.702s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg
+[12.702s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/servo_status.hpp
+[12.702s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail
+[12.702s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__traits.hpp
+[12.702s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__builder.hpp
+[12.702s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__struct.hpp
+[12.703s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__type_support.hpp
+[12.703s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[12.703s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs
+[12.703s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv
+[12.703s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail
+[12.703s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__rosidl_typesupport_fastrtps_cpp.hpp
+[12.703s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[12.704s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[12.704s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[12.704s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[12.704s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/dds_fastrtps
+[12.704s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg
+[12.704s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.704s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail
+[12.705s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__rosidl_typesupport_fastrtps_cpp.hpp
+[12.705s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/dds_fastrtps
+[12.705s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_fastrtps_cpp.so
+[12.705s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[12.706s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs
+[12.706s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv
+[12.706s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail
+[12.706s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__type_support.cpp
+[12.706s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__rosidl_typesupport_introspection_cpp.hpp
+[12.706s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_joint_cmd__rosidl_typesupport_introspection_cpp.hpp
+[12.706s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__type_support.cpp
+[12.706s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__rosidl_typesupport_introspection_cpp.hpp
+[12.707s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__type_support.cpp
+[12.707s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_circle_cmd__type_support.cpp
+[12.707s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/get_pose_cmd__rosidl_typesupport_introspection_cpp.hpp
+[12.707s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/move_line_cmd__rosidl_typesupport_introspection_cpp.hpp
+[12.707s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/srv/detail/servo_command_type__type_support.cpp
+[12.708s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg
+[12.708s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail
+[12.708s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__rosidl_typesupport_introspection_cpp.hpp
+[12.708s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/include/roarm_msgs/roarm_msgs/msg/detail/servo_status__type_support.cpp
+[12.708s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_introspection_cpp.so
+[12.709s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[12.709s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_cpp.so
+[12.709s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_typesupport_cpp.so" to ""
+[12.709s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/environment/pythonpath.sh
+[12.709s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/environment/pythonpath.dsv
+[12.710s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs-0.0.0-py3.10.egg-info
+[12.710s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[12.710s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[12.710s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[12.710s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[12.711s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs
+[12.711s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_c.c
+[12.711s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[12.711s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv
+[12.711s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_move_circle_cmd.py
+[12.712s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_servo_command_type.py
+[12.712s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_move_circle_cmd_s.c
+[12.712s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_get_pose_cmd.py
+[12.712s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_move_line_cmd.py
+[12.712s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_servo_command_type_s.c
+[12.713s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_move_joint_cmd_s.c
+[12.713s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/__init__.py
+[12.713s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_get_pose_cmd_s.c
+[12.713s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_move_joint_cmd.py
+[12.713s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_move_line_cmd_s.c
+[12.713s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.714s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[12.714s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/libroarm_msgs__rosidl_generator_py.so
+[12.714s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/__init__.py
+[12.714s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/_roarm_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[12.715s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[12.715s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/msg
+[12.715s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/msg/_servo_status.py
+[12.715s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/msg/__init__.py
+[12.715s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/msg/_servo_status_s.c
+[12.780s] Listing '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs'...
+[12.781s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/__init__.py'...
+[12.781s] Listing '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/msg'...
+[12.781s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/msg/__init__.py'...
+[12.781s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/msg/_servo_status.py'...
+[12.781s] Listing '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv'...
+[12.781s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/__init__.py'...
+[12.781s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_get_pose_cmd.py'...
+[12.781s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_move_circle_cmd.py'...
+[12.781s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_move_joint_cmd.py'...
+[12.781s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_move_line_cmd.py'...
+[12.782s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/srv/_servo_command_type.py'...
+[12.791s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[12.792s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[12.792s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[12.792s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[12.793s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[12.793s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages/roarm_msgs/roarm_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[12.793s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_generator_py.so
+[12.794s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib/libroarm_msgs__rosidl_generator_py.so" to ""
+[12.794s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/ament_index/resource_index/rust_packages/roarm_msgs
+[12.794s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/rust
+[12.795s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/rust/build.rs
+[12.795s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/rust/src
+[12.795s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/rust/src/srv.rs
+[12.795s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/rust/src/srv
+[12.795s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/rust/src/srv/rmw.rs
+[12.795s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/rust/src/msg.rs
+[12.796s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/rust/src/lib.rs
+[12.796s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/rust/src/msg
+[12.796s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/rust/src/msg/rmw.rs
+[12.796s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/rust/Cargo.toml
+[12.796s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/msg/ServoStatus.idl
+[12.796s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/GetPoseCmd.idl
+[12.797s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/MoveJointCmd.idl
+[12.797s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/MoveCircleCmd.idl
+[12.797s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/MoveLineCmd.idl
+[12.797s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/ServoCommandType.idl
+[12.797s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/msg/ServoStatus.msg
+[12.798s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/GetPoseCmd.srv
+[12.798s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/GetPoseCmd_Request.msg
+[12.798s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/GetPoseCmd_Response.msg
+[12.798s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/MoveJointCmd.srv
+[12.798s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/MoveJointCmd_Request.msg
+[12.799s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/MoveJointCmd_Response.msg
+[12.799s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/MoveCircleCmd.srv
+[12.799s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/MoveCircleCmd_Request.msg
+[12.799s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/MoveCircleCmd_Response.msg
+[12.799s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/MoveLineCmd.srv
+[12.800s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/MoveLineCmd_Request.msg
+[12.800s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/MoveLineCmd_Response.msg
+[12.800s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/ServoCommandType.srv
+[12.800s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/ServoCommandType_Request.msg
+[12.800s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/srv/ServoCommandType_Response.msg
+[12.801s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/ament_index/resource_index/package_run_dependencies/roarm_msgs
+[12.801s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/ament_index/resource_index/parent_prefix_path/roarm_msgs
+[12.801s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/environment/ament_prefix_path.sh
+[12.801s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/environment/ament_prefix_path.dsv
+[12.802s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/environment/path.sh
+[12.802s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/environment/path.dsv
+[12.802s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/local_setup.bash
+[12.802s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/local_setup.sh
+[12.802s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/local_setup.zsh
+[12.803s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/local_setup.dsv
+[12.803s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/package.dsv
+[12.804s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/ament_index/resource_index/packages/roarm_msgs
+[12.805s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_cExport.cmake
+[12.806s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_cExport-noconfig.cmake
+[12.806s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[12.806s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[12.807s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_introspection_cExport.cmake
+[12.807s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[12.808s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_cExport.cmake
+[12.808s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[12.808s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_cppExport.cmake
+[12.808s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[12.808s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[12.809s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[12.809s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[12.809s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_cppExport.cmake
+[12.809s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[12.809s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_pyExport.cmake
+[12.810s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/export_roarm_msgs__rosidl_generator_pyExport-noconfig.cmake
+[12.810s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/rosidl_cmake-extras.cmake
+[12.810s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.810s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.811s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[12.811s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[12.811s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[12.811s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[12.812s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgsConfig.cmake
+[12.812s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake/roarm_msgsConfig-version.cmake
+[12.812s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/package.xml
+[12.817s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs

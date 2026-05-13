@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c7c31eaa4305988269a9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "roarm_moveit_ikfast_plugins",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_m2_hand_moveit_ikfast_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_m2_hand_moveit_ikfast_plugin-b527335e20f907c81890.json",
+					"name" : "roarm_m2_hand_moveit_ikfast_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_m3_hand_moveit_ikfast_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_m3_hand_moveit_ikfast_plugin-7a8f3ecddfc26b99e8c1.json",
+					"name" : "roarm_m3_hand_moveit_ikfast_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_moveit_ikfast_plugins_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_moveit_ikfast_plugins_uninstall-ca1fb3074b581dcc8250.json",
+					"name" : "roarm_moveit_ikfast_plugins_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-ab4b1656a49c4d8723b6.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins",
+		"source" : "/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,51 @@
+-- The CXX compiler identification is Clang 18.1.8
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++-18 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Using standalone ASIO
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosgraph_msgs: 1.2.2 (/opt/ros/humble/share/rosgraph_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found rclcpp_components: 16.0.19 (/opt/ros/humble/share/rclcpp_components/cmake)
+-- Found resource_retriever: 3.1.3 (/opt/ros/humble/share/resource_retriever/cmake)
+-- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+-- Found rosx_introspection: 2.2.0 (/opt/ros/humble/share/rosx_introspection/cmake)
+-- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[31mCMake Error at CMakeLists.txt:240 (find_package):
+  By not providing "Findwebsocketpp.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "websocketpp", but CMake did not find one.
+
+  Could not find a package configuration file provided by "websocketpp" with
+  any of the following names:
+
+    websocketppConfig.cmake
+    websocketpp-config.cmake
+
+  Add the installation prefix of "websocketpp" to CMAKE_PREFIX_PATH or set
+  "websocketpp_DIR" to a directory containing one of the above files.  If
+  "websocketpp" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/workspace/roarm_ws/roarm_ws-ros2-humble/build/foxglove_bridge/CMakeFiles/CMakeOutput.log".

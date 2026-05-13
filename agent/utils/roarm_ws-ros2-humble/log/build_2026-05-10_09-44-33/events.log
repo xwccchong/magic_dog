@@ -1,0 +1,247 @@
+[0.000000] (-) TimerEvent: {}
+[0.000583] (-) JobUnselected: {'identifier': 'moveit_servo'}
+[0.000681] (-) JobUnselected: {'identifier': 'moveit_task_constructor_capabilities'}
+[0.000816] (-) JobUnselected: {'identifier': 'moveit_task_constructor_core'}
+[0.000853] (-) JobUnselected: {'identifier': 'moveit_task_constructor_msgs'}
+[0.000919] (-) JobUnselected: {'identifier': 'moveit_task_constructor_visualization'}
+[0.000956] (-) JobUnselected: {'identifier': 'roarm_description'}
+[0.001661] (-) JobUnselected: {'identifier': 'roarm_driver'}
+[0.001746] (-) JobUnselected: {'identifier': 'roarm_moveit'}
+[0.001853] (-) JobUnselected: {'identifier': 'roarm_moveit_cmd'}
+[0.001912] (-) JobUnselected: {'identifier': 'roarm_moveit_ikfast_plugins'}
+[0.001988] (-) JobUnselected: {'identifier': 'roarm_moveit_mtc_demo'}
+[0.002033] (-) JobUnselected: {'identifier': 'roarm_moveit_servo'}
+[0.002063] (-) JobUnselected: {'identifier': 'roarm_msgs'}
+[0.002351] (rviz_marker_tools) JobQueued: {'identifier': 'rviz_marker_tools', 'dependencies': OrderedDict()}
+[0.002396] (rviz_marker_tools) JobStarted: {'identifier': 'rviz_marker_tools'}
+[0.016656] (rviz_marker_tools) JobProgress: {'identifier': 'rviz_marker_tools', 'progress': 'cmake'}
+[0.017387] (rviz_marker_tools) Command: {'cmd': ['/usr/bin/cmake', '/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/rviz_marker_tools', '-DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098690] (-) TimerEvent: {}
+[0.151498] (rviz_marker_tools) StdoutLine: {'line': b'-- The C compiler identification is Clang 18.1.8\n'}
+[0.198822] (-) TimerEvent: {}
+[0.299649] (-) TimerEvent: {}
+[0.322780] (rviz_marker_tools) StdoutLine: {'line': b'-- The CXX compiler identification is Clang 18.1.8\n'}
+[0.331024] (rviz_marker_tools) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.399805] (-) TimerEvent: {}
+[0.487305] (rviz_marker_tools) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.499891] (-) TimerEvent: {}
+[0.502535] (rviz_marker_tools) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/clang-18 - skipped\n'}
+[0.503239] (rviz_marker_tools) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.504335] (rviz_marker_tools) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.513660] (rviz_marker_tools) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600094] (-) TimerEvent: {}
+[0.700837] (-) TimerEvent: {}
+[0.734252] (rviz_marker_tools) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.754914] (rviz_marker_tools) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++-18 - skipped\n'}
+[0.755921] (rviz_marker_tools) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.757505] (rviz_marker_tools) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.770347] (rviz_marker_tools) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.800953] (-) TimerEvent: {}
+[0.901463] (-) TimerEvent: {}
+[1.002042] (-) TimerEvent: {}
+[1.018664] (rviz_marker_tools) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.102153] (-) TimerEvent: {}
+[1.202747] (-) TimerEvent: {}
+[1.223852] (rviz_marker_tools) StdoutLine: {'line': b'-- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)\n'}
+[1.302875] (-) TimerEvent: {}
+[1.328976] (rviz_marker_tools) StderrLine: {'line': b"\x1b[0mrviz_marker_tools: You did not request a specific build type: Choosing 'Release' for maximum performance\x1b[0m\n"}
+[1.332673] (rviz_marker_tools) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.348567] (rviz_marker_tools) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.352452] (rviz_marker_tools) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.402975] (-) TimerEvent: {}
+[1.423321] (rviz_marker_tools) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.433983] (rviz_marker_tools) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.450055] (rviz_marker_tools) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.471382] (rviz_marker_tools) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.500212] (rviz_marker_tools) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.503044] (-) TimerEvent: {}
+[1.563650] (rviz_marker_tools) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.603168] (-) TimerEvent: {}
+[1.634365] (rviz_marker_tools) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.639995] (rviz_marker_tools) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.703299] (-) TimerEvent: {}
+[1.803806] (-) TimerEvent: {}
+[1.812161] (rviz_marker_tools) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.862750] (rviz_marker_tools) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.903908] (-) TimerEvent: {}
+[1.944104] (rviz_marker_tools) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.963824] (rviz_marker_tools) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.004096] (-) TimerEvent: {}
+[2.104743] (-) TimerEvent: {}
+[2.177816] (rviz_marker_tools) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.178321] (rviz_marker_tools) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.204909] (-) TimerEvent: {}
+[2.305565] (-) TimerEvent: {}
+[2.397523] (rviz_marker_tools) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.400951] (rviz_marker_tools) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.405678] (-) TimerEvent: {}
+[2.487897] (rviz_marker_tools) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.20 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[2.505795] (-) TimerEvent: {}
+[2.606403] (-) TimerEvent: {}
+[2.669122] (rviz_marker_tools) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[2.706515] (-) TimerEvent: {}
+[2.734162] (rviz_marker_tools) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.756368] (rviz_marker_tools) StdoutLine: {'line': b'-- Generating done\n'}
+[2.763684] (rviz_marker_tools) StdoutLine: {'line': b'-- Build files have been written to: /workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools\n'}
+[2.784496] (rviz_marker_tools) CommandEnded: {'returncode': 0}
+[2.785370] (rviz_marker_tools) JobProgress: {'identifier': 'rviz_marker_tools', 'progress': 'build'}
+[2.786441] (rviz_marker_tools) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools', '--', '-j8', '-l8'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.806693] (-) TimerEvent: {}
+[2.872088] (rviz_marker_tools) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/rviz_marker_tools.dir/src/marker_creation.cpp.o\x1b[0m\n'}
+[2.906830] (-) TimerEvent: {}
+[3.007597] (-) TimerEvent: {}
+[3.108413] (-) TimerEvent: {}
+[3.209290] (-) TimerEvent: {}
+[3.310092] (-) TimerEvent: {}
+[3.410862] (-) TimerEvent: {}
+[3.511634] (-) TimerEvent: {}
+[3.612379] (-) TimerEvent: {}
+[3.713176] (-) TimerEvent: {}
+[3.814082] (-) TimerEvent: {}
+[3.914849] (-) TimerEvent: {}
+[4.015781] (-) TimerEvent: {}
+[4.116598] (-) TimerEvent: {}
+[4.217486] (-) TimerEvent: {}
+[4.318285] (-) TimerEvent: {}
+[4.419089] (-) TimerEvent: {}
+[4.519912] (-) TimerEvent: {}
+[4.620713] (-) TimerEvent: {}
+[4.721580] (-) TimerEvent: {}
+[4.822382] (-) TimerEvent: {}
+[4.923190] (-) TimerEvent: {}
+[5.024012] (-) TimerEvent: {}
+[5.124795] (-) TimerEvent: {}
+[5.225575] (-) TimerEvent: {}
+[5.326371] (-) TimerEvent: {}
+[5.427167] (-) TimerEvent: {}
+[5.528063] (-) TimerEvent: {}
+[5.628936] (-) TimerEvent: {}
+[5.729864] (-) TimerEvent: {}
+[5.830689] (-) TimerEvent: {}
+[5.931472] (-) TimerEvent: {}
+[6.032225] (-) TimerEvent: {}
+[6.133034] (-) TimerEvent: {}
+[6.233883] (-) TimerEvent: {}
+[6.334624] (-) TimerEvent: {}
+[6.435491] (-) TimerEvent: {}
+[6.536330] (-) TimerEvent: {}
+[6.637120] (-) TimerEvent: {}
+[6.737922] (-) TimerEvent: {}
+[6.838695] (-) TimerEvent: {}
+[6.939521] (-) TimerEvent: {}
+[7.040371] (-) TimerEvent: {}
+[7.141173] (-) TimerEvent: {}
+[7.241947] (-) TimerEvent: {}
+[7.342687] (-) TimerEvent: {}
+[7.443540] (-) TimerEvent: {}
+[7.544352] (-) TimerEvent: {}
+[7.645146] (-) TimerEvent: {}
+[7.746005] (-) TimerEvent: {}
+[7.846781] (-) TimerEvent: {}
+[7.947482] (-) TimerEvent: {}
+[8.048311] (-) TimerEvent: {}
+[8.149204] (-) TimerEvent: {}
+[8.250013] (-) TimerEvent: {}
+[8.350835] (-) TimerEvent: {}
+[8.451691] (-) TimerEvent: {}
+[8.552452] (-) TimerEvent: {}
+[8.653253] (-) TimerEvent: {}
+[8.754041] (-) TimerEvent: {}
+[8.854816] (-) TimerEvent: {}
+[8.955761] (-) TimerEvent: {}
+[9.056539] (-) TimerEvent: {}
+[9.157349] (-) TimerEvent: {}
+[9.258170] (-) TimerEvent: {}
+[9.358977] (-) TimerEvent: {}
+[9.459794] (-) TimerEvent: {}
+[9.560454] (-) TimerEvent: {}
+[9.661306] (-) TimerEvent: {}
+[9.762176] (-) TimerEvent: {}
+[9.862999] (-) TimerEvent: {}
+[9.963863] (-) TimerEvent: {}
+[10.064666] (-) TimerEvent: {}
+[10.165487] (-) TimerEvent: {}
+[10.266370] (-) TimerEvent: {}
+[10.367212] (-) TimerEvent: {}
+[10.468092] (-) TimerEvent: {}
+[10.568882] (-) TimerEvent: {}
+[10.669776] (-) TimerEvent: {}
+[10.770614] (-) TimerEvent: {}
+[10.871495] (-) TimerEvent: {}
+[10.972305] (-) TimerEvent: {}
+[11.073118] (-) TimerEvent: {}
+[11.173948] (-) TimerEvent: {}
+[11.274697] (-) TimerEvent: {}
+[11.375570] (-) TimerEvent: {}
+[11.476394] (-) TimerEvent: {}
+[11.577191] (-) TimerEvent: {}
+[11.678036] (-) TimerEvent: {}
+[11.778792] (-) TimerEvent: {}
+[11.879619] (-) TimerEvent: {}
+[11.980427] (-) TimerEvent: {}
+[12.081262] (-) TimerEvent: {}
+[12.182072] (-) TimerEvent: {}
+[12.282846] (-) TimerEvent: {}
+[12.383647] (-) TimerEvent: {}
+[12.484504] (-) TimerEvent: {}
+[12.585290] (-) TimerEvent: {}
+[12.686111] (-) TimerEvent: {}
+[12.786870] (-) TimerEvent: {}
+[12.887534] (-) TimerEvent: {}
+[12.988360] (-) TimerEvent: {}
+[13.089118] (-) TimerEvent: {}
+[13.189878] (-) TimerEvent: {}
+[13.290659] (-) TimerEvent: {}
+[13.391442] (-) TimerEvent: {}
+[13.492231] (-) TimerEvent: {}
+[13.593037] (-) TimerEvent: {}
+[13.693858] (-) TimerEvent: {}
+[13.794721] (-) TimerEvent: {}
+[13.895503] (-) TimerEvent: {}
+[13.996356] (-) TimerEvent: {}
+[14.097135] (-) TimerEvent: {}
+[14.197905] (-) TimerEvent: {}
+[14.298661] (-) TimerEvent: {}
+[14.399423] (-) TimerEvent: {}
+[14.500190] (-) TimerEvent: {}
+[14.600945] (-) TimerEvent: {}
+[14.701687] (-) TimerEvent: {}
+[14.800021] (rviz_marker_tools) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library librviz_marker_tools.so\x1b[0m\n'}
+[14.801771] (-) TimerEvent: {}
+[14.902376] (-) TimerEvent: {}
+[15.003047] (-) TimerEvent: {}
+[15.025482] (rviz_marker_tools) StdoutLine: {'line': b'[100%] Built target rviz_marker_tools\n'}
+[15.045870] (rviz_marker_tools) CommandEnded: {'returncode': 0}
+[15.047601] (rviz_marker_tools) JobProgress: {'identifier': 'rviz_marker_tools', 'progress': 'install'}
+[15.062492] (rviz_marker_tools) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[15.076332] (rviz_marker_tools) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[15.076898] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/include\n'}
+[15.077262] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/include/rviz_marker_tools\n'}
+[15.077526] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/include/rviz_marker_tools/marker_creation.h\n'}
+[15.077767] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib/librviz_marker_tools.so\n'}
+[15.078030] (rviz_marker_tools) StdoutLine: {'line': b'-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib/librviz_marker_tools.so" to ""\n'}
+[15.078323] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/environment/library_path.sh\n'}
+[15.078616] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/environment/library_path.dsv\n'}
+[15.078909] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/ament_index/resource_index/package_run_dependencies/rviz_marker_tools\n'}
+[15.079194] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/ament_index/resource_index/parent_prefix_path/rviz_marker_tools\n'}
+[15.079472] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/environment/ament_prefix_path.sh\n'}
+[15.079776] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/environment/ament_prefix_path.dsv\n'}
+[15.080047] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/environment/path.sh\n'}
+[15.080365] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/environment/path.dsv\n'}
+[15.080660] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.bash\n'}
+[15.080981] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.sh\n'}
+[15.081272] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.zsh\n'}
+[15.081581] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.dsv\n'}
+[15.081861] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/package.dsv\n'}
+[15.082135] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/ament_index/resource_index/packages/rviz_marker_tools\n'}
+[15.082410] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsTargetsExport.cmake\n'}
+[15.082743] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsTargetsExport-release.cmake\n'}
+[15.083009] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[15.083285] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.083508] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsConfig.cmake\n'}
+[15.083722] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsConfig-version.cmake\n'}
+[15.083936] (rviz_marker_tools) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/package.xml\n'}
+[15.086418] (rviz_marker_tools) CommandEnded: {'returncode': 0}
+[15.103304] (-) TimerEvent: {}
+[15.146078] (rviz_marker_tools) JobEnded: {'identifier': 'rviz_marker_tools', 'rc': 0}
+[15.147500] (-) EventReactorShutdown: {}

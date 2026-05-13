@@ -1,0 +1,157 @@
+[0.000000] (-) TimerEvent: {}
+[0.000866] (-) JobUnselected: {'identifier': 'foxglove_msgs'}
+[0.000994] (-) JobUnselected: {'identifier': 'moveit_servo'}
+[0.001393] (-) JobUnselected: {'identifier': 'moveit_task_constructor_capabilities'}
+[0.001852] (-) JobUnselected: {'identifier': 'moveit_task_constructor_core'}
+[0.002097] (-) JobUnselected: {'identifier': 'moveit_task_constructor_msgs'}
+[0.002325] (-) JobUnselected: {'identifier': 'moveit_task_constructor_visualization'}
+[0.002364] (-) JobUnselected: {'identifier': 'roarm_description'}
+[0.002398] (-) JobUnselected: {'identifier': 'roarm_driver'}
+[0.002427] (-) JobUnselected: {'identifier': 'roarm_moveit'}
+[0.002455] (-) JobUnselected: {'identifier': 'roarm_moveit_cmd'}
+[0.002483] (-) JobUnselected: {'identifier': 'roarm_moveit_ikfast_plugins'}
+[0.002509] (-) JobUnselected: {'identifier': 'roarm_moveit_mtc_demo'}
+[0.002537] (-) JobUnselected: {'identifier': 'roarm_moveit_servo'}
+[0.002563] (-) JobUnselected: {'identifier': 'roarm_msgs'}
+[0.002590] (-) JobUnselected: {'identifier': 'rviz_marker_tools'}
+[0.002624] (foxglove_bridge) JobQueued: {'identifier': 'foxglove_bridge', 'dependencies': OrderedDict()}
+[0.002662] (foxglove_bridge) JobStarted: {'identifier': 'foxglove_bridge'}
+[0.027173] (foxglove_bridge) JobProgress: {'identifier': 'foxglove_bridge', 'progress': 'cmake'}
+[0.027321] (foxglove_bridge) Command: {'cmd': ['/usr/bin/cmake', '/workspace/roarm_ws/roarm_ws-ros2-humble/src/foxglove-sdk/ros/src/foxglove_bridge', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/foxglove_bridge'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/foxglove_bridge', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/src'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble'), ('ROS_DOMAIN_ID', '99'), ('CXX', '/usr/bin/clang++-18'), ('CMAKE_MODULE_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/foxglove_bridge'), ('PYTHONPATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/lib/python3.10/site-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/opt/ros/humble')]), 'shell': False}
+[0.103156] (-) TimerEvent: {}
+[0.203812] (-) TimerEvent: {}
+[0.298014] (foxglove_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is Clang 18.1.8\n'}
+[0.303857] (-) TimerEvent: {}
+[0.314009] (foxglove_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.404055] (-) TimerEvent: {}
+[0.507140] (-) TimerEvent: {}
+[0.556437] (foxglove_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.564322] (foxglove_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++-18 - skipped\n'}
+[0.571456] (foxglove_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.572291] (foxglove_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.607255] (-) TimerEvent: {}
+[0.608945] (foxglove_bridge) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[0.707437] (-) TimerEvent: {}
+[0.810292] (-) TimerEvent: {}
+[0.891782] (foxglove_bridge) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[0.892276] (foxglove_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.910415] (-) TimerEvent: {}
+[1.010964] (-) TimerEvent: {}
+[1.115153] (-) TimerEvent: {}
+[1.153729] (foxglove_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.155051] (foxglove_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.155314] (foxglove_bridge) StdoutLine: {'line': b'-- Using standalone ASIO\n'}
+[1.215312] (-) TimerEvent: {}
+[1.315922] (-) TimerEvent: {}
+[1.416549] (-) TimerEvent: {}
+[1.517171] (-) TimerEvent: {}
+[1.617781] (-) TimerEvent: {}
+[1.718384] (-) TimerEvent: {}
+[1.818962] (-) TimerEvent: {}
+[1.919526] (-) TimerEvent: {}
+[2.020091] (-) TimerEvent: {}
+[2.120633] (-) TimerEvent: {}
+[2.221156] (-) TimerEvent: {}
+[2.321694] (-) TimerEvent: {}
+[2.422201] (-) TimerEvent: {}
+[2.522743] (-) TimerEvent: {}
+[2.623286] (-) TimerEvent: {}
+[2.723805] (-) TimerEvent: {}
+[2.824292] (-) TimerEvent: {}
+[2.924778] (-) TimerEvent: {}
+[3.025298] (-) TimerEvent: {}
+[3.125826] (-) TimerEvent: {}
+[3.226346] (-) TimerEvent: {}
+[3.326926] (-) TimerEvent: {}
+[3.427531] (-) TimerEvent: {}
+[3.528106] (-) TimerEvent: {}
+[3.628644] (-) TimerEvent: {}
+[3.729168] (-) TimerEvent: {}
+[3.829740] (-) TimerEvent: {}
+[3.930326] (-) TimerEvent: {}
+[4.030912] (-) TimerEvent: {}
+[4.131511] (-) TimerEvent: {}
+[4.232076] (-) TimerEvent: {}
+[4.332645] (-) TimerEvent: {}
+[4.433215] (-) TimerEvent: {}
+[4.533787] (-) TimerEvent: {}
+[4.634337] (-) TimerEvent: {}
+[4.734884] (-) TimerEvent: {}
+[4.835439] (-) TimerEvent: {}
+[4.935953] (-) TimerEvent: {}
+[5.036453] (-) TimerEvent: {}
+[5.136955] (-) TimerEvent: {}
+[5.237480] (-) TimerEvent: {}
+[5.338018] (-) TimerEvent: {}
+[5.438545] (-) TimerEvent: {}
+[5.539083] (-) TimerEvent: {}
+[5.639626] (-) TimerEvent: {}
+[5.743138] (-) TimerEvent: {}
+[5.843738] (-) TimerEvent: {}
+[5.944331] (-) TimerEvent: {}
+[6.044907] (-) TimerEvent: {}
+[6.145469] (-) TimerEvent: {}
+[6.247113] (-) TimerEvent: {}
+[6.349407] (-) TimerEvent: {}
+[6.451142] (-) TimerEvent: {}
+[6.551797] (-) TimerEvent: {}
+[6.652438] (-) TimerEvent: {}
+[6.753090] (-) TimerEvent: {}
+[6.809203] (foxglove_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.853209] (-) TimerEvent: {}
+[6.955116] (-) TimerEvent: {}
+[7.059110] (-) TimerEvent: {}
+[7.083342] (foxglove_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[7.159243] (-) TimerEvent: {}
+[7.203044] (foxglove_bridge) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[7.259371] (-) TimerEvent: {}
+[7.300791] (foxglove_bridge) StdoutLine: {'line': b'-- Found rosgraph_msgs: 1.2.2 (/opt/ros/humble/share/rosgraph_msgs/cmake)\n'}
+[7.359542] (-) TimerEvent: {}
+[7.391655] (foxglove_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.407345] (foxglove_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.430514] (foxglove_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.459633] (-) TimerEvent: {}
+[7.460251] (foxglove_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.503009] (foxglove_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.559805] (-) TimerEvent: {}
+[7.561298] (foxglove_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[7.659969] (-) TimerEvent: {}
+[7.665987] (foxglove_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.674878] (foxglove_bridge) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[7.727886] (foxglove_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[7.760078] (-) TimerEvent: {}
+[7.836920] (foxglove_bridge) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.19 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[7.860183] (-) TimerEvent: {}
+[7.903053] (foxglove_bridge) StdoutLine: {'line': b'-- Found resource_retriever: 3.1.3 (/opt/ros/humble/share/resource_retriever/cmake)\n'}
+[7.960343] (-) TimerEvent: {}
+[8.058682] (foxglove_bridge) StdoutLine: {'line': b'-- library: /usr/lib/aarch64-linux-gnu/libcurl.so\n'}
+[8.060406] (-) TimerEvent: {}
+[8.066593] (foxglove_bridge) StdoutLine: {'line': b'-- Found rosx_introspection: 2.2.0 (/opt/ros/humble/share/rosx_introspection/cmake)\n'}
+[8.160601] (-) TimerEvent: {}
+[8.225955] (foxglove_bridge) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[8.233486] (foxglove_bridge) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[8.263096] (-) TimerEvent: {}
+[8.338068] (foxglove_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.363251] (-) TimerEvent: {}
+[8.366278] (foxglove_bridge) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:240 (find_package):\n'}
+[8.366737] (foxglove_bridge) StderrLine: {'line': b'  By not providing "Findwebsocketpp.cmake" in CMAKE_MODULE_PATH this project\n'}
+[8.366874] (foxglove_bridge) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[8.367006] (foxglove_bridge) StderrLine: {'line': b'  "websocketpp", but CMake did not find one.\n'}
+[8.367122] (foxglove_bridge) StderrLine: {'line': b'\n'}
+[8.367218] (foxglove_bridge) StderrLine: {'line': b'  Could not find a package configuration file provided by "websocketpp" with\n'}
+[8.367312] (foxglove_bridge) StderrLine: {'line': b'  any of the following names:\n'}
+[8.367403] (foxglove_bridge) StderrLine: {'line': b'\n'}
+[8.367491] (foxglove_bridge) StderrLine: {'line': b'    websocketppConfig.cmake\n'}
+[8.367578] (foxglove_bridge) StderrLine: {'line': b'    websocketpp-config.cmake\n'}
+[8.367661] (foxglove_bridge) StderrLine: {'line': b'\n'}
+[8.367743] (foxglove_bridge) StderrLine: {'line': b'  Add the installation prefix of "websocketpp" to CMAKE_PREFIX_PATH or set\n'}
+[8.367828] (foxglove_bridge) StderrLine: {'line': b'  "websocketpp_DIR" to a directory containing one of the above files.  If\n'}
+[8.367913] (foxglove_bridge) StderrLine: {'line': b'  "websocketpp" provides a separate development package or SDK, be sure it\n'}
+[8.367996] (foxglove_bridge) StderrLine: {'line': b'  has been installed.\n'}
+[8.368080] (foxglove_bridge) StderrLine: {'line': b'\n'}
+[8.368162] (foxglove_bridge) StderrLine: {'line': b'\x1b[0m\n'}
+[8.368264] (foxglove_bridge) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[8.368370] (foxglove_bridge) StdoutLine: {'line': b'See also "/workspace/roarm_ws/roarm_ws-ros2-humble/build/foxglove_bridge/CMakeFiles/CMakeOutput.log".\n'}
+[8.389203] (foxglove_bridge) CommandEnded: {'returncode': 1}
+[8.426365] (foxglove_bridge) JobEnded: {'identifier': 'foxglove_bridge', 'rc': 1}
+[8.437423] (-) EventReactorShutdown: {}

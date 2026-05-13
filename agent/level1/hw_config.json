@@ -1,0 +1,31 @@
+{
+    "system": "Unitree Go2 Edu - Jetson Host",
+    "post_result": "PASS",
+    "hardware_list": [
+        {
+            "name": "RealSense D435i",
+            "type": "RGB-D Camera",
+            "interface": "USB",
+            "status": "Online",
+            "id": "8086:0b3a"
+        },
+        {
+            "name": "Livox MID360",
+            "type": "3D LiDAR",
+            "interface": "Ethernet (192.168.123.20)",
+            "status": "Online"
+        },
+        {
+            "name": "Unitree CM4 Base",
+            "type": "Robot Controller",
+            "interface": "Ethernet (192.168.123.161)",
+            "status": "Online"
+        },
+        {
+            "name": "DJI Mic Mini",
+            "type": "Microphone",
+            "interface": "USB Audio",
+            "status": "Online"
+        }
+    ]
+}

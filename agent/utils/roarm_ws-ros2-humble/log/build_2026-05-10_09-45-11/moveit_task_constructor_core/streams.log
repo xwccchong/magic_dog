@@ -1,0 +1,1236 @@
+[0.024s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_core': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/core -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core
+[0.155s] -- The C compiler identification is Clang 18.1.8
+[0.322s] -- The CXX compiler identification is Clang 18.1.8
+[0.332s] -- Detecting C compiler ABI info
+[0.490s] -- Detecting C compiler ABI info - done
+[0.509s] -- Check for working C compiler: /usr/bin/clang-18 - skipped
+[0.509s] -- Detecting C compile features
+[0.511s] -- Detecting C compile features - done
+[0.520s] -- Detecting CXX compiler ABI info
+[0.740s] -- Detecting CXX compiler ABI info - done
+[0.760s] -- Check for working CXX compiler: /usr/bin/clang++-18 - skipped
+[0.761s] -- Detecting CXX compile features
+[0.763s] -- Detecting CXX compile features - done
+[0.776s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.025s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.241s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  
+[1.252s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.325s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.337s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.353s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.375s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.405s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.470s] -- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)
+[1.578s] [0mmoveit_task_constructor_core: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+[1.582s] -- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)
+[2.083s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.182s] -- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.263s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.269s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.438s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.484s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.568s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.588s] -- Found Threads: TRUE  
+[2.678s] -- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.722s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.898s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[3.008s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.008s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.420s] -- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)
+[3.428s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.467s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[3.475s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[3.499s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[3.536s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[3.579s] -- Found moveit_task_constructor_msgs: 0.1.3 (/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/share/moveit_task_constructor_msgs/cmake)
+[3.623s] -- Found py_binding_tools: 2.0.1 (/opt/ros/humble/share/py_binding_tools/cmake)
+[3.627s] -- Found rviz_marker_tools: 0.1.3 (/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/share/rviz_marker_tools/cmake)
+[3.963s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter Development Development.Module Development.Embed 
+[3.987s] -- pybind11 v2.13.0 dev1
+[4.030s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.068s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[4.075s] -- Performing Test HAS_FLTO_THIN
+[4.216s] -- Performing Test HAS_FLTO_THIN - Failed
+[4.219s] -- Performing Test HAS_FLTO
+[4.495s] -- Performing Test HAS_FLTO - Success
+[4.525s] -- Found ament_cmake_pytest: 1.3.14 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[4.537s] -- Found launch_testing_ament_cmake: 1.0.14 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[4.546s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.691s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.692s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.692s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.692s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[4.728s] -- Found PythonExtra: .so  
+[5.350s] -- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[5.354s] -- Found ament_cmake_gmock: 1.3.14 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[5.355s] -- Found launch_testing_ament_cmake: 1.0.14 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[5.355s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.394s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.394s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.394s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[5.403s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.414s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.454s] -- Configuring done
+[5.984s] -- Generating done
+[6.130s] -- Build files have been written to: /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_core
+[6.195s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_core' returned '0': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/core -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core
+[6.200s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_core': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_core -- -j8 -l8
+[6.296s] [  4%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[6.297s] [  4%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[6.297s] [  4%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[6.297s] [  8%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/cost_terms.cpp.o[0m
+[6.297s] [  8%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[6.297s] [  8%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/container.cpp.o[0m
+[6.297s] [  4%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[6.318s] [  8%] Built target ament_cmake_python_copy_moveit
+[6.339s] [  9%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/introspection.cpp.o[0m
+[8.255s] [ 10%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[8.368s] [ 10%] Built target gtest_main
+[8.852s] running egg_info
+[8.854s] creating moveit.egg-info
+[8.854s] writing moveit.egg-info/PKG-INFO
+[8.855s] writing dependency_links to moveit.egg-info/dependency_links.txt
+[8.856s] writing top-level names to moveit.egg-info/top_level.txt
+[8.856s] writing manifest file 'moveit.egg-info/SOURCES.txt'
+[8.862s] reading manifest file 'moveit.egg-info/SOURCES.txt'
+[8.863s] writing manifest file 'moveit.egg-info/SOURCES.txt'
+[8.896s] In file included from /opt/ros/humble/src/gmock_vendor/src/gmock_main.cc:32:
+[8.897s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock.h:61:
+[8.897s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-function-mocker.h:39:
+[8.897s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-generated-function-mockers.h:47:
+[8.898s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-spec-builders.h:75:
+[8.898s] [1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[8.898s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[8.898s]       | [0;1;32m  ^
+[8.898s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[8.898s]   682 |   void operator=(type const &) = delete[0m
+[8.898s]       | [0;1;32m       ^
+[8.898s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<char>>' first required here[0m
+[8.898s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[8.898s]       | [0;1;32m                                                     ^
+[8.899s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[8.899s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[8.900s]       | [0;1;32m         ^
+[8.900s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3813:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>' requested here[0m
+[8.900s]  3813 |   return MakePolymorphicMatcher([0m
+[8.900s]       | [0;1;32m         ^
+[8.900s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[8.900s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[8.900s]       | [0;1;32m  ^
+[8.900s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[8.901s]   682 |   void operator=(type const &) = delete[0m
+[8.901s]       | [0;1;32m       ^
+[8.901s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<char>>' first required here[0m
+[8.901s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[8.901s]       | [0;1;32m                                                     ^
+[8.901s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[8.902s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[8.902s]       | [0;1;32m         ^
+[8.902s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3842:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>' requested here[0m
+[8.903s]  3842 |   return MakePolymorphicMatcher([0m
+[8.903s]       | [0;1;32m         ^
+[8.903s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[8.903s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[8.903s]       | [0;1;32m  ^
+[8.903s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[8.903s]   682 |   void operator=(type const &) = delete[0m
+[8.903s]       | [0;1;32m       ^
+[8.903s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<char>>' first required here[0m
+[8.903s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[8.904s]       | [0;1;32m                                                     ^
+[8.904s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[8.904s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[8.904s]       | [0;1;32m         ^
+[8.904s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3849:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>' requested here[0m
+[8.905s]  3849 |   return MakePolymorphicMatcher([0m
+[8.905s]       | [0;1;32m         ^
+[8.905s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[8.905s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[8.905s]       | [0;1;32m  ^
+[8.906s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[8.906s]   682 |   void operator=(type const &) = delete[0m
+[8.906s]       | [0;1;32m       ^
+[8.906s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<char>>' first required here[0m
+[8.906s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[8.906s]       | [0;1;32m                                                     ^
+[8.906s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[8.906s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[8.906s]       | [0;1;32m         ^
+[8.906s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3856:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>' requested here[0m
+[8.906s]  3856 |   return MakePolymorphicMatcher(internal::EndsWithMatcher<std::string>(suffix));[0m
+[8.907s]       | [0;1;32m         ^
+[8.911s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[8.912s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[8.912s]       | [0;1;32m  ^
+[8.912s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[8.912s]   682 |   void operator=(type const &) = delete[0m
+[8.912s]       | [0;1;32m       ^
+[8.912s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>' first required here[0m
+[8.912s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[8.912s]       | [0;1;32m                                                     ^
+[8.912s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[8.913s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[8.913s]       | [0;1;32m         ^
+[8.913s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3865:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[8.913s]  3865 |   return MakePolymorphicMatcher([0m
+[8.913s]       | [0;1;32m         ^
+[8.914s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[8.914s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[8.914s]       | [0;1;32m  ^
+[8.914s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[8.914s]   682 |   void operator=(type const &) = delete[0m
+[8.915s]       | [0;1;32m       ^
+[8.915s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>' first required here[0m
+[8.915s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[8.915s]       | [0;1;32m                                                     ^
+[8.915s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[8.915s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[8.915s]       | [0;1;32m         ^
+[8.915s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3894:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[8.915s]  3894 |   return MakePolymorphicMatcher([0m
+[8.920s]       | [0;1;32m         ^
+[8.921s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[8.921s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[8.921s]       | [0;1;32m  ^
+[8.921s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[8.921s]   682 |   void operator=(type const &) = delete[0m
+[8.921s]       | [0;1;32m       ^
+[8.921s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[8.921s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[8.921s]       | [0;1;32m                                                     ^
+[8.922s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[8.922s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[8.922s]       | [0;1;32m         ^
+[8.922s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3901:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[8.922s]  3901 |   return MakePolymorphicMatcher([0m
+[8.922s]       | [0;1;32m         ^
+[8.922s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[8.922s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[8.922s]       | [0;1;32m  ^
+[8.922s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[8.923s]   682 |   void operator=(type const &) = delete[0m
+[8.923s]       | [0;1;32m       ^
+[8.923s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[8.923s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[8.923s]       | [0;1;32m                                                     ^
+[8.923s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[8.923s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[8.923s]       | [0;1;32m         ^
+[8.923s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3908:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[8.923s]  3908 |   return MakePolymorphicMatcher([0m
+[8.923s]       | [0;1;32m         ^
+[8.947s] [ 10%] Built target ament_cmake_python_build_moveit_egg
+[8.964s] [ 11%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/marker_tools.cpp.o[0m
+[9.001s] [0m8 warnings generated.
+[9.030s] [ 12%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[9.132s] [ 12%] Built target gmock_main
+[9.153s] [ 14%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/merge.cpp.o[0m
+[9.155s] In file included from /opt/ros/humble/src/gmock_vendor/src/gmock-all.cc:39:
+[9.156s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock.h:61:
+[9.156s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-function-mocker.h:39:
+[9.156s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-generated-function-mockers.h:47:
+[9.156s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-spec-builders.h:75:
+[9.156s] [1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[9.157s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[9.157s]       | [0;1;32m  ^
+[9.157s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[9.157s]   682 |   void operator=(type const &) = delete[0m
+[9.157s]       | [0;1;32m       ^
+[9.158s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<char>>' first required here[0m
+[9.161s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[9.162s]       | [0;1;32m                                                     ^
+[9.162s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[9.162s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[9.162s]       | [0;1;32m         ^
+[9.163s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3813:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>' requested here[0m
+[9.163s]  3813 |   return MakePolymorphicMatcher([0m
+[9.163s]       | [0;1;32m         ^
+[9.165s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[9.165s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[9.165s]       | [0;1;32m  ^
+[9.165s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[9.166s]   682 |   void operator=(type const &) = delete[0m
+[9.166s]       | [0;1;32m       ^
+[9.167s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<char>>' first required here[0m
+[9.168s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[9.168s]       | [0;1;32m                                                     ^
+[9.169s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[9.169s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[9.169s]       | [0;1;32m         ^
+[9.170s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3842:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>' requested here[0m
+[9.170s]  3842 |   return MakePolymorphicMatcher([0m
+[9.170s]       | [0;1;32m         ^
+[9.172s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[9.173s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[9.173s]       | [0;1;32m  ^
+[9.173s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[9.174s]   682 |   void operator=(type const &) = delete[0m
+[9.174s]       | [0;1;32m       ^
+[9.174s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<char>>' first required here[0m
+[9.176s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[9.176s]       | [0;1;32m                                                     ^
+[9.176s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[9.177s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[9.178s]       | [0;1;32m         ^
+[9.178s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3849:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>' requested here[0m
+[9.178s]  3849 |   return MakePolymorphicMatcher([0m
+[9.179s]       | [0;1;32m         ^
+[9.180s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[9.181s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[9.181s]       | [0;1;32m  ^
+[9.181s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[9.182s]   682 |   void operator=(type const &) = delete[0m
+[9.182s]       | [0;1;32m       ^
+[9.182s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<char>>' first required here[0m
+[9.184s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[9.184s]       | [0;1;32m                                                     ^
+[9.185s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[9.185s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[9.185s]       | [0;1;32m         ^
+[9.185s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3856:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>' requested here[0m
+[9.188s]  3856 |   return MakePolymorphicMatcher(internal::EndsWithMatcher<std::string>(suffix));[0m
+[9.188s]       | [0;1;32m         ^
+[9.190s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[9.191s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[9.191s]       | [0;1;32m  ^
+[9.191s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[9.192s]   682 |   void operator=(type const &) = delete[0m
+[9.192s]       | [0;1;32m       ^
+[9.192s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>' first required here[0m
+[9.194s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[9.194s]       | [0;1;32m                                                     ^
+[9.194s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[9.194s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[9.195s]       | [0;1;32m         ^
+[9.195s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3865:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[9.195s]  3865 |   return MakePolymorphicMatcher([0m
+[9.196s]       | [0;1;32m         ^
+[9.197s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[9.198s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[9.198s]       | [0;1;32m  ^
+[9.198s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[9.199s]   682 |   void operator=(type const &) = delete[0m
+[9.199s]       | [0;1;32m       ^
+[9.199s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>' first required here[0m
+[9.201s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[9.201s]       | [0;1;32m                                                     ^
+[9.201s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[9.203s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[9.203s]       | [0;1;32m         ^
+[9.204s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3894:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[9.205s]  3894 |   return MakePolymorphicMatcher([0m
+[9.205s]       | [0;1;32m         ^
+[9.207s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[9.208s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[9.208s]       | [0;1;32m  ^
+[9.208s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[9.209s]   682 |   void operator=(type const &) = delete[0m
+[9.209s]       | [0;1;32m       ^
+[9.209s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[9.211s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[9.212s]       | [0;1;32m                                                     ^
+[9.212s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[9.212s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[9.213s]       | [0;1;32m         ^
+[9.213s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3901:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[9.213s]  3901 |   return MakePolymorphicMatcher([0m
+[9.213s]       | [0;1;32m         ^
+[9.215s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[9.216s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[9.216s]       | [0;1;32m  ^
+[9.216s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[9.217s]   682 |   void operator=(type const &) = delete[0m
+[9.217s]       | [0;1;32m       ^
+[9.217s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[9.219s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[9.219s]       | [0;1;32m                                                     ^
+[9.220s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[9.220s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[9.221s]       | [0;1;32m         ^
+[9.221s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3908:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[9.222s]  3908 |   return MakePolymorphicMatcher([0m
+[9.222s]       | [0;1;32m         ^
+[12.059s] [0m8 warnings generated.
+[12.092s] [ 15%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/properties.cpp.o[0m
+[18.631s] [ 16%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/stage.cpp.o[0m
+[21.396s] [ 17%] [32m[1mLinking CXX static library libgtest.a[0m
+[21.507s] [ 17%] Built target gtest
+[21.526s] [ 18%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/storage.cpp.o[0m
+[23.262s] [ 20%] [32m[1mLinking CXX static library libgmock.a[0m
+[23.370s] [ 20%] Built target gmock
+[23.388s] [ 21%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/task.cpp.o[0m
+[27.141s] [ 22%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/utils.cpp.o[0m
+[27.518s] [ 23%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/solvers/planner_interface.cpp.o[0m
+[28.284s] [ 24%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/solvers/cartesian_path.cpp.o[0m
+[35.177s] [ 25%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/solvers/joint_interpolation.cpp.o[0m
+[43.541s] [ 27%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/solvers/pipeline_planner.cpp.o[0m
+[43.904s] [ 28%] [32mBuilding CXX object src/CMakeFiles/moveit_task_constructor_core.dir/solvers/multi_planner.cpp.o[0m
+[67.510s] [ 29%] [32m[1mLinking CXX shared library libmoveit_task_constructor_core.so[0m
+[69.310s] [ 29%] Built target moveit_task_constructor_core
+[69.352s] [ 35%] [32mBuilding CXX object test/CMakeFiles/gtest_utils.dir/models.cpp.o[0m
+[69.352s] [ 35%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/modify_planning_scene.cpp.o[0m
+[69.352s] [ 36%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/fixed_state.cpp.o[0m
+[69.352s] [ 37%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/current_state.cpp.o[0m
+[69.353s] [ 35%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/fix_collision_objects.cpp.o[0m
+[69.353s] [ 35%] [32mBuilding CXX object test/CMakeFiles/gtest_utils.dir/gtest_value_printers.cpp.o[0m
+[69.353s] [ 35%] [32mBuilding CXX object test/CMakeFiles/gtest_utils.dir/stage_mockups.cpp.o[0m
+[69.355s] [ 38%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/fixed_cartesian_poses.cpp.o[0m
+[81.387s] [ 40%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/generate_pose.cpp.o[0m
+[84.834s] [ 41%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/generate_random_pose.cpp.o[0m
+[87.732s] [ 42%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/generate_grasp_pose.cpp.o[0m
+[88.471s] In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/core/test/stage_mockups.cpp:4:
+[88.472s] In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/core/test/stage_mockups.h:11:
+[88.472s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock.h:61:
+[88.472s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-function-mocker.h:39:
+[88.473s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-generated-function-mockers.h:47:
+[88.473s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-spec-builders.h:75:
+[88.473s] [1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[88.473s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[88.473s]       | [0;1;32m  ^
+[88.474s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[88.474s]   682 |   void operator=(type const &) = delete[0m
+[88.474s]       | [0;1;32m       ^
+[88.474s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<char>>' first required here[0m
+[88.474s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[88.475s]       | [0;1;32m                                                     ^
+[88.475s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[88.476s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[88.476s]       | [0;1;32m         ^
+[88.477s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3813:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>' requested here[0m
+[88.477s]  3813 |   return MakePolymorphicMatcher([0m
+[88.477s]       | [0;1;32m         ^
+[88.480s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[88.481s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[88.481s]       | [0;1;32m  ^
+[88.481s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[88.482s]   682 |   void operator=(type const &) = delete[0m
+[88.482s]       | [0;1;32m       ^
+[88.482s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<char>>' first required here[0m
+[88.484s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[88.484s]       | [0;1;32m                                                     ^
+[88.485s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[88.485s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[88.485s]       | [0;1;32m         ^
+[88.485s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3842:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>' requested here[0m
+[88.485s]  3842 |   return MakePolymorphicMatcher([0m
+[88.485s]       | [0;1;32m         ^
+[88.487s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[88.487s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[88.488s]       | [0;1;32m  ^
+[88.488s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[88.488s]   682 |   void operator=(type const &) = delete[0m
+[88.488s]       | [0;1;32m       ^
+[88.488s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<char>>' first required here[0m
+[88.488s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[88.488s]       | [0;1;32m                                                     ^
+[88.488s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[88.488s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[88.488s]       | [0;1;32m         ^
+[88.489s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3849:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>' requested here[0m
+[88.489s]  3849 |   return MakePolymorphicMatcher([0m
+[88.489s]       | [0;1;32m         ^
+[88.489s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[88.490s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[88.490s]       | [0;1;32m  ^
+[88.490s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[88.491s]   682 |   void operator=(type const &) = delete[0m
+[88.491s]       | [0;1;32m       ^
+[88.491s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<char>>' first required here[0m
+[88.491s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[88.491s]       | [0;1;32m                                                     ^
+[88.491s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[88.491s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[88.491s]       | [0;1;32m         ^
+[88.491s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3856:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>' requested here[0m
+[88.491s]  3856 |   return MakePolymorphicMatcher(internal::EndsWithMatcher<std::string>(suffix));[0m
+[88.491s]       | [0;1;32m         ^
+[88.494s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[88.495s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[88.495s]       | [0;1;32m  ^
+[88.495s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[88.495s]   682 |   void operator=(type const &) = delete[0m
+[88.495s]       | [0;1;32m       ^
+[88.496s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>' first required here[0m
+[88.496s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[88.496s]       | [0;1;32m                                                     ^
+[88.496s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[88.496s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[88.496s]       | [0;1;32m         ^
+[88.496s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3865:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[88.496s]  3865 |   return MakePolymorphicMatcher([0m
+[88.496s]       | [0;1;32m         ^
+[88.497s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[88.497s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[88.497s]       | [0;1;32m  ^
+[88.498s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[88.498s]   682 |   void operator=(type const &) = delete[0m
+[88.498s]       | [0;1;32m       ^
+[88.498s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>' first required here[0m
+[88.498s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[88.498s]       | [0;1;32m                                                     ^
+[88.499s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[88.499s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[88.499s]       | [0;1;32m         ^
+[88.499s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3894:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[88.499s]  3894 |   return MakePolymorphicMatcher([0m
+[88.499s]       | [0;1;32m         ^
+[88.500s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[88.500s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[88.501s]       | [0;1;32m  ^
+[88.501s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[88.501s]   682 |   void operator=(type const &) = delete[0m
+[88.501s]       | [0;1;32m       ^
+[88.501s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[88.501s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[88.501s]       | [0;1;32m                                                     ^
+[88.502s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[88.502s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[88.502s]       | [0;1;32m         ^
+[88.502s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3901:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[88.502s]  3901 |   return MakePolymorphicMatcher([0m
+[88.502s]       | [0;1;32m         ^
+[88.514s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[88.515s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[88.515s]       | [0;1;32m  ^
+[88.515s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[88.515s]   682 |   void operator=(type const &) = delete[0m
+[88.515s]       | [0;1;32m       ^
+[88.515s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[88.515s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[88.515s]       | [0;1;32m                                                     ^
+[88.515s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[88.516s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[88.516s]       | [0;1;32m         ^
+[88.516s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3908:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[88.516s]  3908 |   return MakePolymorphicMatcher([0m
+[88.516s]       | [0;1;32m         ^
+[89.145s] [ 43%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/generate_place_pose.cpp.o[0m
+[89.541s] [ 44%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/compute_ik.cpp.o[0m
+[90.379s] [0m8 warnings generated.
+[90.437s] [ 45%] [32m[1mLinking CXX shared library libgtest_utils.so[0m
+[90.524s] [ 47%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/passthrough.cpp.o[0m
+[92.933s] [ 47%] Built target gtest_utils
+[92.953s] [ 48%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/predicate_filter.cpp.o[0m
+[96.643s] [ 49%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/connect.cpp.o[0m
+[101.864s] [ 50%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/move_to.cpp.o[0m
+[103.895s] [ 51%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/move_relative.cpp.o[0m
+[107.584s] [ 52%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/simple_grasp.cpp.o[0m
+[111.407s] [ 54%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stages.dir/pick.cpp.o[0m
+[138.900s] [ 55%] [32m[1mLinking CXX shared library libmoveit_task_constructor_core_stages.so[0m
+[140.914s] [ 55%] Built target moveit_task_constructor_core_stages
+[140.962s] [ 60%] [32mBuilding CXX object src/stages/CMakeFiles/moveit_task_constructor_core_stage_plugins.dir/plugins.cpp.o[0m
+[140.963s] [ 60%] [32mBuilding CXX object test/CMakeFiles/moveit_task_constructor_core-test-stage.dir/test_stage.cpp.o[0m
+[140.963s] [ 60%] [32mBuilding CXX object test/CMakeFiles/moveit_task_constructor_core-test-pruning.dir/test_pruning.cpp.o[0m
+[140.963s] [ 60%] [32mBuilding CXX object python/bindings/CMakeFiles/pymoveit_mtc.dir/src/properties.cpp.o[0m
+[140.963s] [ 62%] [32mBuilding CXX object test/CMakeFiles/moveit_task_constructor_core-test-mockups.dir/test_mockups.cpp.o[0m
+[140.963s] [ 62%] [32mBuilding CXX object test/CMakeFiles/moveit_task_constructor_core-test-properties.dir/test_properties.cpp.o[0m
+[140.963s] [ 63%] [32mBuilding CXX object test/CMakeFiles/moveit_task_constructor_core-test-serial.dir/test_serial.cpp.o[0m
+[140.965s] [ 64%] [32mBuilding CXX object test/CMakeFiles/moveit_task_constructor_core-test-container.dir/test_container.cpp.o[0m
+[145.911s] [ 65%] [32m[1mLinking CXX executable moveit_task_constructor_core-test-properties[0m
+[147.030s] [ 65%] Built target moveit_task_constructor_core-test-properties
+[147.074s] [ 67%] [32mBuilding CXX object test/CMakeFiles/moveit_task_constructor_core-test-cost-terms.dir/test_cost_terms.cpp.o[0m
+[148.232s] [ 68%] [32m[1mLinking CXX shared library libmoveit_task_constructor_core_stage_plugins.so[0m
+[150.740s] [ 68%] Built target moveit_task_constructor_core_stage_plugins
+[150.790s] [ 69%] [32mBuilding CXX object test/CMakeFiles/moveit_task_constructor_core-test-fallback.dir/test_fallback.cpp.o[0m
+[160.325s] [ 70%] [32mBuilding CXX object python/bindings/CMakeFiles/pymoveit_mtc.dir/src/solvers.cpp.o[0m
+[160.444s] In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/core/test/test_stage.cpp:9:
+[160.445s] In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/core/test/stage_mockups.h:11:
+[160.446s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock.h:61:
+[160.446s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-function-mocker.h:39:
+[160.447s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-generated-function-mockers.h:47:
+[160.447s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-spec-builders.h:75:
+[160.447s] [1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[160.449s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[160.449s]       | [0;1;32m  ^
+[160.450s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[160.451s]   682 |   void operator=(type const &) = delete[0m
+[160.451s]       | [0;1;32m       ^
+[160.452s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<char>>' first required here[0m
+[160.454s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[160.455s]       | [0;1;32m                                                     ^
+[160.455s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[160.457s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[160.457s]       | [0;1;32m         ^
+[160.458s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3813:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>' requested here[0m
+[160.459s]  3813 |   return MakePolymorphicMatcher([0m
+[160.459s]       | [0;1;32m         ^
+[160.461s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[160.462s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[160.463s]       | [0;1;32m  ^
+[160.463s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[160.465s]   682 |   void operator=(type const &) = delete[0m
+[160.465s]       | [0;1;32m       ^
+[160.466s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<char>>' first required here[0m
+[160.468s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[160.468s]       | [0;1;32m                                                     ^
+[160.469s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[160.470s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[160.471s]       | [0;1;32m         ^
+[160.471s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3842:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>' requested here[0m
+[160.472s]  3842 |   return MakePolymorphicMatcher([0m
+[160.472s]       | [0;1;32m         ^
+[160.474s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[160.476s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[160.476s]       | [0;1;32m  ^
+[160.477s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[160.478s]   682 |   void operator=(type const &) = delete[0m
+[160.478s]       | [0;1;32m       ^
+[160.479s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<char>>' first required here[0m
+[160.481s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[160.482s]       | [0;1;32m                                                     ^
+[160.482s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[160.484s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[160.484s]       | [0;1;32m         ^
+[160.485s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3849:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>' requested here[0m
+[160.486s]  3849 |   return MakePolymorphicMatcher([0m
+[160.486s]       | [0;1;32m         ^
+[160.488s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[160.488s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[160.488s]       | [0;1;32m  ^
+[160.489s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[160.489s]   682 |   void operator=(type const &) = delete[0m
+[160.489s]       | [0;1;32m       ^
+[160.490s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<char>>' first required here[0m
+[160.490s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[160.490s]       | [0;1;32m                                                     ^
+[160.491s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[160.491s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[160.491s]       | [0;1;32m         ^
+[160.492s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3856:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>' requested here[0m
+[160.492s]  3856 |   return MakePolymorphicMatcher(internal::EndsWithMatcher<std::string>(suffix));[0m
+[160.492s]       | [0;1;32m         ^
+[160.495s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[160.495s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[160.495s]       | [0;1;32m  ^
+[160.496s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[160.496s]   682 |   void operator=(type const &) = delete[0m
+[160.496s]       | [0;1;32m       ^
+[160.496s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>' first required here[0m
+[160.497s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[160.497s]       | [0;1;32m                                                     ^
+[160.497s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[160.498s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[160.498s]       | [0;1;32m         ^
+[160.498s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3865:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[160.499s]  3865 |   return MakePolymorphicMatcher([0m
+[160.499s]       | [0;1;32m         ^
+[160.500s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[160.501s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[160.501s]       | [0;1;32m  ^
+[160.501s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[160.502s]   682 |   void operator=(type const &) = delete[0m
+[160.502s]       | [0;1;32m       ^
+[160.502s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>' first required here[0m
+[160.503s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[160.503s]       | [0;1;32m                                                     ^
+[160.503s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[160.504s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[160.504s]       | [0;1;32m         ^
+[160.504s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3894:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[160.505s]  3894 |   return MakePolymorphicMatcher([0m
+[160.505s]       | [0;1;32m         ^
+[160.506s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[160.507s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[160.507s]       | [0;1;32m  ^
+[160.507s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[160.508s]   682 |   void operator=(type const &) = delete[0m
+[160.508s]       | [0;1;32m       ^
+[160.508s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[160.509s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[160.509s]       | [0;1;32m                                                     ^
+[160.509s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[160.510s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[160.510s]       | [0;1;32m         ^
+[160.510s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3901:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[160.511s]  3901 |   return MakePolymorphicMatcher([0m
+[160.511s]       | [0;1;32m         ^
+[160.512s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[160.513s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[160.513s]       | [0;1;32m  ^
+[160.513s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[160.514s]   682 |   void operator=(type const &) = delete[0m
+[160.514s]       | [0;1;32m       ^
+[160.514s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[160.515s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[160.515s]       | [0;1;32m                                                     ^
+[160.515s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[160.515s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[160.515s]       | [0;1;32m         ^
+[160.516s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3908:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[160.516s]  3908 |   return MakePolymorphicMatcher([0m
+[160.516s]       | [0;1;32m         ^
+[162.144s] [0mIn file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/core/test/test_container.cpp:7:
+[162.145s] In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/core/test/stage_mockups.h:11:
+[162.145s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock.h:61:
+[162.145s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-function-mocker.h:39:
+[162.145s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-generated-function-mockers.h:47:
+[162.145s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-spec-builders.h:75:
+[162.145s] [1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[162.145s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[162.146s]       | [0;1;32m  ^
+[162.146s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[162.146s]   682 |   void operator=(type const &) = delete[0m
+[162.146s]       | [0;1;32m       ^
+[162.146s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<char>>' first required here[0m
+[162.146s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[162.146s]       | [0;1;32m                                                     ^
+[162.147s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[162.147s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[162.147s]       | [0;1;32m         ^
+[162.147s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3813:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>' requested here[0m
+[162.147s]  3813 |   return MakePolymorphicMatcher([0m
+[162.147s]       | [0;1;32m         ^
+[162.147s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[162.148s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[162.148s]       | [0;1;32m  ^
+[162.148s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[162.148s]   682 |   void operator=(type const &) = delete[0m
+[162.149s]       | [0;1;32m       ^
+[162.149s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<char>>' first required here[0m
+[162.151s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[162.151s]       | [0;1;32m                                                     ^
+[162.151s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[162.151s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[162.152s]       | [0;1;32m         ^
+[162.152s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3842:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>' requested here[0m
+[162.152s]  3842 |   return MakePolymorphicMatcher([0m
+[162.152s]       | [0;1;32m         ^
+[162.154s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[162.154s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[162.155s]       | [0;1;32m  ^
+[162.155s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[162.155s]   682 |   void operator=(type const &) = delete[0m
+[162.155s]       | [0;1;32m       ^
+[162.156s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<char>>' first required here[0m
+[162.157s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[162.157s]       | [0;1;32m                                                     ^
+[162.158s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[162.158s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[162.158s]       | [0;1;32m         ^
+[162.158s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3849:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>' requested here[0m
+[162.158s]  3849 |   return MakePolymorphicMatcher([0m
+[162.159s]       | [0;1;32m         ^
+[162.160s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[162.161s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[162.161s]       | [0;1;32m  ^
+[162.161s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[162.162s]   682 |   void operator=(type const &) = delete[0m
+[162.162s]       | [0;1;32m       ^
+[162.163s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<char>>' first required here[0m
+[162.164s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[162.164s]       | [0;1;32m                                                     ^
+[162.164s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[162.164s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[162.165s]       | [0;1;32m         ^
+[162.165s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3856:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>' requested here[0m
+[162.167s]  3856 |   return MakePolymorphicMatcher(internal::EndsWithMatcher<std::string>(suffix));[0m
+[162.167s]       | [0;1;32m         ^
+[162.170s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[162.170s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[162.170s]       | [0;1;32m  ^
+[162.171s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[162.171s]   682 |   void operator=(type const &) = delete[0m
+[162.171s]       | [0;1;32m       ^
+[162.171s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>' first required here[0m
+[162.173s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[162.173s]       | [0;1;32m                                                     ^
+[162.174s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[162.174s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[162.174s]       | [0;1;32m         ^
+[162.174s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3865:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[162.175s]  3865 |   return MakePolymorphicMatcher([0m
+[162.175s]       | [0;1;32m         ^
+[162.177s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[162.177s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[162.178s]       | [0;1;32m  ^
+[162.178s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[162.178s]   682 |   void operator=(type const &) = delete[0m
+[162.178s]       | [0;1;32m       ^
+[162.179s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>' first required here[0m
+[162.181s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[162.181s]       | [0;1;32m                                                     ^
+[162.181s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[162.181s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[162.181s]       | [0;1;32m         ^
+[162.182s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3894:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[162.182s]  3894 |   return MakePolymorphicMatcher([0m
+[162.182s]       | [0;1;32m         ^
+[162.184s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[162.184s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[162.184s]       | [0;1;32m  ^
+[162.184s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[162.185s]   682 |   void operator=(type const &) = delete[0m
+[162.185s]       | [0;1;32m       ^
+[162.185s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[162.187s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[162.188s]       | [0;1;32m                                                     ^
+[162.188s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[162.188s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[162.188s]       | [0;1;32m         ^
+[162.188s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3901:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[162.189s]  3901 |   return MakePolymorphicMatcher([0m
+[162.189s]       | [0;1;32m         ^
+[162.192s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[162.192s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[162.192s]       | [0;1;32m  ^
+[162.192s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[162.193s]   682 |   void operator=(type const &) = delete[0m
+[162.193s]       | [0;1;32m       ^
+[162.193s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[162.194s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[162.194s]       | [0;1;32m                                                     ^
+[162.195s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[162.195s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[162.195s]       | [0;1;32m         ^
+[162.195s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3908:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[162.196s]  3908 |   return MakePolymorphicMatcher([0m
+[162.196s]       | [0;1;32m         ^
+[163.247s] [ 71%] [32m[1mLinking CXX executable moveit_task_constructor_core-test-serial[0m
+[163.271s] [0m8 warnings generated.
+[163.322s] [ 72%] [32m[1mLinking CXX executable moveit_task_constructor_core-test-stage[0m
+[163.630s] [ 74%] [32m[1mLinking CXX executable moveit_task_constructor_core-test-pruning[0m
+[164.382s] [ 74%] Built target moveit_task_constructor_core-test-serial
+[164.428s] [ 75%] [32mBuilding CXX object test/CMakeFiles/moveit_task_constructor_core-test-cost-queue.dir/test_cost_queue.cpp.o[0m
+[164.537s] [ 75%] Built target moveit_task_constructor_core-test-stage
+[164.581s] [ 76%] [32mBuilding CXX object test/CMakeFiles/moveit_task_constructor_core-test-interface-state.dir/test_interface_state.cpp.o[0m
+[164.584s] [ 77%] [32m[1mLinking CXX executable moveit_task_constructor_core-test-mockups[0m
+[164.776s] [ 77%] Built target moveit_task_constructor_core-test-pruning
+[164.831s] [ 78%] [32mBuilding CXX object test/CMakeFiles/moveit_task_constructor_core-test-move-to.dir/test_move_to.cpp.o[0m
+[165.691s] [ 78%] Built target moveit_task_constructor_core-test-mockups
+[165.744s] [ 80%] [32mBuilding CXX object test/CMakeFiles/moveit_task_constructor_core-test-move-relative.dir/test_move_relative.cpp.o[0m
+[166.911s] 8 warnings generated.
+[166.973s] [ 81%] [32m[1mLinking CXX executable moveit_task_constructor_core-test-container[0m
+[168.118s] [ 81%] Built target moveit_task_constructor_core-test-container
+[168.162s] [ 82%] [32mBuilding CXX object test/CMakeFiles/pick_ur5.dir/pick_ur5.cpp.o[0m
+[169.165s] In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/core/test/test_cost_terms.cpp:14:
+[169.165s] In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/core/test/stage_mockups.h:11:
+[169.165s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock.h:61:
+[169.165s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-function-mocker.h:39:
+[169.166s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-generated-function-mockers.h:47:
+[169.166s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-spec-builders.h:75:
+[169.166s] [1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[169.167s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[169.167s]       | [0;1;32m  ^
+[169.167s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[169.168s]   682 |   void operator=(type const &) = delete[0m
+[169.168s]       | [0;1;32m       ^
+[169.168s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<char>>' first required here[0m
+[169.169s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[169.169s]       | [0;1;32m                                                     ^
+[169.169s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[169.169s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[169.170s]       | [0;1;32m         ^
+[169.170s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3813:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>' requested here[0m
+[169.170s]  3813 |   return MakePolymorphicMatcher([0m
+[169.171s]       | [0;1;32m         ^
+[169.172s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[169.173s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[169.173s]       | [0;1;32m  ^
+[169.173s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[169.174s]   682 |   void operator=(type const &) = delete[0m
+[169.174s]       | [0;1;32m       ^
+[169.174s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<char>>' first required here[0m
+[169.175s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[169.175s]       | [0;1;32m                                                     ^
+[169.175s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[169.176s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[169.176s]       | [0;1;32m         ^
+[169.176s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3842:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>' requested here[0m
+[169.176s]  3842 |   return MakePolymorphicMatcher([0m
+[169.177s]       | [0;1;32m         ^
+[169.178s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[169.179s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[169.179s]       | [0;1;32m  ^
+[169.179s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[169.180s]   682 |   void operator=(type const &) = delete[0m
+[169.180s]       | [0;1;32m       ^
+[169.180s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<char>>' first required here[0m
+[169.180s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[169.181s]       | [0;1;32m                                                     ^
+[169.181s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[169.181s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[169.181s]       | [0;1;32m         ^
+[169.182s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3849:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>' requested here[0m
+[169.182s]  3849 |   return MakePolymorphicMatcher([0m
+[169.182s]       | [0;1;32m         ^
+[169.184s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[169.184s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[169.184s]       | [0;1;32m  ^
+[169.185s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[169.185s]   682 |   void operator=(type const &) = delete[0m
+[169.185s]       | [0;1;32m       ^
+[169.186s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<char>>' first required here[0m
+[169.186s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[169.186s]       | [0;1;32m                                                     ^
+[169.187s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[169.187s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[169.187s]       | [0;1;32m         ^
+[169.188s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3856:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>' requested here[0m
+[169.188s]  3856 |   return MakePolymorphicMatcher(internal::EndsWithMatcher<std::string>(suffix));[0m
+[169.188s]       | [0;1;32m         ^
+[169.191s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[169.191s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[169.191s]       | [0;1;32m  ^
+[169.192s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[169.192s]   682 |   void operator=(type const &) = delete[0m
+[169.192s]       | [0;1;32m       ^
+[169.193s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>' first required here[0m
+[169.193s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[169.193s]       | [0;1;32m                                                     ^
+[169.194s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[169.194s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[169.194s]       | [0;1;32m         ^
+[169.195s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3865:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[169.195s]  3865 |   return MakePolymorphicMatcher([0m
+[169.195s]       | [0;1;32m         ^
+[169.197s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[169.197s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[169.198s]       | [0;1;32m  ^
+[169.198s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[169.198s]   682 |   void operator=(type const &) = delete[0m
+[169.198s]       | [0;1;32m       ^
+[169.199s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>' first required here[0m
+[169.199s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[169.199s]       | [0;1;32m                                                     ^
+[169.200s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[169.201s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[169.201s]       | [0;1;32m         ^
+[169.202s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3894:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[169.203s]  3894 |   return MakePolymorphicMatcher([0m
+[169.203s]       | [0;1;32m         ^
+[169.205s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[169.207s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[169.207s]       | [0;1;32m  ^
+[169.208s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[169.209s]   682 |   void operator=(type const &) = delete[0m
+[169.209s]       | [0;1;32m       ^
+[169.210s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[169.212s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[169.213s]       | [0;1;32m                                                     ^
+[169.214s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[169.215s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[169.215s]       | [0;1;32m         ^
+[169.216s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3901:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[169.217s]  3901 |   return MakePolymorphicMatcher([0m
+[169.218s]       | [0;1;32m         ^
+[169.220s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[169.221s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[169.222s]       | [0;1;32m  ^
+[169.222s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[169.224s]   682 |   void operator=(type const &) = delete[0m
+[169.224s]       | [0;1;32m       ^
+[169.225s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[169.227s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[169.227s]       | [0;1;32m                                                     ^
+[169.228s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[169.229s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[169.230s]       | [0;1;32m         ^
+[169.230s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3908:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[169.232s]  3908 |   return MakePolymorphicMatcher([0m
+[169.232s]       | [0;1;32m         ^
+[173.538s] [0m8 warnings generated.
+[173.594s] [ 83%] [32m[1mLinking CXX executable moveit_task_constructor_core-test-cost-terms[0m
+[174.878s] [ 83%] Built target moveit_task_constructor_core-test-cost-terms
+[174.926s] [ 84%] [32mBuilding CXX object test/CMakeFiles/pick_pr2.dir/pick_pr2.cpp.o[0m
+[175.598s] [ 85%] [32m[1mLinking CXX executable moveit_task_constructor_core-test-cost-queue[0m
+[176.669s] [ 85%] Built target moveit_task_constructor_core-test-cost-queue
+[176.718s] [ 87%] [32mBuilding CXX object test/CMakeFiles/pick_pa10.dir/pick_pa10.cpp.o[0m
+[179.524s] [ 88%] [32m[1mLinking CXX executable moveit_task_constructor_core-test-fallback[0m
+[180.696s] [ 88%] Built target moveit_task_constructor_core-test-fallback
+[180.713s] [ 89%] [32mBuilding CXX object python/bindings/CMakeFiles/pymoveit_mtc.dir/src/core.cpp.o[0m
+[184.561s] In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/core/test/test_move_to.cpp:2:
+[184.562s] In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/core/test/stage_mockups.h:11:
+[184.562s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock.h:61:
+[184.562s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-function-mocker.h:39:
+[184.563s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-generated-function-mockers.h:47:
+[184.563s] In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-spec-builders.h:75:
+[184.563s] [1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[184.563s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[184.563s]       | [0;1;32m  ^
+[184.563s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[184.564s]   682 |   void operator=(type const &) = delete[0m
+[184.564s]       | [0;1;32m       ^
+[184.564s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<char>>' first required here[0m
+[184.564s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[184.565s]       | [0;1;32m                                                     ^
+[184.565s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[184.566s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[184.566s]       | [0;1;32m         ^
+[184.566s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3813:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>' requested here[0m
+[184.567s]  3813 |   return MakePolymorphicMatcher([0m
+[184.567s]       | [0;1;32m         ^
+[184.569s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[184.569s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[184.569s]       | [0;1;32m  ^
+[184.569s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[184.570s]   682 |   void operator=(type const &) = delete[0m
+[184.570s]       | [0;1;32m       ^
+[184.570s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<char>>' first required here[0m
+[184.572s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[184.572s]       | [0;1;32m                                                     ^
+[184.572s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[184.572s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[184.573s]       | [0;1;32m         ^
+[184.573s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3842:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>' requested here[0m
+[184.573s]  3842 |   return MakePolymorphicMatcher([0m
+[184.573s]       | [0;1;32m         ^
+[184.575s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[184.576s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[184.576s]       | [0;1;32m  ^
+[184.576s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[184.576s]   682 |   void operator=(type const &) = delete[0m
+[184.577s]       | [0;1;32m       ^
+[184.577s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<char>>' first required here[0m
+[184.579s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[184.579s]       | [0;1;32m                                                     ^
+[184.580s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[184.580s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[184.580s]       | [0;1;32m         ^
+[184.580s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3849:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>' requested here[0m
+[184.580s]  3849 |   return MakePolymorphicMatcher([0m
+[184.581s]       | [0;1;32m         ^
+[184.582s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[184.583s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[184.583s]       | [0;1;32m  ^
+[184.583s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[184.583s]   682 |   void operator=(type const &) = delete[0m
+[184.584s]       | [0;1;32m       ^
+[184.584s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<char>>' first required here[0m
+[184.584s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[184.585s]       | [0;1;32m                                                     ^
+[184.585s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here[0m
+[184.585s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[184.586s]       | [0;1;32m         ^
+[184.586s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3856:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>' requested here[0m
+[184.586s]  3856 |   return MakePolymorphicMatcher(internal::EndsWithMatcher<std::string>(suffix));[0m
+[184.586s]       | [0;1;32m         ^
+[184.590s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[184.590s]   721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);[0m
+[184.590s]       | [0;1;32m  ^
+[184.590s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[184.591s]   682 |   void operator=(type const &) = delete[0m
+[184.591s]       | [0;1;32m       ^
+[184.592s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>' first required here[0m
+[184.594s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[184.594s]       | [0;1;32m                                                     ^
+[184.594s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[184.595s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[184.595s]       | [0;1;32m         ^
+[184.595s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3865:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[184.595s]  3865 |   return MakePolymorphicMatcher([0m
+[184.595s]       | [0;1;32m         ^
+[184.597s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[184.597s]   778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);[0m
+[184.598s]       | [0;1;32m  ^
+[184.598s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[184.599s]   682 |   void operator=(type const &) = delete[0m
+[184.599s]       | [0;1;32m       ^
+[184.599s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>' first required here[0m
+[184.601s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[184.601s]       | [0;1;32m                                                     ^
+[184.601s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[184.602s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[184.602s]       | [0;1;32m         ^
+[184.602s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3894:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[184.603s]  3894 |   return MakePolymorphicMatcher([0m
+[184.603s]       | [0;1;32m         ^
+[184.605s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[184.605s]   835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);[0m
+[184.606s]       | [0;1;32m  ^
+[184.606s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[184.606s]   682 |   void operator=(type const &) = delete[0m
+[184.607s]       | [0;1;32m       ^
+[184.607s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[184.609s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[184.609s]       | [0;1;32m                                                     ^
+[184.609s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[184.609s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[184.610s]       | [0;1;32m         ^
+[184.610s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3901:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[184.610s]  3901 |   return MakePolymorphicMatcher([0m
+[184.611s]       | [0;1;32m         ^
+[184.613s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: [0m[0;1;35mwarning: [0m[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy][0m
+[184.613s]   891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);[0m
+[184.613s]       | [0;1;32m  ^
+[184.613s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: [0m[0;1;36mnote: [0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'[0m
+[184.613s]   682 |   void operator=(type const &) = delete[0m
+[184.614s]       | [0;1;32m       ^
+[184.614s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: [0m[0;1;36mnote: [0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>' first required here[0m
+[184.616s]   456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}[0m
+[184.616s]       | [0;1;32m                                                     ^
+[184.616s] [0m[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: [0m[0;1;36mnote: [0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here[0m
+[184.616s]   514 |   return PolymorphicMatcher<Impl>(impl);[0m
+[184.617s]       | [0;1;32m         ^
+[184.617s] [0m[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3908:10: [0m[0;1;36mnote: [0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>' requested here[0m
+[184.618s]  3908 |   return MakePolymorphicMatcher([0m
+[184.618s]       | [0;1;32m         ^
+[185.686s] [ 90%] [32m[1mLinking CXX executable moveit_task_constructor_core-test-interface-state[0m
+[186.726s] [ 91%] [32mBuilding CXX object python/bindings/CMakeFiles/pymoveit_mtc.dir/src/stages.cpp.o[0m
+[186.852s] [ 91%] Built target moveit_task_constructor_core-test-interface-state
+[186.872s] [ 92%] [32mBuilding CXX object python/bindings/CMakeFiles/pymoveit_mtc.dir/src/module.cpp.o[0m
+[188.748s] [ 94%] [32m[1mLinking CXX executable moveit_task_constructor_core-test-move-relative[0m
+[189.256s] [ 95%] [32m[1mLinking CXX executable pick_ur5[0m
+[189.945s] [ 95%] Built target moveit_task_constructor_core-test-move-relative
+[190.353s] [ 95%] Built target pick_ur5
+[190.652s] [0m8 warnings generated.
+[190.711s] [ 96%] [32m[1mLinking CXX executable moveit_task_constructor_core-test-move-to[0m
+[191.937s] [ 96%] Built target moveit_task_constructor_core-test-move-to
+[195.600s] [ 97%] [32m[1mLinking CXX executable pick_pr2[0m
+[196.582s] [ 97%] Built target pick_pr2
+[199.895s] [ 98%] [32m[1mLinking CXX executable pick_pa10[0m
+[200.903s] [ 98%] Built target pick_pa10
+[224.274s] [100%] [32m[1mLinking CXX shared module pymoveit_mtc.cpython-310-aarch64-linux-gnu.so[0m
+[243.501s] [100%] Built target pymoveit_mtc
+[243.530s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_core' returned '0': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_core -- -j8 -l8
+[243.552s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_core': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_core
+[243.563s] -- Install configuration: "Release"
+[243.564s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core_stages.so
+[243.566s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core_stages.so" to ""
+[243.567s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core_stage_plugins.so
+[243.568s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core_stage_plugins.so" to ""
+[243.568s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core.so
+[243.571s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core.so" to ""
+[243.571s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/pythonpath.sh
+[243.572s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/pythonpath.dsv
+[243.572s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info
+[243.572s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info/dependency_links.txt
+[243.572s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info/top_level.txt
+[243.572s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info/PKG-INFO
+[243.572s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info/SOURCES.txt
+[243.573s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit
+[243.573s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor
+[243.573s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/__init__.py
+[243.573s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/core.py
+[243.573s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/stages.py
+[243.573s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/__init__.py
+[243.626s] Listing '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit'...
+[243.627s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/__init__.py'...
+[243.627s] Listing '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor'...
+[243.627s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/__init__.py'...
+[243.628s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/core.py'...
+[243.628s] Compiling '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/stages.py'...
+[243.636s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11
+[243.637s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/iostream.h
+[243.637s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen.h
+[243.638s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/chrono.h
+[243.638s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/operators.h
+[243.638s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/common.h
+[243.638s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/functional.h
+[243.639s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/attr.h
+[243.639s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/buffer_info.h
+[243.639s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/type_caster_pyobject_ptr.h
+[243.640s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/typing.h
+[243.640s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/options.h
+[243.640s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/stl_bind.h
+[243.640s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/stl.h
+[243.641s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/gil.h
+[243.641s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/eval.h
+[243.641s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/pybind11.h
+[243.641s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/trampoline_self_life_support.h
+[243.642s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/numpy.h
+[243.642s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/gil_safe_call_once.h
+[243.642s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/embed.h
+[243.643s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/smart_holder.h
+[243.643s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen
+[243.643s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen/common.h
+[243.644s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen/tensor.h
+[243.644s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen/matrix.h
+[243.644s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/pytypes.h
+[243.645s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail
+[243.645s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/smart_holder_type_casters.h
+[243.645s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/common.h
+[243.646s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/type_caster_base.h
+[243.646s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/smart_holder_sfinae_hooks_only.h
+[243.646s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/internals.h
+[243.647s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/dynamic_raw_ptr_cast_if_possible.h
+[243.647s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/init.h
+[243.647s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/type_caster_odr_guard.h
+[243.648s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/smart_holder_poc.h
+[243.648s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/descr.h
+[243.648s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/typeid.h
+[243.648s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/class.h
+[243.649s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/stl
+[243.649s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/stl/filesystem.h
+[243.649s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/complex.h
+[243.649s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/pybind11/cast.h
+[243.650s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11Config.cmake
+[243.650s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11ConfigVersion.cmake
+[243.650s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/FindPythonLibsNew.cmake
+[243.651s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11Common.cmake
+[243.651s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11Tools.cmake
+[243.651s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11NewTools.cmake
+[243.651s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11Targets.cmake
+[243.652s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/pkgconfig/pybind11.pc
+[243.652s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/pymoveit_mtc.cpython-310-aarch64-linux-gnu.so
+[243.654s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/pymoveit_mtc.cpython-310-aarch64-linux-gnu.so" to ""
+[243.655s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include
+[243.655s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit
+[243.656s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor
+[243.656s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/task.h
+[243.656s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers
+[243.657s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/joint_interpolation.h
+[243.657s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/planner_interface.h
+[243.657s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/pipeline_planner.h
+[243.658s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/cartesian_path.h
+[243.658s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/multi_planner.h
+[243.658s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/storage.h
+[243.658s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/utils.h
+[243.659s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stage.h
+[243.659s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/marker_tools.h
+[243.659s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/cost_queue.h
+[243.659s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/container.h
+[243.660s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/cost_terms.h
+[243.660s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages.h
+[243.660s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/merge.h
+[243.661s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/type_traits.h
+[243.661s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers.h
+[243.661s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages
+[243.661s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/fixed_cartesian_poses.h
+[243.662s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/compute_ik.h
+[243.662s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/passthrough.h
+[243.662s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/fix_collision_objects.h
+[243.663s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/current_state.h
+[243.663s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/noop.h
+[243.663s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/simple_grasp.h
+[243.664s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/fixed_state.h
+[243.664s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/modify_planning_scene.h
+[243.664s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_pose.h
+[243.664s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/predicate_filter.h
+[243.665s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/pick.h
+[243.665s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_place_pose.h
+[243.665s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/connect.h
+[243.665s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/move_relative.h
+[243.666s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_grasp_pose.h
+[243.666s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/move_to.h
+[243.666s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_random_pose.h
+[243.667s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/introspection.h
+[243.667s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/trajectory_execution_info.h
+[243.667s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/moveit_compat.h
+[243.667s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/task_constructor/properties.h
+[243.668s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python
+[243.668s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/task_constructor
+[243.668s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/include/moveit/python/task_constructor/properties.h
+[243.669s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/motion_planning_stages_plugin_description.xml
+[243.669s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/library_path.sh
+[243.669s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/library_path.dsv
+[243.669s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/ament_index/resource_index/package_run_dependencies/moveit_task_constructor_core
+[243.670s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/ament_index/resource_index/parent_prefix_path/moveit_task_constructor_core
+[243.670s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/ament_prefix_path.sh
+[243.670s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/ament_prefix_path.dsv
+[243.670s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/path.sh
+[243.670s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/path.dsv
+[243.671s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/local_setup.bash
+[243.671s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/local_setup.sh
+[243.671s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/local_setup.zsh
+[243.671s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/local_setup.dsv
+[243.671s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/package.dsv
+[243.672s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/ament_index/resource_index/packages/moveit_task_constructor_core
+[243.673s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/ament_index/resource_index/moveit_task_constructor_core__pluginlib__plugin/moveit_task_constructor_core
+[243.675s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/moveit_task_constructor_coreTargetsExport.cmake
+[243.676s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/moveit_task_constructor_coreTargetsExport-release.cmake
+[243.676s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/ament_cmake_export_targets-extras.cmake
+[243.677s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/ament_cmake_export_dependencies-extras.cmake
+[243.678s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/moveit_task_constructor_coreConfig.cmake
+[243.678s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/moveit_task_constructor_coreConfig-version.cmake
+[243.678s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/package.xml
+[243.679s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_core' returned '0': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_core

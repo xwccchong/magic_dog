@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "roarm_msgs__py",
+		"source" : "/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/roarm_msgs__py"
+	}
+}

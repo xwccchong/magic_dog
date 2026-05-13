@@ -1,0 +1,364 @@
+[0.000000] (-) TimerEvent: {}
+[0.000400] (-) JobUnselected: {'identifier': 'moveit_servo'}
+[0.000734] (-) JobUnselected: {'identifier': 'moveit_task_constructor_capabilities'}
+[0.000782] (-) JobUnselected: {'identifier': 'moveit_task_constructor_core'}
+[0.000820] (-) JobUnselected: {'identifier': 'moveit_task_constructor_msgs'}
+[0.000851] (-) JobUnselected: {'identifier': 'moveit_task_constructor_visualization'}
+[0.000885] (-) JobUnselected: {'identifier': 'roarm_description'}
+[0.000915] (-) JobUnselected: {'identifier': 'roarm_driver'}
+[0.001373] (-) JobUnselected: {'identifier': 'roarm_moveit'}
+[0.001406] (-) JobUnselected: {'identifier': 'roarm_moveit_cmd'}
+[0.001648] (-) JobUnselected: {'identifier': 'roarm_moveit_mtc_demo'}
+[0.001682] (-) JobUnselected: {'identifier': 'roarm_moveit_servo'}
+[0.001897] (-) JobUnselected: {'identifier': 'roarm_msgs'}
+[0.001925] (-) JobUnselected: {'identifier': 'rviz_marker_tools'}
+[0.002006] (roarm_moveit_ikfast_plugins) JobQueued: {'identifier': 'roarm_moveit_ikfast_plugins', 'dependencies': OrderedDict()}
+[0.002049] (roarm_moveit_ikfast_plugins) JobStarted: {'identifier': 'roarm_moveit_ikfast_plugins'}
+[0.016014] (roarm_moveit_ikfast_plugins) JobProgress: {'identifier': 'roarm_moveit_ikfast_plugins', 'progress': 'cmake'}
+[0.016728] (roarm_moveit_ikfast_plugins) Command: {'cmd': ['/usr/bin/cmake', '/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins', '-DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099423] (-) TimerEvent: {}
+[0.159015] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- The C compiler identification is Clang 18.1.8\n'}
+[0.199540] (-) TimerEvent: {}
+[0.300055] (-) TimerEvent: {}
+[0.340329] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- The CXX compiler identification is Clang 18.1.8\n'}
+[0.349722] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400242] (-) TimerEvent: {}
+[0.500949] (-) TimerEvent: {}
+[0.519507] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.537701] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/clang-18 - skipped\n'}
+[0.538571] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.539805] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.549106] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.601080] (-) TimerEvent: {}
+[0.701940] (-) TimerEvent: {}
+[0.767997] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.790763] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++-18 - skipped\n'}
+[0.791775] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.793422] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.802001] (-) TimerEvent: {}
+[0.806312] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.902170] (-) TimerEvent: {}
+[1.002722] (-) TimerEvent: {}
+[1.053010] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.102848] (-) TimerEvent: {}
+[1.203449] (-) TimerEvent: {}
+[1.260872] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)\n'}
+[1.303540] (-) TimerEvent: {}
+[1.404163] (-) TimerEvent: {}
+[1.504832] (-) TimerEvent: {}
+[1.605522] (-) TimerEvent: {}
+[1.673566] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.705585] (-) TimerEvent: {}
+[1.775269] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[1.805695] (-) TimerEvent: {}
+[1.849916] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.860454] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.876939] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.898445] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.905766] (-) TimerEvent: {}
+[1.928167] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.005939] (-) TimerEvent: {}
+[2.009342] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.015291] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.106116] (-) TimerEvent: {}
+[2.192242] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.206207] (-) TimerEvent: {}
+[2.237328] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.306379] (-) TimerEvent: {}
+[2.319509] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.338921] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.406477] (-) TimerEvent: {}
+[2.444512] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[2.486034] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[2.506589] (-) TimerEvent: {}
+[2.607195] (-) TimerEvent: {}
+[2.691377] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- library: /usr/lib/aarch64-linux-gnu/libcurl.so\n'}
+[2.707313] (-) TimerEvent: {}
+[2.799774] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.800409] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.807422] (-) TimerEvent: {}
+[2.908025] (-) TimerEvent: {}
+[3.008805] (-) TimerEvent: {}
+[3.109597] (-) TimerEvent: {}
+[3.203962] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[3.209682] (-) TimerEvent: {}
+[3.310346] (-) TimerEvent: {}
+[3.361703] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Looking for sgemm_ - not found\n'}
+[3.410487] (-) TimerEvent: {}
+[3.424303] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[3.510652] (-) TimerEvent: {}
+[3.586584] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Looking for sgemm_ - found\n'}
+[3.587383] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found BLAS: /usr/lib/aarch64-linux-gnu/libblas.so  \n'}
+[3.592474] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Looking for cheev_\n'}
+[3.610702] (-) TimerEvent: {}
+[3.711140] (-) TimerEvent: {}
+[3.765997] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Looking for cheev_ - not found\n'}
+[3.795810] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Looking for cheev_\n'}
+[3.811208] (-) TimerEvent: {}
+[3.911711] (-) TimerEvent: {}
+[3.939478] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Looking for cheev_ - not found\n'}
+[3.941261] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Looking for cheev_\n'}
+[4.012262] (-) TimerEvent: {}
+[4.112927] (-) TimerEvent: {}
+[4.140710] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Looking for cheev_ - found\n'}
+[4.141974] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Found LAPACK: /usr/lib/aarch64-linux-gnu/liblapack.so;/usr/lib/aarch64-linux-gnu/libblas.so  \n'}
+[4.213047] (-) TimerEvent: {}
+[4.281923] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.313166] (-) TimerEvent: {}
+[4.355078] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Generating done\n'}
+[4.372810] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Build files have been written to: /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins\n'}
+[4.405599] (roarm_moveit_ikfast_plugins) CommandEnded: {'returncode': 0}
+[4.406594] (roarm_moveit_ikfast_plugins) JobProgress: {'identifier': 'roarm_moveit_ikfast_plugins', 'progress': 'build'}
+[4.407725] (roarm_moveit_ikfast_plugins) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins', '--', '-j8', '-l8'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.413236] (-) TimerEvent: {}
+[4.505400] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/roarm_m2_hand_moveit_ikfast_plugin.dir/src/roarm_m2_hand_moveit_ikfast_plugin.cpp.o\x1b[0m\n'}
+[4.505831] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/roarm_m3_hand_moveit_ikfast_plugin.dir/src/roarm_m3_hand_moveit_ikfast_plugin.cpp.o\x1b[0m\n'}
+[4.513399] (-) TimerEvent: {}
+[4.614021] (-) TimerEvent: {}
+[4.714654] (-) TimerEvent: {}
+[4.815285] (-) TimerEvent: {}
+[4.915909] (-) TimerEvent: {}
+[5.016536] (-) TimerEvent: {}
+[5.117150] (-) TimerEvent: {}
+[5.217786] (-) TimerEvent: {}
+[5.318410] (-) TimerEvent: {}
+[5.419043] (-) TimerEvent: {}
+[5.519672] (-) TimerEvent: {}
+[5.620321] (-) TimerEvent: {}
+[5.720954] (-) TimerEvent: {}
+[5.821607] (-) TimerEvent: {}
+[5.922241] (-) TimerEvent: {}
+[6.022884] (-) TimerEvent: {}
+[6.123510] (-) TimerEvent: {}
+[6.224154] (-) TimerEvent: {}
+[6.324804] (-) TimerEvent: {}
+[6.425485] (-) TimerEvent: {}
+[6.526119] (-) TimerEvent: {}
+[6.626767] (-) TimerEvent: {}
+[6.727411] (-) TimerEvent: {}
+[6.828071] (-) TimerEvent: {}
+[6.928724] (-) TimerEvent: {}
+[7.029348] (-) TimerEvent: {}
+[7.130026] (-) TimerEvent: {}
+[7.230685] (-) TimerEvent: {}
+[7.331322] (-) TimerEvent: {}
+[7.431983] (-) TimerEvent: {}
+[7.532630] (-) TimerEvent: {}
+[7.633269] (-) TimerEvent: {}
+[7.733921] (-) TimerEvent: {}
+[7.834562] (-) TimerEvent: {}
+[7.935215] (-) TimerEvent: {}
+[8.035859] (-) TimerEvent: {}
+[8.136495] (-) TimerEvent: {}
+[8.237118] (-) TimerEvent: {}
+[8.337760] (-) TimerEvent: {}
+[8.438470] (-) TimerEvent: {}
+[8.539094] (-) TimerEvent: {}
+[8.639716] (-) TimerEvent: {}
+[8.740355] (-) TimerEvent: {}
+[8.841010] (-) TimerEvent: {}
+[8.941666] (-) TimerEvent: {}
+[9.042316] (-) TimerEvent: {}
+[9.142963] (-) TimerEvent: {}
+[9.243642] (-) TimerEvent: {}
+[9.344311] (-) TimerEvent: {}
+[9.444977] (-) TimerEvent: {}
+[9.545639] (-) TimerEvent: {}
+[9.646299] (-) TimerEvent: {}
+[9.746946] (-) TimerEvent: {}
+[9.847566] (-) TimerEvent: {}
+[9.948204] (-) TimerEvent: {}
+[10.048860] (-) TimerEvent: {}
+[10.149545] (-) TimerEvent: {}
+[10.250192] (-) TimerEvent: {}
+[10.350806] (-) TimerEvent: {}
+[10.451450] (-) TimerEvent: {}
+[10.552071] (-) TimerEvent: {}
+[10.652705] (-) TimerEvent: {}
+[10.753351] (-) TimerEvent: {}
+[10.854040] (-) TimerEvent: {}
+[10.954811] (-) TimerEvent: {}
+[11.055460] (-) TimerEvent: {}
+[11.156091] (-) TimerEvent: {}
+[11.256742] (-) TimerEvent: {}
+[11.357397] (-) TimerEvent: {}
+[11.458069] (-) TimerEvent: {}
+[11.558706] (-) TimerEvent: {}
+[11.659326] (-) TimerEvent: {}
+[11.760144] (-) TimerEvent: {}
+[11.860783] (-) TimerEvent: {}
+[11.961422] (-) TimerEvent: {}
+[12.062066] (-) TimerEvent: {}
+[12.162685] (-) TimerEvent: {}
+[12.263451] (-) TimerEvent: {}
+[12.364069] (-) TimerEvent: {}
+[12.464903] (-) TimerEvent: {}
+[12.565559] (-) TimerEvent: {}
+[12.666200] (-) TimerEvent: {}
+[12.766833] (-) TimerEvent: {}
+[12.867462] (-) TimerEvent: {}
+[12.968102] (-) TimerEvent: {}
+[13.068741] (-) TimerEvent: {}
+[13.169353] (-) TimerEvent: {}
+[13.269995] (-) TimerEvent: {}
+[13.370626] (-) TimerEvent: {}
+[13.471302] (-) TimerEvent: {}
+[13.572167] (-) TimerEvent: {}
+[13.673052] (-) TimerEvent: {}
+[13.773727] (-) TimerEvent: {}
+[13.874363] (-) TimerEvent: {}
+[13.975005] (-) TimerEvent: {}
+[14.075642] (-) TimerEvent: {}
+[14.176260] (-) TimerEvent: {}
+[14.276881] (-) TimerEvent: {}
+[14.377534] (-) TimerEvent: {}
+[14.478149] (-) TimerEvent: {}
+[14.578753] (-) TimerEvent: {}
+[14.589681] (roarm_moveit_ikfast_plugins) StderrLine: {'line': b'\x1b[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m2_hand_moveit_ikfast_plugin.cpp:803:17: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mvariable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]\x1b[0m\n'}
+[14.590147] (roarm_moveit_ikfast_plugins) StderrLine: {'line': b'  803 |   IkReal angles[num_joints_];\x1b[0m\n'}
+[14.590303] (roarm_moveit_ikfast_plugins) StderrLine: {'line': b'      | \x1b[0;1;32m                ^~~~~~~~~~~\n'}
+[14.590404] (roarm_moveit_ikfast_plugins) StderrLine: {'line': b"\x1b[0m\x1b[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m2_hand_moveit_ikfast_plugin.cpp:803:17: \x1b[0m\x1b[0;1;36mnote: \x1b[0mimplicit use of 'this' pointer is only allowed within the evaluation of a call to a 'constexpr' member function\x1b[0m\n"}
+[14.678912] (-) TimerEvent: {}
+[14.779533] (-) TimerEvent: {}
+[14.880176] (-) TimerEvent: {}
+[14.980840] (-) TimerEvent: {}
+[15.081501] (-) TimerEvent: {}
+[15.182125] (-) TimerEvent: {}
+[15.282840] (-) TimerEvent: {}
+[15.383502] (-) TimerEvent: {}
+[15.484167] (-) TimerEvent: {}
+[15.584811] (-) TimerEvent: {}
+[15.685483] (-) TimerEvent: {}
+[15.689210] (roarm_moveit_ikfast_plugins) StderrLine: {'line': b'\x1b[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m3_hand_moveit_ikfast_plugin.cpp:803:17: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mvariable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]\x1b[0m\n'}
+[15.689617] (roarm_moveit_ikfast_plugins) StderrLine: {'line': b'  803 |   IkReal angles[num_joints_];\x1b[0m\n'}
+[15.689747] (roarm_moveit_ikfast_plugins) StderrLine: {'line': b'      | \x1b[0;1;32m                ^~~~~~~~~~~\n'}
+[15.689849] (roarm_moveit_ikfast_plugins) StderrLine: {'line': b"\x1b[0m\x1b[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m3_hand_moveit_ikfast_plugin.cpp:803:17: \x1b[0m\x1b[0;1;36mnote: \x1b[0mimplicit use of 'this' pointer is only allowed within the evaluation of a call to a 'constexpr' member function\x1b[0m\n"}
+[15.785603] (-) TimerEvent: {}
+[15.886258] (-) TimerEvent: {}
+[15.986896] (-) TimerEvent: {}
+[16.087537] (-) TimerEvent: {}
+[16.188195] (-) TimerEvent: {}
+[16.288845] (-) TimerEvent: {}
+[16.389519] (-) TimerEvent: {}
+[16.490171] (-) TimerEvent: {}
+[16.590827] (-) TimerEvent: {}
+[16.691587] (-) TimerEvent: {}
+[16.792224] (-) TimerEvent: {}
+[16.892876] (-) TimerEvent: {}
+[16.993628] (-) TimerEvent: {}
+[17.094269] (-) TimerEvent: {}
+[17.194903] (-) TimerEvent: {}
+[17.295648] (-) TimerEvent: {}
+[17.396276] (-) TimerEvent: {}
+[17.497012] (-) TimerEvent: {}
+[17.597663] (-) TimerEvent: {}
+[17.698409] (-) TimerEvent: {}
+[17.799032] (-) TimerEvent: {}
+[17.899666] (-) TimerEvent: {}
+[18.000303] (-) TimerEvent: {}
+[18.100946] (-) TimerEvent: {}
+[18.201605] (-) TimerEvent: {}
+[18.302240] (-) TimerEvent: {}
+[18.402889] (-) TimerEvent: {}
+[18.503547] (-) TimerEvent: {}
+[18.604196] (-) TimerEvent: {}
+[18.704828] (-) TimerEvent: {}
+[18.805498] (-) TimerEvent: {}
+[18.906131] (-) TimerEvent: {}
+[19.006778] (-) TimerEvent: {}
+[19.107422] (-) TimerEvent: {}
+[19.208080] (-) TimerEvent: {}
+[19.308730] (-) TimerEvent: {}
+[19.409377] (-) TimerEvent: {}
+[19.510040] (-) TimerEvent: {}
+[19.610681] (-) TimerEvent: {}
+[19.711312] (-) TimerEvent: {}
+[19.811962] (-) TimerEvent: {}
+[19.912612] (-) TimerEvent: {}
+[20.013262] (-) TimerEvent: {}
+[20.113930] (-) TimerEvent: {}
+[20.214574] (-) TimerEvent: {}
+[20.315233] (-) TimerEvent: {}
+[20.415881] (-) TimerEvent: {}
+[20.516528] (-) TimerEvent: {}
+[20.617151] (-) TimerEvent: {}
+[20.717796] (-) TimerEvent: {}
+[20.818432] (-) TimerEvent: {}
+[20.919138] (-) TimerEvent: {}
+[21.019767] (-) TimerEvent: {}
+[21.120390] (-) TimerEvent: {}
+[21.221031] (-) TimerEvent: {}
+[21.321689] (-) TimerEvent: {}
+[21.349091] (roarm_moveit_ikfast_plugins) StderrLine: {'line': b'1 warning generated.\n'}
+[21.397392] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libroarm_m2_hand_moveit_ikfast_plugin.so\x1b[0m\n'}
+[21.421829] (-) TimerEvent: {}
+[21.522472] (-) TimerEvent: {}
+[21.623114] (-) TimerEvent: {}
+[21.723757] (-) TimerEvent: {}
+[21.824409] (-) TimerEvent: {}
+[21.925063] (-) TimerEvent: {}
+[22.025737] (-) TimerEvent: {}
+[22.126394] (-) TimerEvent: {}
+[22.227041] (-) TimerEvent: {}
+[22.327689] (-) TimerEvent: {}
+[22.428363] (-) TimerEvent: {}
+[22.517815] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'[ 75%] Built target roarm_m2_hand_moveit_ikfast_plugin\n'}
+[22.528485] (-) TimerEvent: {}
+[22.629039] (-) TimerEvent: {}
+[22.729645] (-) TimerEvent: {}
+[22.830220] (-) TimerEvent: {}
+[22.930805] (-) TimerEvent: {}
+[23.031386] (-) TimerEvent: {}
+[23.131965] (-) TimerEvent: {}
+[23.232558] (-) TimerEvent: {}
+[23.314917] (roarm_moveit_ikfast_plugins) StderrLine: {'line': b'1 warning generated.\n'}
+[23.332682] (-) TimerEvent: {}
+[23.371068] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libroarm_m3_hand_moveit_ikfast_plugin.so\x1b[0m\n'}
+[23.432815] (-) TimerEvent: {}
+[23.533519] (-) TimerEvent: {}
+[23.634324] (-) TimerEvent: {}
+[23.735130] (-) TimerEvent: {}
+[23.835940] (-) TimerEvent: {}
+[23.936738] (-) TimerEvent: {}
+[24.037558] (-) TimerEvent: {}
+[24.138353] (-) TimerEvent: {}
+[24.239136] (-) TimerEvent: {}
+[24.339882] (-) TimerEvent: {}
+[24.440585] (-) TimerEvent: {}
+[24.474135] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'[100%] Built target roarm_m3_hand_moveit_ikfast_plugin\n'}
+[24.497374] (roarm_moveit_ikfast_plugins) CommandEnded: {'returncode': 0}
+[24.499512] (roarm_moveit_ikfast_plugins) JobProgress: {'identifier': 'roarm_moveit_ikfast_plugins', 'progress': 'install'}
+[24.515762] (roarm_moveit_ikfast_plugins) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[24.529853] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.530136] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib/libroarm_m2_hand_moveit_ikfast_plugin.so\n'}
+[24.533826] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib/libroarm_m2_hand_moveit_ikfast_plugin.so" to ""\n'}
+[24.534017] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib/libroarm_m3_hand_moveit_ikfast_plugin.so\n'}
+[24.537425] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib/libroarm_m3_hand_moveit_ikfast_plugin.so" to ""\n'}
+[24.537867] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/roarm_m2_hand_moveit_ikfast_plugin.xml\n'}
+[24.538231] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/roarm_m3_hand_moveit_ikfast_plugin.xml\n'}
+[24.538607] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/library_path.sh\n'}
+[24.538850] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/library_path.dsv\n'}
+[24.539152] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/ament_index/resource_index/package_run_dependencies/roarm_moveit_ikfast_plugins\n'}
+[24.539443] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/ament_index/resource_index/parent_prefix_path/roarm_moveit_ikfast_plugins\n'}
+[24.539677] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/ament_prefix_path.sh\n'}
+[24.539897] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/ament_prefix_path.dsv\n'}
+[24.540100] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/path.sh\n'}
+[24.540323] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/path.dsv\n'}
+[24.540510] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/local_setup.bash\n'}
+[24.540638] (-) TimerEvent: {}
+[24.540883] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/local_setup.sh\n'}
+[24.541064] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/local_setup.zsh\n'}
+[24.541572] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/local_setup.dsv\n'}
+[24.541791] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/package.dsv\n'}
+[24.541915] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/ament_index/resource_index/packages/roarm_moveit_ikfast_plugins\n'}
+[24.542082] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/ament_index/resource_index/moveit_core__pluginlib__plugin/roarm_moveit_ikfast_plugins\n'}
+[24.542263] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/export_roarm_moveit_ikfast_pluginsExport.cmake\n'}
+[24.542455] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/export_roarm_moveit_ikfast_pluginsExport-noconfig.cmake\n'}
+[24.542668] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[24.542861] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[24.543084] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/roarm_moveit_ikfast_pluginsConfig.cmake\n'}
+[24.543274] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/roarm_moveit_ikfast_pluginsConfig-version.cmake\n'}
+[24.543458] (roarm_moveit_ikfast_plugins) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/package.xml\n'}
+[24.547213] (roarm_moveit_ikfast_plugins) CommandEnded: {'returncode': 0}
+[24.607657] (roarm_moveit_ikfast_plugins) JobEnded: {'identifier': 'roarm_moveit_ikfast_plugins', 'rc': 0}
+[24.608703] (-) EventReactorShutdown: {}

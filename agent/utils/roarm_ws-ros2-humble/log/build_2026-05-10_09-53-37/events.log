@@ -1,0 +1,114 @@
+[0.000000] (-) TimerEvent: {}
+[0.000584] (-) JobUnselected: {'identifier': 'moveit_servo'}
+[0.000681] (-) JobUnselected: {'identifier': 'moveit_task_constructor_capabilities'}
+[0.000806] (-) JobUnselected: {'identifier': 'moveit_task_constructor_core'}
+[0.000874] (-) JobUnselected: {'identifier': 'moveit_task_constructor_msgs'}
+[0.000913] (-) JobUnselected: {'identifier': 'moveit_task_constructor_visualization'}
+[0.000964] (-) JobUnselected: {'identifier': 'roarm_description'}
+[0.001013] (-) JobUnselected: {'identifier': 'roarm_driver'}
+[0.001050] (-) JobUnselected: {'identifier': 'roarm_moveit'}
+[0.001516] (-) JobUnselected: {'identifier': 'roarm_moveit_cmd'}
+[0.001594] (-) JobUnselected: {'identifier': 'roarm_moveit_ikfast_plugins'}
+[0.001632] (-) JobUnselected: {'identifier': 'roarm_moveit_mtc_demo'}
+[0.001688] (-) JobUnselected: {'identifier': 'roarm_msgs'}
+[0.001725] (-) JobUnselected: {'identifier': 'rviz_marker_tools'}
+[0.001933] (roarm_moveit_servo) JobQueued: {'identifier': 'roarm_moveit_servo', 'dependencies': OrderedDict()}
+[0.001976] (roarm_moveit_servo) JobStarted: {'identifier': 'roarm_moveit_servo'}
+[0.015214] (roarm_moveit_servo) JobProgress: {'identifier': 'roarm_moveit_servo', 'progress': 'cmake'}
+[0.015972] (roarm_moveit_servo) Command: {'cmd': ['/usr/bin/cmake', '/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_servo', '-DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098740] (-) TimerEvent: {}
+[0.159273] (roarm_moveit_servo) StdoutLine: {'line': b'-- The C compiler identification is Clang 18.1.8\n'}
+[0.198891] (-) TimerEvent: {}
+[0.299575] (-) TimerEvent: {}
+[0.341329] (roarm_moveit_servo) StdoutLine: {'line': b'-- The CXX compiler identification is Clang 18.1.8\n'}
+[0.349320] (roarm_moveit_servo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.399711] (-) TimerEvent: {}
+[0.500338] (-) TimerEvent: {}
+[0.511657] (roarm_moveit_servo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.528040] (roarm_moveit_servo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/clang-18 - skipped\n'}
+[0.528832] (roarm_moveit_servo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.529959] (roarm_moveit_servo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.539127] (roarm_moveit_servo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600504] (-) TimerEvent: {}
+[0.701126] (-) TimerEvent: {}
+[0.770622] (roarm_moveit_servo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.791796] (roarm_moveit_servo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++-18 - skipped\n'}
+[0.792876] (roarm_moveit_servo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.794399] (roarm_moveit_servo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.801193] (-) TimerEvent: {}
+[0.901759] (-) TimerEvent: {}
+[1.002398] (-) TimerEvent: {}
+[1.103017] (-) TimerEvent: {}
+[1.203785] (-) TimerEvent: {}
+[1.207071] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time thread \n'}
+[1.223309] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.303940] (-) TimerEvent: {}
+[1.404665] (-) TimerEvent: {}
+[1.474407] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.504756] (-) TimerEvent: {}
+[1.605326] (-) TimerEvent: {}
+[1.671897] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[1.685662] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[1.705374] (-) TimerEvent: {}
+[1.762367] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.773018] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.788946] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.805464] (-) TimerEvent: {}
+[1.810416] (roarm_moveit_servo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.839884] (roarm_moveit_servo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.905551] (-) TimerEvent: {}
+[2.006186] (-) TimerEvent: {}
+[2.106889] (-) TimerEvent: {}
+[2.153329] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[2.207262] (-) TimerEvent: {}
+[2.224196] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[2.300767] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.306038] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.307304] (-) TimerEvent: {}
+[2.407753] (-) TimerEvent: {}
+[2.483572] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.507841] (-) TimerEvent: {}
+[2.529307] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.608031] (-) TimerEvent: {}
+[2.611808] (roarm_moveit_servo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.633415] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.708114] (-) TimerEvent: {}
+[2.724850] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[2.770024] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[2.808226] (-) TimerEvent: {}
+[2.909123] (-) TimerEvent: {}
+[2.968287] (roarm_moveit_servo) StdoutLine: {'line': b'-- library: /usr/lib/aarch64-linux-gnu/libcurl.so\n'}
+[3.009220] (-) TimerEvent: {}
+[3.025400] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.025737] (roarm_moveit_servo) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.109320] (-) TimerEvent: {}
+[3.209794] (-) TimerEvent: {}
+[3.267110] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[3.309892] (-) TimerEvent: {}
+[3.315698] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[3.352263] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[3.400639] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[3.409965] (-) TimerEvent: {}
+[3.460335] (roarm_moveit_servo) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:17 (find_package):\n'}
+[3.460959] (roarm_moveit_servo) StderrLine: {'line': b'  By not providing "Findroarm_msgs.cmake" in CMAKE_MODULE_PATH this project\n'}
+[3.461135] (roarm_moveit_servo) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[3.461301] (roarm_moveit_servo) StderrLine: {'line': b'  "roarm_msgs", but CMake did not find one.\n'}
+[3.461444] (roarm_moveit_servo) StderrLine: {'line': b'\n'}
+[3.461577] (roarm_moveit_servo) StderrLine: {'line': b'  Could not find a package configuration file provided by "roarm_msgs" with\n'}
+[3.461710] (roarm_moveit_servo) StderrLine: {'line': b'  any of the following names:\n'}
+[3.461836] (roarm_moveit_servo) StderrLine: {'line': b'\n'}
+[3.461960] (roarm_moveit_servo) StderrLine: {'line': b'    roarm_msgsConfig.cmake\n'}
+[3.462082] (roarm_moveit_servo) StderrLine: {'line': b'    roarm_msgs-config.cmake\n'}
+[3.462223] (roarm_moveit_servo) StderrLine: {'line': b'\n'}
+[3.462345] (roarm_moveit_servo) StderrLine: {'line': b'  Add the installation prefix of "roarm_msgs" to CMAKE_PREFIX_PATH or set\n'}
+[3.462467] (roarm_moveit_servo) StderrLine: {'line': b'  "roarm_msgs_DIR" to a directory containing one of the above files.  If\n'}
+[3.462586] (roarm_moveit_servo) StderrLine: {'line': b'  "roarm_msgs" provides a separate development package or SDK, be sure it has\n'}
+[3.462705] (roarm_moveit_servo) StderrLine: {'line': b'  been installed.\n'}
+[3.462822] (roarm_moveit_servo) StderrLine: {'line': b'\n'}
+[3.462939] (roarm_moveit_servo) StderrLine: {'line': b'\x1b[0m\n'}
+[3.463058] (roarm_moveit_servo) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.463203] (roarm_moveit_servo) StdoutLine: {'line': b'See also "/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo/CMakeFiles/CMakeOutput.log".\n'}
+[3.489874] (roarm_moveit_servo) CommandEnded: {'returncode': 1}
+[3.510065] (-) TimerEvent: {}
+[3.554059] (roarm_moveit_servo) JobEnded: {'identifier': 'roarm_moveit_servo', 'rc': 1}
+[3.565112] (-) EventReactorShutdown: {}

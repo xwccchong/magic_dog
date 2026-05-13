@@ -1,0 +1,11 @@
+{
+  "package_name": "roarm_msgs",
+  "non_idl_tuples": [
+    "/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_msgs:msg/ServoStatus.msg",
+    "/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_msgs:srv/GetPoseCmd.srv",
+    "/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_msgs:srv/MoveJointCmd.srv",
+    "/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_msgs:srv/MoveCircleCmd.srv",
+    "/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_msgs:srv/MoveLineCmd.srv",
+    "/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_msgs:srv/ServoCommandType.srv"
+  ]
+}

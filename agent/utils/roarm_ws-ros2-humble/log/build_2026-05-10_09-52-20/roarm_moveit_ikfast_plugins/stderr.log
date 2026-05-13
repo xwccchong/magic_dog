@@ -1,0 +1,10 @@
+[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m2_hand_moveit_ikfast_plugin.cpp:803:17: [0m[0;1;35mwarning: [0m[1mvariable length arrays in C++ are a Clang extension [-Wvla-cxx-extension][0m
+  803 |   IkReal angles[num_joints_];[0m
+      | [0;1;32m                ^~~~~~~~~~~
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m2_hand_moveit_ikfast_plugin.cpp:803:17: [0m[0;1;36mnote: [0mimplicit use of 'this' pointer is only allowed within the evaluation of a call to a 'constexpr' member function[0m
+[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m3_hand_moveit_ikfast_plugin.cpp:803:17: [0m[0;1;35mwarning: [0m[1mvariable length arrays in C++ are a Clang extension [-Wvla-cxx-extension][0m
+  803 |   IkReal angles[num_joints_];[0m
+      | [0;1;32m                ^~~~~~~~~~~
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m3_hand_moveit_ikfast_plugin.cpp:803:17: [0m[0;1;36mnote: [0mimplicit use of 'this' pointer is only allowed within the evaluation of a call to a 'constexpr' member function[0m
+1 warning generated.
+1 warning generated.

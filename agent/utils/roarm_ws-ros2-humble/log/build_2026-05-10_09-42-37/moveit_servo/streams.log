@@ -1,0 +1,130 @@
+[0.020s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_servo -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo
+[0.219s] -- The CXX compiler identification is Clang 18.1.8
+[0.227s] -- Detecting CXX compiler ABI info
+[0.441s] -- Detecting CXX compiler ABI info - done
+[0.458s] -- Check for working CXX compiler: /usr/bin/clang++-18 - skipped
+[0.459s] -- Detecting CXX compile features
+[0.460s] -- Detecting CXX compile features - done
+[0.472s] -- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)
+[0.482s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.729s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.033s] [0mmoveit_servo: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+[1.038s] -- Found generate_parameter_library: 0.7.1 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[1.055s] -- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.150s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.161s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.178s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.199s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.230s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.322s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.329s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.509s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.562s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.644s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.666s] -- Looking for C++ include pthread.h
+[1.894s] -- Looking for C++ include pthread.h - found
+[1.895s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.129s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.131s] -- Found Threads: TRUE  
+[2.281s] -- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.324s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[2.496s] -- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)
+[2.583s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.656s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.840s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[2.929s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.930s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.307s] -- Found roarm_msgs: 0.0.0 (/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake)
+[3.331s] -- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)
+[3.339s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.381s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[3.389s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[3.414s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[3.452s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[3.505s] -- Found realtime_tools: 2.15.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[3.542s] -- Configuring done
+[3.637s] -- Generating done
+[3.660s] -- Build files have been written to: /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo
+[3.690s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo' returned '0': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_servo -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo
+[3.695s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo -- -j8 -l8
+[3.782s] [ 16%] [32mBuilding CXX object CMakeFiles/servo_node.dir/rclcpp_components/node_main_servo_node.cpp.o[0m
+[3.783s] [ 16%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo/include/moveit_servo/moveit_servo_lib_parameters.hpp /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_servo/config/servo_parameters.yaml `[0m
+[5.232s] [ 25%] [34m[1mCreating deprecated header file /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo/include/moveit_servo_lib_parameters.hpp[0m
+[5.266s] [ 25%] Built target moveit_servo_lib_parameters
+[5.303s] [ 66%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib_cpp.dir/src/utils/command.cpp.o[0m
+[5.303s] [ 66%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib_cpp.dir/src/collision_monitor.cpp.o[0m
+[5.303s] [ 66%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib_cpp.dir/src/utils/common.cpp.o[0m
+[5.303s] [ 66%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib_cpp.dir/src/servo.cpp.o[0m
+[5.303s] [ 66%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib_cpp.dir/src/utils/logger.cpp.o[0m
+[12.407s] [ 75%] [32m[1mLinking CXX executable servo_node[0m
+[12.676s] [ 75%] Built target servo_node
+[48.140s] [ 83%] [32m[1mLinking CXX shared library libmoveit_servo_lib_cpp.so[0m
+[48.862s] [ 83%] Built target moveit_servo_lib_cpp
+[48.898s] [ 91%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib_ros.dir/src/servo_node.cpp.o[0m
+[113.474s] [100%] [32m[1mLinking CXX shared library libmoveit_servo_lib_ros.so[0m
+[114.273s] [100%] Built target moveit_servo_lib_ros
+[114.297s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo' returned '0': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo -- -j8 -l8
+[114.318s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo
+[114.330s] -- Install configuration: "Release"
+[114.330s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo
+[114.330s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo_lib_parameters.hpp
+[114.331s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib/moveit_servo/servo_node
+[114.332s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib/moveit_servo/servo_node" to ""
+[114.332s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib/libmoveit_servo_lib_cpp.so.2.12.0
+[114.334s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib/libmoveit_servo_lib_cpp.so.2.12.0" to ""
+[114.334s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib/libmoveit_servo_lib_cpp.so
+[114.334s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib/libmoveit_servo_lib_ros.so.2.12.0
+[114.340s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib/libmoveit_servo_lib_ros.so.2.12.0" to ""
+[114.341s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib/libmoveit_servo_lib_ros.so
+[114.341s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib/moveit_servo/servo_node
+[114.341s] -- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo
+[114.341s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo
+[114.341s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/utils
+[114.341s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/utils/common.hpp
+[114.341s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/utils/logger.hpp
+[114.341s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/utils/command.hpp
+[114.341s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/utils/datatypes.h
+[114.344s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/utils/common.h
+[114.344s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/utils/datatypes.hpp
+[114.345s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/utils/command.h
+[114.345s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/utils/logger.h
+[114.345s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/servo_node.h
+[114.346s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/servo.h
+[114.346s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/collision_monitor.h
+[114.346s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/servo_node.hpp
+[114.347s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/collision_monitor.hpp
+[114.347s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/include/moveit_servo/moveit_servo/servo.hpp
+[114.347s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/launch
+[114.347s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/launch/demo_pose.launch.py
+[114.348s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/launch/demo_joint_jog.launch.py
+[114.348s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/launch/demo_twist.launch.py
+[114.348s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/launch/demo_ros_api.launch.py
+[114.348s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/config
+[114.349s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/config/test_config_panda.yaml
+[114.349s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/config/servo_parameters.yaml
+[114.349s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/config/demo_rviz_config.rviz
+[114.349s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/config/panda_simulated_config.yaml
+[114.350s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/config/demo_rviz_config_ros.rviz
+[114.350s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/environment/library_path.sh
+[114.350s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/environment/library_path.dsv
+[114.351s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/ament_index/resource_index/package_run_dependencies/moveit_servo
+[114.351s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/ament_index/resource_index/parent_prefix_path/moveit_servo
+[114.351s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/environment/ament_prefix_path.sh
+[114.352s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/environment/ament_prefix_path.dsv
+[114.352s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/environment/path.sh
+[114.352s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/environment/path.dsv
+[114.352s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/local_setup.bash
+[114.353s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/local_setup.sh
+[114.353s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/local_setup.zsh
+[114.353s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/local_setup.dsv
+[114.353s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/package.dsv
+[114.354s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/ament_index/resource_index/packages/moveit_servo
+[114.354s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/ament_index/resource_index/rclcpp_components/moveit_servo
+[114.354s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/cmake/moveit_servoTargetsExport.cmake
+[114.354s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/cmake/moveit_servoTargetsExport-release.cmake
+[114.355s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/cmake/ament_cmake_export_dependencies-extras.cmake
+[114.355s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/cmake/ament_cmake_export_targets-extras.cmake
+[114.355s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/cmake/moveit_servoConfig.cmake
+[114.355s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/cmake/moveit_servoConfig-version.cmake
+[114.355s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/share/moveit_servo/package.xml
+[114.359s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo' returned '0': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_servo

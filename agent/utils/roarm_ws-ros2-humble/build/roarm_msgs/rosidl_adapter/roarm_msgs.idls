@@ -1,0 +1,6 @@
+/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/rosidl_adapter/roarm_msgs:msg/ServoStatus.idl
+/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/rosidl_adapter/roarm_msgs:srv/GetPoseCmd.idl
+/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/rosidl_adapter/roarm_msgs:srv/MoveJointCmd.idl
+/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/rosidl_adapter/roarm_msgs:srv/MoveCircleCmd.idl
+/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/rosidl_adapter/roarm_msgs:srv/MoveLineCmd.idl
+/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/rosidl_adapter/roarm_msgs:srv/ServoCommandType.idl

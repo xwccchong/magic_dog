@@ -1,0 +1,73 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/roarm_msgs__rs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			}
+		]
+	},
+	"id" : "roarm_msgs__rs::@995cb17551853d531098",
+	"name" : "roarm_msgs__rs",
+	"paths" : 
+	{
+		"build" : "roarm_msgs__rs",
+		"source" : "/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/roarm_msgs__rs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/roarm_msgs__rs/CMakeFiles/roarm_msgs__rs",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/roarm_msgs__rs/CMakeFiles/roarm_msgs__rs.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/rosidl_generator_rs/roarm_msgs/rust/src/lib.rs.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

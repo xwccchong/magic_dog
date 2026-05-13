@@ -1,0 +1,643 @@
+[0.000000] (-) TimerEvent: {}
+[0.000654] (-) JobUnselected: {'identifier': 'moveit_servo'}
+[0.001137] (-) JobUnselected: {'identifier': 'moveit_task_constructor_capabilities'}
+[0.001361] (-) JobUnselected: {'identifier': 'moveit_task_constructor_core'}
+[0.001582] (-) JobUnselected: {'identifier': 'moveit_task_constructor_msgs'}
+[0.001616] (-) JobUnselected: {'identifier': 'moveit_task_constructor_visualization'}
+[0.001689] (-) JobUnselected: {'identifier': 'roarm_description'}
+[0.001817] (-) JobUnselected: {'identifier': 'roarm_driver'}
+[0.001848] (-) JobUnselected: {'identifier': 'roarm_moveit'}
+[0.001913] (-) JobUnselected: {'identifier': 'roarm_moveit_cmd'}
+[0.001949] (-) JobUnselected: {'identifier': 'roarm_moveit_ikfast_plugins'}
+[0.002012] (-) JobUnselected: {'identifier': 'roarm_moveit_servo'}
+[0.002048] (-) JobUnselected: {'identifier': 'roarm_msgs'}
+[0.002370] (-) JobUnselected: {'identifier': 'rviz_marker_tools'}
+[0.002412] (roarm_moveit_mtc_demo) JobQueued: {'identifier': 'roarm_moveit_mtc_demo', 'dependencies': OrderedDict([('moveit_task_constructor_msgs', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs'), ('rviz_marker_tools', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools'), ('moveit_task_constructor_core', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core'), ('moveit_task_constructor_capabilities', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities')])}
+[0.002498] (roarm_moveit_mtc_demo) JobStarted: {'identifier': 'roarm_moveit_mtc_demo'}
+[0.029834] (roarm_moveit_mtc_demo) JobProgress: {'identifier': 'roarm_moveit_mtc_demo', 'progress': 'cmake'}
+[0.030603] (roarm_moveit_mtc_demo) Command: {'cmd': ['/usr/bin/cmake', '/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_mtc_demo', '-DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('CMAKE_MODULE_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo'), ('PYTHONPATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099466] (-) TimerEvent: {}
+[0.174053] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- The C compiler identification is Clang 18.1.8\n'}
+[0.199594] (-) TimerEvent: {}
+[0.300226] (-) TimerEvent: {}
+[0.358118] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- The CXX compiler identification is Clang 18.1.8\n'}
+[0.366355] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400364] (-) TimerEvent: {}
+[0.500957] (-) TimerEvent: {}
+[0.524963] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.542902] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/clang-18 - skipped\n'}
+[0.543575] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.544484] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.552131] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.601119] (-) TimerEvent: {}
+[0.701773] (-) TimerEvent: {}
+[0.786914] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.801981] (-) TimerEvent: {}
+[0.807788] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++-18 - skipped\n'}
+[0.808751] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.810560] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.826136] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.902180] (-) TimerEvent: {}
+[1.002973] (-) TimerEvent: {}
+[1.080396] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.103084] (-) TimerEvent: {}
+[1.203735] (-) TimerEvent: {}
+[1.296565] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found generate_parameter_library: 0.7.1 (/opt/ros/humble/share/generate_parameter_library/cmake)\n'}
+[1.303829] (-) TimerEvent: {}
+[1.306830] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[1.397989] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.403940] (-) TimerEvent: {}
+[1.409538] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.426931] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.449563] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.480622] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.504051] (-) TimerEvent: {}
+[1.566279] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.572490] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.604174] (-) TimerEvent: {}
+[1.704771] (-) TimerEvent: {}
+[1.755298] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.804937] (-) TimerEvent: {}
+[1.806199] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.888210] (roarm_moveit_mtc_demo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.905031] (-) TimerEvent: {}
+[1.908577] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.005266] (-) TimerEvent: {}
+[2.075407] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.075980] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.105362] (-) TimerEvent: {}
+[2.205886] (-) TimerEvent: {}
+[2.240319] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.242574] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.306060] (-) TimerEvent: {}
+[2.380966] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[2.406163] (-) TimerEvent: {}
+[2.418278] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)\n'}
+[2.506351] (-) TimerEvent: {}
+[2.527328] (roarm_moveit_mtc_demo) StderrLine: {'line': b"\x1b[0mroarm_moveit_mtc_demo: You did not request a specific build type: Choosing 'Release' for maximum performance\x1b[0m\n"}
+[2.531872] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)\n'}
+[2.606472] (-) TimerEvent: {}
+[2.613844] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[2.682932] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[2.706573] (-) TimerEvent: {}
+[2.807088] (-) TimerEvent: {}
+[2.897209] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- library: /usr/lib/aarch64-linux-gnu/libcurl.so\n'}
+[2.907172] (-) TimerEvent: {}
+[3.007758] (-) TimerEvent: {}
+[3.008609] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.009115] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.107893] (-) TimerEvent: {}
+[3.208586] (-) TimerEvent: {}
+[3.309325] (-) TimerEvent: {}
+[3.410061] (-) TimerEvent: {}
+[3.425832] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)\n'}
+[3.433874] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[3.473135] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[3.480763] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[3.504426] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[3.510134] (-) TimerEvent: {}
+[3.542248] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[3.585297] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Found moveit_task_constructor_core: 0.1.3 (/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake)\n'}
+[3.610246] (-) TimerEvent: {}
+[3.680004] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.710355] (-) TimerEvent: {}
+[3.803669] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Generating done\n'}
+[3.810471] (-) TimerEvent: {}
+[3.839628] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Build files have been written to: /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo\n'}
+[3.874819] (roarm_moveit_mtc_demo) CommandEnded: {'returncode': 0}
+[3.875782] (roarm_moveit_mtc_demo) JobProgress: {'identifier': 'roarm_moveit_mtc_demo', 'progress': 'build'}
+[3.878759] (roarm_moveit_mtc_demo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo', '--', '-j8', '-l8'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('CMAKE_MODULE_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo'), ('PYTHONPATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble')]), 'shell': False}
+[3.910612] (-) TimerEvent: {}
+[3.973816] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/roarm_moveit_mtc_demo_cartesian.dir/src/cartesian.cpp.o\x1b[0m\n'}
+[3.974239] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo/include/roarm_moveit_mtc_demo/pick_place_parameters.hpp /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_mtc_demo/src/pick_place_parameters.yaml `\x1b[0m\n'}
+[3.974418] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/roarm_moveit_mtc_demo_cartesian_modular.dir/src/cartesian_modular.cpp.o\x1b[0m\n'}
+[4.010766] (-) TimerEvent: {}
+[4.111376] (-) TimerEvent: {}
+[4.212057] (-) TimerEvent: {}
+[4.312636] (-) TimerEvent: {}
+[4.413195] (-) TimerEvent: {}
+[4.513770] (-) TimerEvent: {}
+[4.614342] (-) TimerEvent: {}
+[4.715088] (-) TimerEvent: {}
+[4.815666] (-) TimerEvent: {}
+[4.916232] (-) TimerEvent: {}
+[5.008222] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mCreating deprecated header file /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo/include/pick_place_parameters.hpp\x1b[0m\n'}
+[5.016378] (-) TimerEvent: {}
+[5.040752] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 40%] Built target pick_place_parameters\n'}
+[5.079131] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/roarm_moveit_mtc_demo_pick_place_task.dir/src/pick_place_task.cpp.o\x1b[0m\n'}
+[5.116553] (-) TimerEvent: {}
+[5.217184] (-) TimerEvent: {}
+[5.317812] (-) TimerEvent: {}
+[5.418449] (-) TimerEvent: {}
+[5.519244] (-) TimerEvent: {}
+[5.619882] (-) TimerEvent: {}
+[5.720514] (-) TimerEvent: {}
+[5.821146] (-) TimerEvent: {}
+[5.921786] (-) TimerEvent: {}
+[6.022416] (-) TimerEvent: {}
+[6.123084] (-) TimerEvent: {}
+[6.223706] (-) TimerEvent: {}
+[6.324332] (-) TimerEvent: {}
+[6.424958] (-) TimerEvent: {}
+[6.525593] (-) TimerEvent: {}
+[6.626266] (-) TimerEvent: {}
+[6.726908] (-) TimerEvent: {}
+[6.827557] (-) TimerEvent: {}
+[6.928188] (-) TimerEvent: {}
+[7.028808] (-) TimerEvent: {}
+[7.129543] (-) TimerEvent: {}
+[7.230171] (-) TimerEvent: {}
+[7.330799] (-) TimerEvent: {}
+[7.431448] (-) TimerEvent: {}
+[7.532078] (-) TimerEvent: {}
+[7.632703] (-) TimerEvent: {}
+[7.733341] (-) TimerEvent: {}
+[7.833963] (-) TimerEvent: {}
+[7.934585] (-) TimerEvent: {}
+[8.035232] (-) TimerEvent: {}
+[8.135869] (-) TimerEvent: {}
+[8.236497] (-) TimerEvent: {}
+[8.337133] (-) TimerEvent: {}
+[8.437776] (-) TimerEvent: {}
+[8.538405] (-) TimerEvent: {}
+[8.639055] (-) TimerEvent: {}
+[8.739682] (-) TimerEvent: {}
+[8.840315] (-) TimerEvent: {}
+[8.940936] (-) TimerEvent: {}
+[9.041567] (-) TimerEvent: {}
+[9.142207] (-) TimerEvent: {}
+[9.242840] (-) TimerEvent: {}
+[9.343660] (-) TimerEvent: {}
+[9.444311] (-) TimerEvent: {}
+[9.544939] (-) TimerEvent: {}
+[9.645571] (-) TimerEvent: {}
+[9.746205] (-) TimerEvent: {}
+[9.846859] (-) TimerEvent: {}
+[9.947519] (-) TimerEvent: {}
+[10.048150] (-) TimerEvent: {}
+[10.148794] (-) TimerEvent: {}
+[10.249419] (-) TimerEvent: {}
+[10.350057] (-) TimerEvent: {}
+[10.450683] (-) TimerEvent: {}
+[10.551332] (-) TimerEvent: {}
+[10.651968] (-) TimerEvent: {}
+[10.752607] (-) TimerEvent: {}
+[10.853245] (-) TimerEvent: {}
+[10.953852] (-) TimerEvent: {}
+[11.054503] (-) TimerEvent: {}
+[11.155158] (-) TimerEvent: {}
+[11.255800] (-) TimerEvent: {}
+[11.356426] (-) TimerEvent: {}
+[11.457076] (-) TimerEvent: {}
+[11.557703] (-) TimerEvent: {}
+[11.658343] (-) TimerEvent: {}
+[11.759002] (-) TimerEvent: {}
+[11.859618] (-) TimerEvent: {}
+[11.960263] (-) TimerEvent: {}
+[12.060910] (-) TimerEvent: {}
+[12.161555] (-) TimerEvent: {}
+[12.262213] (-) TimerEvent: {}
+[12.362863] (-) TimerEvent: {}
+[12.463546] (-) TimerEvent: {}
+[12.564188] (-) TimerEvent: {}
+[12.664817] (-) TimerEvent: {}
+[12.765463] (-) TimerEvent: {}
+[12.866099] (-) TimerEvent: {}
+[12.966742] (-) TimerEvent: {}
+[13.067405] (-) TimerEvent: {}
+[13.168048] (-) TimerEvent: {}
+[13.268689] (-) TimerEvent: {}
+[13.369328] (-) TimerEvent: {}
+[13.469957] (-) TimerEvent: {}
+[13.570603] (-) TimerEvent: {}
+[13.671914] (-) TimerEvent: {}
+[13.772564] (-) TimerEvent: {}
+[13.873191] (-) TimerEvent: {}
+[13.973833] (-) TimerEvent: {}
+[14.074484] (-) TimerEvent: {}
+[14.175128] (-) TimerEvent: {}
+[14.275768] (-) TimerEvent: {}
+[14.376403] (-) TimerEvent: {}
+[14.477036] (-) TimerEvent: {}
+[14.577667] (-) TimerEvent: {}
+[14.678312] (-) TimerEvent: {}
+[14.778945] (-) TimerEvent: {}
+[14.879721] (-) TimerEvent: {}
+[14.980345] (-) TimerEvent: {}
+[15.081176] (-) TimerEvent: {}
+[15.181822] (-) TimerEvent: {}
+[15.282486] (-) TimerEvent: {}
+[15.383134] (-) TimerEvent: {}
+[15.483765] (-) TimerEvent: {}
+[15.584409] (-) TimerEvent: {}
+[15.685067] (-) TimerEvent: {}
+[15.785724] (-) TimerEvent: {}
+[15.886404] (-) TimerEvent: {}
+[15.987077] (-) TimerEvent: {}
+[16.088006] (-) TimerEvent: {}
+[16.188650] (-) TimerEvent: {}
+[16.289301] (-) TimerEvent: {}
+[16.389965] (-) TimerEvent: {}
+[16.490618] (-) TimerEvent: {}
+[16.591291] (-) TimerEvent: {}
+[16.691920] (-) TimerEvent: {}
+[16.792581] (-) TimerEvent: {}
+[16.893248] (-) TimerEvent: {}
+[16.993875] (-) TimerEvent: {}
+[17.027531] (roarm_moveit_mtc_demo) StderrLine: {'line': b'In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_mtc_demo/src/pick_place_task.cpp:38:\n'}
+[17.027953] (roarm_moveit_mtc_demo) StderrLine: {'line': b'In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_mtc_demo/include/roarm_moveit_mtc_demo/pick_place_task.h:61:\n'}
+[17.028073] (roarm_moveit_mtc_demo) StderrLine: {'line': b'\x1b[1m/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo/include/pick_place_parameters.hpp:1:9: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1m#include "pick_place_parameters.hpp" is deprecated. Use #include <roarm_moveit_mtc_demo/pick_place_parameters.hpp> instead. [-W#pragma-messages]\x1b[0m\n'}
+[17.028212] (roarm_moveit_mtc_demo) StderrLine: {'line': b'    1 | #pragma message("#include \\"pick_place_parameters.hpp\\" is deprecated. Use #include <roarm_moveit_mtc_demo/pick_place_parameters.hpp> instead.")\x1b[0m\n'}
+[17.028315] (roarm_moveit_mtc_demo) StderrLine: {'line': b'      | \x1b[0;1;32m        ^\n'}
+[17.094060] (-) TimerEvent: {}
+[17.194709] (-) TimerEvent: {}
+[17.295363] (-) TimerEvent: {}
+[17.395992] (-) TimerEvent: {}
+[17.496616] (-) TimerEvent: {}
+[17.597249] (-) TimerEvent: {}
+[17.697862] (-) TimerEvent: {}
+[17.798478] (-) TimerEvent: {}
+[17.899125] (-) TimerEvent: {}
+[17.999744] (-) TimerEvent: {}
+[18.100374] (-) TimerEvent: {}
+[18.201012] (-) TimerEvent: {}
+[18.301636] (-) TimerEvent: {}
+[18.402272] (-) TimerEvent: {}
+[18.502910] (-) TimerEvent: {}
+[18.603549] (-) TimerEvent: {}
+[18.704183] (-) TimerEvent: {}
+[18.804801] (-) TimerEvent: {}
+[18.905434] (-) TimerEvent: {}
+[19.006062] (-) TimerEvent: {}
+[19.106699] (-) TimerEvent: {}
+[19.207356] (-) TimerEvent: {}
+[19.308004] (-) TimerEvent: {}
+[19.408666] (-) TimerEvent: {}
+[19.509318] (-) TimerEvent: {}
+[19.609960] (-) TimerEvent: {}
+[19.710591] (-) TimerEvent: {}
+[19.811276] (-) TimerEvent: {}
+[19.911904] (-) TimerEvent: {}
+[20.012539] (-) TimerEvent: {}
+[20.113177] (-) TimerEvent: {}
+[20.213814] (-) TimerEvent: {}
+[20.314446] (-) TimerEvent: {}
+[20.415144] (-) TimerEvent: {}
+[20.515761] (-) TimerEvent: {}
+[20.616387] (-) TimerEvent: {}
+[20.716990] (-) TimerEvent: {}
+[20.817627] (-) TimerEvent: {}
+[20.918503] (-) TimerEvent: {}
+[21.019129] (-) TimerEvent: {}
+[21.119761] (-) TimerEvent: {}
+[21.220406] (-) TimerEvent: {}
+[21.321054] (-) TimerEvent: {}
+[21.421712] (-) TimerEvent: {}
+[21.433330] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable cartesian_modular\x1b[0m\n'}
+[21.521885] (-) TimerEvent: {}
+[21.622548] (-) TimerEvent: {}
+[21.723250] (-) TimerEvent: {}
+[21.823926] (-) TimerEvent: {}
+[21.924595] (-) TimerEvent: {}
+[22.025248] (-) TimerEvent: {}
+[22.125907] (-) TimerEvent: {}
+[22.226584] (-) TimerEvent: {}
+[22.327254] (-) TimerEvent: {}
+[22.373616] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 60%] Built target roarm_moveit_mtc_demo_cartesian_modular\n'}
+[22.427425] (-) TimerEvent: {}
+[22.514324] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable cartesian\x1b[0m\n'}
+[22.527596] (-) TimerEvent: {}
+[22.628298] (-) TimerEvent: {}
+[22.728977] (-) TimerEvent: {}
+[22.829657] (-) TimerEvent: {}
+[22.930333] (-) TimerEvent: {}
+[23.031042] (-) TimerEvent: {}
+[23.131681] (-) TimerEvent: {}
+[23.232374] (-) TimerEvent: {}
+[23.333015] (-) TimerEvent: {}
+[23.417045] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 70%] Built target roarm_moveit_mtc_demo_cartesian\n'}
+[23.433136] (-) TimerEvent: {}
+[23.533812] (-) TimerEvent: {}
+[23.634660] (-) TimerEvent: {}
+[23.735505] (-) TimerEvent: {}
+[23.836427] (-) TimerEvent: {}
+[23.937242] (-) TimerEvent: {}
+[24.038156] (-) TimerEvent: {}
+[24.138954] (-) TimerEvent: {}
+[24.239781] (-) TimerEvent: {}
+[24.340646] (-) TimerEvent: {}
+[24.441503] (-) TimerEvent: {}
+[24.542402] (-) TimerEvent: {}
+[24.643201] (-) TimerEvent: {}
+[24.744022] (-) TimerEvent: {}
+[24.844850] (-) TimerEvent: {}
+[24.945628] (-) TimerEvent: {}
+[25.046511] (-) TimerEvent: {}
+[25.147350] (-) TimerEvent: {}
+[25.248212] (-) TimerEvent: {}
+[25.349099] (-) TimerEvent: {}
+[25.449873] (-) TimerEvent: {}
+[25.550565] (-) TimerEvent: {}
+[25.651397] (-) TimerEvent: {}
+[25.752268] (-) TimerEvent: {}
+[25.853065] (-) TimerEvent: {}
+[25.953834] (-) TimerEvent: {}
+[26.054722] (-) TimerEvent: {}
+[26.155526] (-) TimerEvent: {}
+[26.256402] (-) TimerEvent: {}
+[26.357250] (-) TimerEvent: {}
+[26.458093] (-) TimerEvent: {}
+[26.558973] (-) TimerEvent: {}
+[26.659811] (-) TimerEvent: {}
+[26.760685] (-) TimerEvent: {}
+[26.861451] (-) TimerEvent: {}
+[26.962382] (-) TimerEvent: {}
+[27.063194] (-) TimerEvent: {}
+[27.164003] (-) TimerEvent: {}
+[27.264850] (-) TimerEvent: {}
+[27.365664] (-) TimerEvent: {}
+[27.466540] (-) TimerEvent: {}
+[27.506473] (roarm_moveit_mtc_demo) StderrLine: {'line': b'\x1b[0m1 warning generated.\n'}
+[27.565800] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libroarm_moveit_mtc_demo_pick_place_task.so\x1b[0m\n'}
+[27.566584] (-) TimerEvent: {}
+[27.667040] (-) TimerEvent: {}
+[27.767656] (-) TimerEvent: {}
+[27.868326] (-) TimerEvent: {}
+[27.968988] (-) TimerEvent: {}
+[28.069629] (-) TimerEvent: {}
+[28.134565] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 80%] Built target roarm_moveit_mtc_demo_pick_place_task\n'}
+[28.169810] (-) TimerEvent: {}
+[28.172220] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/roarm_moveit_mtc_demo_pick_place.dir/src/pick_place.cpp.o\x1b[0m\n'}
+[28.269977] (-) TimerEvent: {}
+[28.370592] (-) TimerEvent: {}
+[28.471221] (-) TimerEvent: {}
+[28.571825] (-) TimerEvent: {}
+[28.672449] (-) TimerEvent: {}
+[28.773104] (-) TimerEvent: {}
+[28.873741] (-) TimerEvent: {}
+[28.974401] (-) TimerEvent: {}
+[29.075056] (-) TimerEvent: {}
+[29.175701] (-) TimerEvent: {}
+[29.276326] (-) TimerEvent: {}
+[29.376967] (-) TimerEvent: {}
+[29.477617] (-) TimerEvent: {}
+[29.578251] (-) TimerEvent: {}
+[29.678861] (-) TimerEvent: {}
+[29.779515] (-) TimerEvent: {}
+[29.880142] (-) TimerEvent: {}
+[29.980749] (-) TimerEvent: {}
+[30.081364] (-) TimerEvent: {}
+[30.181992] (-) TimerEvent: {}
+[30.282643] (-) TimerEvent: {}
+[30.383302] (-) TimerEvent: {}
+[30.483942] (-) TimerEvent: {}
+[30.584588] (-) TimerEvent: {}
+[30.685218] (-) TimerEvent: {}
+[30.785846] (-) TimerEvent: {}
+[30.886469] (-) TimerEvent: {}
+[30.987115] (-) TimerEvent: {}
+[31.087883] (-) TimerEvent: {}
+[31.188644] (-) TimerEvent: {}
+[31.289445] (-) TimerEvent: {}
+[31.390246] (-) TimerEvent: {}
+[31.491067] (-) TimerEvent: {}
+[31.591858] (-) TimerEvent: {}
+[31.692634] (-) TimerEvent: {}
+[31.793433] (-) TimerEvent: {}
+[31.894225] (-) TimerEvent: {}
+[31.995036] (-) TimerEvent: {}
+[32.095827] (-) TimerEvent: {}
+[32.196605] (-) TimerEvent: {}
+[32.297377] (-) TimerEvent: {}
+[32.398146] (-) TimerEvent: {}
+[32.498920] (-) TimerEvent: {}
+[32.599725] (-) TimerEvent: {}
+[32.700499] (-) TimerEvent: {}
+[32.801271] (-) TimerEvent: {}
+[32.902066] (-) TimerEvent: {}
+[33.002841] (-) TimerEvent: {}
+[33.103631] (-) TimerEvent: {}
+[33.204392] (-) TimerEvent: {}
+[33.305215] (-) TimerEvent: {}
+[33.406053] (-) TimerEvent: {}
+[33.507025] (-) TimerEvent: {}
+[33.607956] (-) TimerEvent: {}
+[33.708783] (-) TimerEvent: {}
+[33.809612] (-) TimerEvent: {}
+[33.910463] (-) TimerEvent: {}
+[34.011389] (-) TimerEvent: {}
+[34.112218] (-) TimerEvent: {}
+[34.213068] (-) TimerEvent: {}
+[34.313896] (-) TimerEvent: {}
+[34.414800] (-) TimerEvent: {}
+[34.515673] (-) TimerEvent: {}
+[34.616542] (-) TimerEvent: {}
+[34.717330] (-) TimerEvent: {}
+[34.818089] (-) TimerEvent: {}
+[34.918838] (-) TimerEvent: {}
+[35.019687] (-) TimerEvent: {}
+[35.120427] (-) TimerEvent: {}
+[35.221147] (-) TimerEvent: {}
+[35.321827] (-) TimerEvent: {}
+[35.422527] (-) TimerEvent: {}
+[35.523179] (-) TimerEvent: {}
+[35.623916] (-) TimerEvent: {}
+[35.724621] (-) TimerEvent: {}
+[35.825316] (-) TimerEvent: {}
+[35.926016] (-) TimerEvent: {}
+[36.026752] (-) TimerEvent: {}
+[36.127508] (-) TimerEvent: {}
+[36.228199] (-) TimerEvent: {}
+[36.328875] (-) TimerEvent: {}
+[36.429580] (-) TimerEvent: {}
+[36.530338] (-) TimerEvent: {}
+[36.631167] (-) TimerEvent: {}
+[36.731923] (-) TimerEvent: {}
+[36.832698] (-) TimerEvent: {}
+[36.933483] (-) TimerEvent: {}
+[37.034256] (-) TimerEvent: {}
+[37.135053] (-) TimerEvent: {}
+[37.235791] (-) TimerEvent: {}
+[37.336518] (-) TimerEvent: {}
+[37.437282] (-) TimerEvent: {}
+[37.538072] (-) TimerEvent: {}
+[37.638855] (-) TimerEvent: {}
+[37.739636] (-) TimerEvent: {}
+[37.840373] (-) TimerEvent: {}
+[37.941111] (-) TimerEvent: {}
+[38.041828] (-) TimerEvent: {}
+[38.142538] (-) TimerEvent: {}
+[38.243319] (-) TimerEvent: {}
+[38.344065] (-) TimerEvent: {}
+[38.444774] (-) TimerEvent: {}
+[38.545487] (-) TimerEvent: {}
+[38.646203] (-) TimerEvent: {}
+[38.746939] (-) TimerEvent: {}
+[38.847695] (-) TimerEvent: {}
+[38.948428] (-) TimerEvent: {}
+[39.049152] (-) TimerEvent: {}
+[39.149902] (-) TimerEvent: {}
+[39.250648] (-) TimerEvent: {}
+[39.351419] (-) TimerEvent: {}
+[39.452371] (-) TimerEvent: {}
+[39.553171] (-) TimerEvent: {}
+[39.619713] (roarm_moveit_mtc_demo) StderrLine: {'line': b'In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_mtc_demo/src/pick_place.cpp:41:\n'}
+[39.620422] (roarm_moveit_mtc_demo) StderrLine: {'line': b'In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_mtc_demo/include/roarm_moveit_mtc_demo/pick_place_task.h:61:\n'}
+[39.620713] (roarm_moveit_mtc_demo) StderrLine: {'line': b'\x1b[1m/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo/include/pick_place_parameters.hpp:1:9: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1m#include "pick_place_parameters.hpp" is deprecated. Use #include <roarm_moveit_mtc_demo/pick_place_parameters.hpp> instead. [-W#pragma-messages]\x1b[0m\n'}
+[39.620968] (roarm_moveit_mtc_demo) StderrLine: {'line': b'    1 | #pragma message("#include \\"pick_place_parameters.hpp\\" is deprecated. Use #include <roarm_moveit_mtc_demo/pick_place_parameters.hpp> instead.")\x1b[0m\n'}
+[39.621199] (roarm_moveit_mtc_demo) StderrLine: {'line': b'      | \x1b[0;1;32m        ^\n'}
+[39.653237] (-) TimerEvent: {}
+[39.753843] (-) TimerEvent: {}
+[39.854637] (-) TimerEvent: {}
+[39.955468] (-) TimerEvent: {}
+[40.056247] (-) TimerEvent: {}
+[40.157029] (-) TimerEvent: {}
+[40.257840] (-) TimerEvent: {}
+[40.358631] (-) TimerEvent: {}
+[40.459418] (-) TimerEvent: {}
+[40.560067] (-) TimerEvent: {}
+[40.660878] (-) TimerEvent: {}
+[40.761650] (-) TimerEvent: {}
+[40.862412] (-) TimerEvent: {}
+[40.963179] (-) TimerEvent: {}
+[41.063985] (-) TimerEvent: {}
+[41.164772] (-) TimerEvent: {}
+[41.265530] (-) TimerEvent: {}
+[41.366302] (-) TimerEvent: {}
+[41.467140] (-) TimerEvent: {}
+[41.567947] (-) TimerEvent: {}
+[41.668738] (-) TimerEvent: {}
+[41.769499] (-) TimerEvent: {}
+[41.870280] (-) TimerEvent: {}
+[41.971097] (-) TimerEvent: {}
+[42.071866] (-) TimerEvent: {}
+[42.172639] (-) TimerEvent: {}
+[42.273413] (-) TimerEvent: {}
+[42.374194] (-) TimerEvent: {}
+[42.475014] (-) TimerEvent: {}
+[42.575783] (-) TimerEvent: {}
+[42.676547] (-) TimerEvent: {}
+[42.777304] (-) TimerEvent: {}
+[42.878073] (-) TimerEvent: {}
+[42.978864] (-) TimerEvent: {}
+[43.079664] (-) TimerEvent: {}
+[43.180435] (-) TimerEvent: {}
+[43.281224] (-) TimerEvent: {}
+[43.382005] (-) TimerEvent: {}
+[43.482787] (-) TimerEvent: {}
+[43.583573] (-) TimerEvent: {}
+[43.684324] (-) TimerEvent: {}
+[43.785093] (-) TimerEvent: {}
+[43.885869] (-) TimerEvent: {}
+[43.986647] (-) TimerEvent: {}
+[44.087464] (-) TimerEvent: {}
+[44.188258] (-) TimerEvent: {}
+[44.289053] (-) TimerEvent: {}
+[44.389811] (-) TimerEvent: {}
+[44.490587] (-) TimerEvent: {}
+[44.591408] (-) TimerEvent: {}
+[44.692175] (-) TimerEvent: {}
+[44.792943] (-) TimerEvent: {}
+[44.893697] (-) TimerEvent: {}
+[44.994436] (-) TimerEvent: {}
+[45.095204] (-) TimerEvent: {}
+[45.195939] (-) TimerEvent: {}
+[45.296734] (-) TimerEvent: {}
+[45.397514] (-) TimerEvent: {}
+[45.498281] (-) TimerEvent: {}
+[45.599044] (-) TimerEvent: {}
+[45.699806] (-) TimerEvent: {}
+[45.800533] (-) TimerEvent: {}
+[45.901217] (-) TimerEvent: {}
+[46.001934] (-) TimerEvent: {}
+[46.102666] (-) TimerEvent: {}
+[46.203421] (-) TimerEvent: {}
+[46.304371] (-) TimerEvent: {}
+[46.405142] (-) TimerEvent: {}
+[46.505920] (-) TimerEvent: {}
+[46.606718] (-) TimerEvent: {}
+[46.707522] (-) TimerEvent: {}
+[46.808342] (-) TimerEvent: {}
+[46.909120] (-) TimerEvent: {}
+[47.009892] (-) TimerEvent: {}
+[47.110664] (-) TimerEvent: {}
+[47.211443] (-) TimerEvent: {}
+[47.312222] (-) TimerEvent: {}
+[47.413015] (-) TimerEvent: {}
+[47.513803] (-) TimerEvent: {}
+[47.614598] (-) TimerEvent: {}
+[47.715422] (-) TimerEvent: {}
+[47.816218] (-) TimerEvent: {}
+[47.916990] (-) TimerEvent: {}
+[48.017714] (-) TimerEvent: {}
+[48.118630] (-) TimerEvent: {}
+[48.219581] (-) TimerEvent: {}
+[48.320306] (-) TimerEvent: {}
+[48.421044] (-) TimerEvent: {}
+[48.522049] (-) TimerEvent: {}
+[48.622856] (-) TimerEvent: {}
+[48.723685] (-) TimerEvent: {}
+[48.824486] (-) TimerEvent: {}
+[48.925296] (-) TimerEvent: {}
+[49.026082] (-) TimerEvent: {}
+[49.126898] (-) TimerEvent: {}
+[49.227705] (-) TimerEvent: {}
+[49.328498] (-) TimerEvent: {}
+[49.429278] (-) TimerEvent: {}
+[49.530087] (-) TimerEvent: {}
+[49.630864] (-) TimerEvent: {}
+[49.731647] (-) TimerEvent: {}
+[49.832415] (-) TimerEvent: {}
+[49.933161] (-) TimerEvent: {}
+[49.981177] (roarm_moveit_mtc_demo) StderrLine: {'line': b'\x1b[0m1 warning generated.\n'}
+[50.033344] (-) TimerEvent: {}
+[50.034272] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pick_place\x1b[0m\n'}
+[50.133503] (-) TimerEvent: {}
+[50.234133] (-) TimerEvent: {}
+[50.334744] (-) TimerEvent: {}
+[50.435373] (-) TimerEvent: {}
+[50.535988] (-) TimerEvent: {}
+[50.636590] (-) TimerEvent: {}
+[50.737204] (-) TimerEvent: {}
+[50.837804] (-) TimerEvent: {}
+[50.887173] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'[100%] Built target roarm_moveit_mtc_demo_pick_place\n'}
+[50.914170] (roarm_moveit_mtc_demo) CommandEnded: {'returncode': 0}
+[50.916497] (roarm_moveit_mtc_demo) JobProgress: {'identifier': 'roarm_moveit_mtc_demo', 'progress': 'install'}
+[50.932354] (roarm_moveit_mtc_demo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('CMAKE_MODULE_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo'), ('PYTHONPATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble')]), 'shell': False}
+[50.937851] (-) TimerEvent: {}
+[50.947227] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[50.947688] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib/libroarm_moveit_mtc_demo_pick_place_task.so\n'}
+[50.949190] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib/libroarm_moveit_mtc_demo_pick_place_task.so" to ""\n'}
+[50.949376] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib/roarm_moveit_mtc_demo/cartesian\n'}
+[50.949922] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib/roarm_moveit_mtc_demo/cartesian" to ""\n'}
+[50.950188] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib/roarm_moveit_mtc_demo/cartesian_modular\n'}
+[50.950800] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib/roarm_moveit_mtc_demo/cartesian_modular" to ""\n'}
+[50.950963] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/include/roarm_moveit_mtc_demo\n'}
+[50.951142] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/include/roarm_moveit_mtc_demo/pick_place_parameters.hpp\n'}
+[50.951384] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib/roarm_moveit_mtc_demo/pick_place\n'}
+[50.952213] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib/roarm_moveit_mtc_demo/pick_place" to ""\n'}
+[50.952411] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/launch\n'}
+[50.952590] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/launch/demo.launch.py\n'}
+[50.953066] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/launch/run.launch.py\n'}
+[50.953353] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/config\n'}
+[50.953519] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/config/roarm_config.yaml\n'}
+[50.953754] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/rviz\n'}
+[50.953927] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/rviz/mtc.rviz\n'}
+[50.954431] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/ament_index/resource_index/package_run_dependencies/roarm_moveit_mtc_demo\n'}
+[50.954706] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/ament_index/resource_index/parent_prefix_path/roarm_moveit_mtc_demo\n'}
+[50.955308] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/environment/ament_prefix_path.sh\n'}
+[50.955565] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/environment/ament_prefix_path.dsv\n'}
+[50.955811] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/environment/path.sh\n'}
+[50.956026] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/environment/path.dsv\n'}
+[50.956259] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/local_setup.bash\n'}
+[50.956523] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/local_setup.sh\n'}
+[50.956778] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/local_setup.zsh\n'}
+[50.956996] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/local_setup.dsv\n'}
+[50.957240] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/package.dsv\n'}
+[50.957518] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/ament_index/resource_index/packages/roarm_moveit_mtc_demo\n'}
+[50.957768] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/cmake/roarm_moveit_mtc_demoConfig.cmake\n'}
+[50.957953] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/cmake/roarm_moveit_mtc_demoConfig-version.cmake\n'}
+[50.958171] (roarm_moveit_mtc_demo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/package.xml\n'}
+[50.962209] (roarm_moveit_mtc_demo) CommandEnded: {'returncode': 0}
+[51.019638] (roarm_moveit_mtc_demo) JobEnded: {'identifier': 'roarm_moveit_mtc_demo', 'rc': 0}
+[51.021366] (-) EventReactorShutdown: {}

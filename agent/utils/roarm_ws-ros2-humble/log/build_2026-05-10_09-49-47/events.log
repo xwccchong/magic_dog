@@ -1,0 +1,1732 @@
+[0.000000] (-) TimerEvent: {}
+[0.000654] (-) JobUnselected: {'identifier': 'moveit_servo'}
+[0.001370] (-) JobUnselected: {'identifier': 'moveit_task_constructor_capabilities'}
+[0.001462] (-) JobUnselected: {'identifier': 'moveit_task_constructor_core'}
+[0.001582] (-) JobUnselected: {'identifier': 'moveit_task_constructor_msgs'}
+[0.001650] (-) JobUnselected: {'identifier': 'roarm_description'}
+[0.001687] (-) JobUnselected: {'identifier': 'roarm_driver'}
+[0.001732] (-) JobUnselected: {'identifier': 'roarm_moveit'}
+[0.001781] (-) JobUnselected: {'identifier': 'roarm_moveit_cmd'}
+[0.001814] (-) JobUnselected: {'identifier': 'roarm_moveit_ikfast_plugins'}
+[0.001860] (-) JobUnselected: {'identifier': 'roarm_moveit_mtc_demo'}
+[0.002165] (-) JobUnselected: {'identifier': 'roarm_moveit_servo'}
+[0.002196] (-) JobUnselected: {'identifier': 'roarm_msgs'}
+[0.002258] (-) JobUnselected: {'identifier': 'rviz_marker_tools'}
+[0.002452] (moveit_task_constructor_visualization) JobQueued: {'identifier': 'moveit_task_constructor_visualization', 'dependencies': OrderedDict([('moveit_task_constructor_msgs', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs'), ('rviz_marker_tools', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools'), ('moveit_task_constructor_core', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core')])}
+[0.002575] (moveit_task_constructor_visualization) JobStarted: {'identifier': 'moveit_task_constructor_visualization'}
+[0.026821] (moveit_task_constructor_visualization) JobProgress: {'identifier': 'moveit_task_constructor_visualization', 'progress': 'cmake'}
+[0.027632] (moveit_task_constructor_visualization) Command: {'cmd': ['/usr/bin/cmake', '/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_else/moveit_task_constructor/visualization', '-DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_visualization', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('CMAKE_MODULE_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_visualization'), ('PYTHONPATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099485] (-) TimerEvent: {}
+[0.178004] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- The C compiler identification is Clang 18.1.8\n'}
+[0.199585] (-) TimerEvent: {}
+[0.300198] (-) TimerEvent: {}
+[0.358473] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- The CXX compiler identification is Clang 18.1.8\n'}
+[0.368159] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400353] (-) TimerEvent: {}
+[0.500973] (-) TimerEvent: {}
+[0.531396] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.551148] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/clang-18 - skipped\n'}
+[0.551994] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.553122] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.562490] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.601140] (-) TimerEvent: {}
+[0.701801] (-) TimerEvent: {}
+[0.787505] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.801891] (-) TimerEvent: {}
+[0.808371] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/clang++-18 - skipped\n'}
+[0.809366] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.811000] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.824515] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.902159] (-) TimerEvent: {}
+[1.002815] (-) TimerEvent: {}
+[1.082821] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.102914] (-) TimerEvent: {}
+[1.203566] (-) TimerEvent: {}
+[1.304337] (-) TimerEvent: {}
+[1.308553] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  \n'}
+[1.313765] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)\n'}
+[1.404464] (-) TimerEvent: {}
+[1.423310] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0mmoveit_task_constructor_visualization: You did not request a specific build type: Choosing 'Release' for maximum performance\x1b[0m\n"}
+[1.427352] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)\n'}
+[1.504563] (-) TimerEvent: {}
+[1.605144] (-) TimerEvent: {}
+[1.705786] (-) TimerEvent: {}
+[1.806389] (-) TimerEvent: {}
+[1.907005] (-) TimerEvent: {}
+[1.938098] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[2.007157] (-) TimerEvent: {}
+[2.056523] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[2.107274] (-) TimerEvent: {}
+[2.137054] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.148675] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.165868] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.188577] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.207346] (-) TimerEvent: {}
+[2.219826] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.305817] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.307424] (-) TimerEvent: {}
+[2.311662] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.407614] (-) TimerEvent: {}
+[2.493807] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.507701] (-) TimerEvent: {}
+[2.540463] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.607936] (-) TimerEvent: {}
+[2.626270] (moveit_task_constructor_visualization) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.647149] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.708014] (-) TimerEvent: {}
+[2.757209] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[2.800679] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[2.808095] (-) TimerEvent: {}
+[2.908540] (-) TimerEvent: {}
+[3.009145] (-) TimerEvent: {}
+[3.021621] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- library: /usr/lib/aarch64-linux-gnu/libcurl.so\n'}
+[3.109302] (-) TimerEvent: {}
+[3.134819] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.135240] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.209414] (-) TimerEvent: {}
+[3.309934] (-) TimerEvent: {}
+[3.410504] (-) TimerEvent: {}
+[3.511109] (-) TimerEvent: {}
+[3.551145] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found moveit_ros_visualization: 2.5.9 (/opt/ros/humble/share/moveit_ros_visualization/cmake)\n'}
+[3.558335] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread date_time system filesystem \n'}
+[3.585185] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[3.611196] (-) TimerEvent: {}
+[3.635443] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[3.659449] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[3.696259] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[3.711310] (-) TimerEvent: {}
+[3.792759] (moveit_task_constructor_visualization) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[3.795691] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found OGRE\n'}
+[3.796011] (moveit_task_constructor_visualization) StdoutLine: {'line': b'--   static     : OFF\n'}
+[3.796432] (moveit_task_constructor_visualization) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[3.796858] (moveit_task_constructor_visualization) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[3.797153] (moveit_task_constructor_visualization) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[3.797402] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[3.797955] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[3.798315] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[3.798597] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[3.798905] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[3.799280] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[3.799526] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[3.799774] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[3.799993] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Could not find freeimage library\n'}
+[3.811426] (-) TimerEvent: {}
+[3.823238] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[3.830800] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so   \n'}
+[3.911629] (-) TimerEvent: {}
+[4.006695] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[4.007245] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so\n'}
+[4.011677] (-) TimerEvent: {}
+[4.112157] (-) TimerEvent: {}
+[4.212948] (-) TimerEvent: {}
+[4.225256] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found\n'}
+[4.225716] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[4.313098] (-) TimerEvent: {}
+[4.413715] (-) TimerEvent: {}
+[4.449182] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[4.449824] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Looking for connect\n'}
+[4.513899] (-) TimerEvent: {}
+[4.614553] (-) TimerEvent: {}
+[4.672029] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[4.672850] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Looking for remove\n'}
+[4.714753] (-) TimerEvent: {}
+[4.815438] (-) TimerEvent: {}
+[4.895128] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[4.895833] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[4.915530] (-) TimerEvent: {}
+[5.016181] (-) TimerEvent: {}
+[5.116867] (-) TimerEvent: {}
+[5.117618] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[5.118418] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[5.217039] (-) TimerEvent: {}
+[5.317683] (-) TimerEvent: {}
+[5.346092] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[5.417853] (-) TimerEvent: {}
+[5.427440] (moveit_task_constructor_visualization) StdoutLine: {'line': b"-- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'\n"}
+[5.517995] (-) TimerEvent: {}
+[5.586274] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found moveit_task_constructor_core: 0.1.3 (/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake)\n'}
+[5.618098] (-) TimerEvent: {}
+[5.688014] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[5.689125] (moveit_task_constructor_visualization) StdoutLine: {'line': b"-- Checking for module 'yaml-0.1'\n"}
+[5.718300] (-) TimerEvent: {}
+[5.723601] (moveit_task_constructor_visualization) StdoutLine: {'line': b'--   Found yaml-0.1, version 0.2.2\n'}
+[5.813874] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[5.818386] (-) TimerEvent: {}
+[5.819007] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 1.3.14 (/opt/ros/humble/share/ament_cmake_gmock/cmake)\n'}
+[5.823744] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.14 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[5.828773] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.865348] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[5.871998] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[5.872484] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.872793] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.873037] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[5.911172] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.917204] (moveit_task_constructor_visualization) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[5.918458] (-) TimerEvent: {}
+[5.931516] (moveit_task_constructor_visualization) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[5.951215] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.018618] (-) TimerEvent: {}
+[6.119673] (-) TimerEvent: {}
+[6.220283] (-) TimerEvent: {}
+[6.300578] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Generating done\n'}
+[6.320380] (-) TimerEvent: {}
+[6.360808] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Build files have been written to: /workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_visualization\n'}
+[6.420212] (moveit_task_constructor_visualization) CommandEnded: {'returncode': 0}
+[6.421716] (-) TimerEvent: {}
+[6.422345] (moveit_task_constructor_visualization) JobProgress: {'identifier': 'moveit_task_constructor_visualization', 'progress': 'build'}
+[6.423948] (moveit_task_constructor_visualization) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_visualization', '--', '-j8', '-l8'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_visualization', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('CMAKE_MODULE_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_visualization'), ('PYTHONPATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble')]), 'shell': False}
+[6.521929] (-) TimerEvent: {}
+[6.534557] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mAutomatic MOC for target gtest_main\x1b[0m\n'}
+[6.535257] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mAutomatic MOC for target gmock\x1b[0m\n'}
+[6.535411] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mAutomatic MOC for target gmock_main\x1b[0m\n'}
+[6.535526] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mAutomatic MOC for target gtest\x1b[0m\n'}
+[6.535631] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mAutomatic MOC for target motion_planning_tasks_utils\x1b[0m\n'}
+[6.535735] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mAutomatic MOC for target motion_planning_tasks_properties\x1b[0m\n'}
+[6.535833] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mAutomatic MOC for target moveit_task_visualization_tools\x1b[0m\n'}
+[6.616749] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 10%] Built target gtest_main_autogen\n'}
+[6.617227] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 10%] Built target gtest_autogen\n'}
+[6.617363] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 10%] Built target gmock_main_autogen\n'}
+[6.617475] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 10%] Built target gmock_autogen\n'}
+[6.617730] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 10%] Built target motion_planning_tasks_properties_autogen\n'}
+[6.622071] (-) TimerEvent: {}
+[6.659168] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[6.659788] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o\x1b[0m\n'}
+[6.659975] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/gmock_main_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[6.660121] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[6.660244] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o\x1b[0m\n'}
+[6.661310] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[6.722257] (-) TimerEvent: {}
+[6.724829] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[6.822443] (-) TimerEvent: {}
+[6.924038] (-) TimerEvent: {}
+[6.974529] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 21%] Built target motion_planning_tasks_utils_autogen\n'}
+[7.021436] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object motion_planning_tasks/utils/CMakeFiles/motion_planning_tasks_utils.dir/motion_planning_tasks_utils_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[7.021890] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object motion_planning_tasks/properties/CMakeFiles/motion_planning_tasks_properties.dir/motion_planning_tasks_properties_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[7.024162] (-) TimerEvent: {}
+[7.040084] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/gtest_main_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[7.090008] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object motion_planning_tasks/utils/CMakeFiles/motion_planning_tasks_utils.dir/flat_merge_proxy_model.cpp.o\x1b[0m\n'}
+[7.090521] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object motion_planning_tasks/properties/CMakeFiles/motion_planning_tasks_properties.dir/property_factory.cpp.o\x1b[0m\n'}
+[7.113727] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[7.124364] (-) TimerEvent: {}
+[7.226448] (-) TimerEvent: {}
+[7.328138] (-) TimerEvent: {}
+[7.429700] (-) TimerEvent: {}
+[7.531310] (-) TimerEvent: {}
+[7.607993] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 30%] Built target moveit_task_visualization_tools_autogen\n'}
+[7.627105] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object motion_planning_tasks/properties/CMakeFiles/motion_planning_tasks_properties.dir/property_from_yaml.cpp.o\x1b[0m\n'}
+[7.631471] (-) TimerEvent: {}
+[7.732996] (-) TimerEvent: {}
+[7.834626] (-) TimerEvent: {}
+[7.936270] (-) TimerEvent: {}
+[8.037909] (-) TimerEvent: {}
+[8.139493] (-) TimerEvent: {}
+[8.241095] (-) TimerEvent: {}
+[8.342713] (-) TimerEvent: {}
+[8.444266] (-) TimerEvent: {}
+[8.545836] (-) TimerEvent: {}
+[8.647409] (-) TimerEvent: {}
+[8.748946] (-) TimerEvent: {}
+[8.850499] (-) TimerEvent: {}
+[8.952134] (-) TimerEvent: {}
+[9.053698] (-) TimerEvent: {}
+[9.155235] (-) TimerEvent: {}
+[9.256749] (-) TimerEvent: {}
+[9.259804] (moveit_task_constructor_visualization) StderrLine: {'line': b'In file included from /opt/ros/humble/src/gmock_vendor/src/gmock_main.cc:32:\n'}
+[9.260740] (moveit_task_constructor_visualization) StderrLine: {'line': b'In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock.h:61:\n'}
+[9.260942] (moveit_task_constructor_visualization) StderrLine: {'line': b'In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-function-mocker.h:39:\n'}
+[9.261073] (moveit_task_constructor_visualization) StderrLine: {'line': b'In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-generated-function-mockers.h:47:\n'}
+[9.261371] (moveit_task_constructor_visualization) StderrLine: {'line': b'In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-spec-builders.h:75:\n'}
+[9.261497] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.261610] (moveit_task_constructor_visualization) StderrLine: {'line': b'  721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);\x1b[0m\n'}
+[9.261707] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.261798] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.261892] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.261980] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.262067] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<char>>' first required here\x1b[0m\n"}
+[9.262408] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.262571] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.262706] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.262985] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.263241] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.263467] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3813:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>' requested here\x1b[0m\n"}
+[9.263623] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3813 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.263797] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.263976] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.264183] (moveit_task_constructor_visualization) StderrLine: {'line': b'  778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);\x1b[0m\n'}
+[9.264398] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.264659] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.264813] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.264986] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.265178] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<char>>' first required here\x1b[0m\n"}
+[9.266021] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.266364] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.266584] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.266885] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.267158] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.267373] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3842:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>' requested here\x1b[0m\n"}
+[9.268054] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3842 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.268293] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.269678] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.270156] (moveit_task_constructor_visualization) StderrLine: {'line': b'  835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);\x1b[0m\n'}
+[9.270479] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.270780] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.271501] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.271808] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.272058] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<char>>' first required here\x1b[0m\n"}
+[9.273571] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.273916] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.274167] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.274727] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.274968] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.275234] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3849:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>' requested here\x1b[0m\n"}
+[9.275936] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3849 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.276145] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.277607] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.278236] (moveit_task_constructor_visualization) StderrLine: {'line': b'  891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);\x1b[0m\n'}
+[9.278561] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.278800] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.279397] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.279711] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.280004] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<char>>' first required here\x1b[0m\n"}
+[9.281575] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.281891] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.282189] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.282538] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.282797] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.283075] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3856:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>' requested here\x1b[0m\n"}
+[9.285100] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3856 |   return MakePolymorphicMatcher(internal::EndsWithMatcher<std::string>(suffix));\x1b[0m\n'}
+[9.285411] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.287690] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.288165] (moveit_task_constructor_visualization) StderrLine: {'line': b'  721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);\x1b[0m\n'}
+[9.288474] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.288737] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.289002] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.289244] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.289452] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>' first required here\x1b[0m\n"}
+[9.290969] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.291318] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.291557] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.292215] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.292531] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.292826] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3865:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>' requested here\x1b[0m\n"}
+[9.293079] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3865 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.293270] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.294750] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.295572] (moveit_task_constructor_visualization) StderrLine: {'line': b'  778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);\x1b[0m\n'}
+[9.295949] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.296185] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.296444] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.296594] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.296848] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>' first required here\x1b[0m\n"}
+[9.298338] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.298668] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.298941] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.299656] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.299967] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.300229] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3894:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>' requested here\x1b[0m\n"}
+[9.300742] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3894 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.301001] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.302594] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.303469] (moveit_task_constructor_visualization) StderrLine: {'line': b'  835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);\x1b[0m\n'}
+[9.303974] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.304203] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.304436] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.304718] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.304946] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>' first required here\x1b[0m\n"}
+[9.306820] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.307297] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.307550] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.307788] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.308025] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.308217] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3901:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>' requested here\x1b[0m\n"}
+[9.308380] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3901 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.308561] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.310097] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.310952] (moveit_task_constructor_visualization) StderrLine: {'line': b'  891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);\x1b[0m\n'}
+[9.311279] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.311510] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.311940] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.312190] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.312452] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>' first required here\x1b[0m\n"}
+[9.314328] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.314700] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.314983] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.315443] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.315724] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.315950] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3908:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>' requested here\x1b[0m\n"}
+[9.316446] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3908 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.316707] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.356963] (-) TimerEvent: {}
+[9.386890] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[9.399065] (moveit_task_constructor_visualization) StderrLine: {'line': b'\x1b[0m8 warnings generated.\n'}
+[9.441323] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX static library libgmock_main.a\x1b[0m\n'}
+[9.457192] (-) TimerEvent: {}
+[9.504913] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 35%] Built target gtest_main\n'}
+[9.549434] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object visualization_tools/CMakeFiles/moveit_task_visualization_tools.dir/moveit_task_visualization_tools_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[9.557419] (-) TimerEvent: {}
+[9.559827] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 36%] Built target gmock_main\n'}
+[9.580698] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object motion_planning_tasks/utils/CMakeFiles/motion_planning_tasks_utils.dir/tree_merge_proxy_model.cpp.o\x1b[0m\n'}
+[9.585482] (moveit_task_constructor_visualization) StderrLine: {'line': b'In file included from /opt/ros/humble/src/gmock_vendor/src/gmock-all.cc:39:\n'}
+[9.586079] (moveit_task_constructor_visualization) StderrLine: {'line': b'In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock.h:61:\n'}
+[9.586444] (moveit_task_constructor_visualization) StderrLine: {'line': b'In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-function-mocker.h:39:\n'}
+[9.586772] (moveit_task_constructor_visualization) StderrLine: {'line': b'In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-generated-function-mockers.h:47:\n'}
+[9.586898] (moveit_task_constructor_visualization) StderrLine: {'line': b'In file included from /opt/ros/humble/src/gmock_vendor/include/gmock/gmock-spec-builders.h:75:\n'}
+[9.587074] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.587199] (moveit_task_constructor_visualization) StderrLine: {'line': b'  721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);\x1b[0m\n'}
+[9.587295] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.587381] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.587470] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.587556] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.587641] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<char>>' first required here\x1b[0m\n"}
+[9.587731] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.587962] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.588236] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.588538] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.588832] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.589201] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3813:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<char>>>' requested here\x1b[0m\n"}
+[9.589321] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3813 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.589417] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.589504] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.589623] (moveit_task_constructor_visualization) StderrLine: {'line': b'  778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);\x1b[0m\n'}
+[9.589715] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.589799] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.589886] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.589969] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.590051] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<char>>' first required here\x1b[0m\n"}
+[9.590198] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.590576] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.590968] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.591405] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.591598] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.591696] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3842:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<char>>>' requested here\x1b[0m\n"}
+[9.591790] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3842 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.591900] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.591985] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.592076] (moveit_task_constructor_visualization) StderrLine: {'line': b'  835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);\x1b[0m\n'}
+[9.592161] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.592244] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.592345] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.592590] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.592897] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<char>>' first required here\x1b[0m\n"}
+[9.593053] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.593247] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.593559] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.593919] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.594046] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.594141] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3849:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<char>>>' requested here\x1b[0m\n"}
+[9.594233] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3849 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.594320] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.594404] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<char>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.594495] (moveit_task_constructor_visualization) StderrLine: {'line': b'  891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);\x1b[0m\n'}
+[9.594579] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.594662] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.594750] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.594866] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.594949] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<char>>' first required here\x1b[0m\n"}
+[9.595072] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.595188] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.595275] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.595364] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.595449] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.595531] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3856:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<char>>>' requested here\x1b[0m\n"}
+[9.595615] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3856 |   return MakePolymorphicMatcher(internal::EndsWithMatcher<std::string>(suffix));\x1b[0m\n'}
+[9.595701] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.596122] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:721:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'StrEqualityMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.603801] (moveit_task_constructor_visualization) StderrLine: {'line': b'  721 |   GTEST_DISALLOW_ASSIGN_(StrEqualityMatcher);\x1b[0m\n'}
+[9.604020] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.604161] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.604286] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.604401] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.604862] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>' first required here\x1b[0m\n"}
+[9.605050] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.605160] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.605260] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.605380] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.605472] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.605562] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3865:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StrEqualityMatcher<std::basic_string<wchar_t>>>' requested here\x1b[0m\n"}
+[9.605815] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3865 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.605942] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.606239] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:778:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'HasSubstrMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.606524] (moveit_task_constructor_visualization) StderrLine: {'line': b'  778 |   GTEST_DISALLOW_ASSIGN_(HasSubstrMatcher);\x1b[0m\n'}
+[9.606834] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.607167] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.607573] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.607825] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.608067] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>' first required here\x1b[0m\n"}
+[9.609273] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.609784] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.610163] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.610556] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.610826] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.610948] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3894:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::HasSubstrMatcher<std::basic_string<wchar_t>>>' requested here\x1b[0m\n"}
+[9.611130] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3894 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.611231] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.612430] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:835:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'StartsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.612916] (moveit_task_constructor_visualization) StderrLine: {'line': b'  835 |   GTEST_DISALLOW_ASSIGN_(StartsWithMatcher);\x1b[0m\n'}
+[9.613281] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.613531] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.613862] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.614158] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.614327] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>' first required here\x1b[0m\n"}
+[9.615430] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.615900] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.616126] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.616499] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.616818] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.617038] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3901:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::StartsWithMatcher<std::basic_string<wchar_t>>>' requested here\x1b[0m\n"}
+[9.617285] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3901 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.617545] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.619195] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:891:3: \x1b[0m\x1b[0;1;35mwarning: \x1b[0m\x1b[1mdefinition of implicit copy constructor for 'EndsWithMatcher<std::basic_string<wchar_t>>' is deprecated because it has a user-declared copy assignment operator [-Wdeprecated-copy]\x1b[0m\n"}
+[9.619681] (moveit_task_constructor_visualization) StderrLine: {'line': b'  891 |   GTEST_DISALLOW_ASSIGN_(EndsWithMatcher);\x1b[0m\n'}
+[9.620034] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m  ^\n'}
+[9.620214] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port.h:682:8: \x1b[0m\x1b[0;1;36mnote: \x1b[0mexpanded from macro 'GTEST_DISALLOW_ASSIGN_'\x1b[0m\n"}
+[9.620532] (moveit_task_constructor_visualization) StderrLine: {'line': b'  682 |   void operator=(type const &) = delete\x1b[0m\n'}
+[9.620840] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m       ^\n'}
+[9.621112] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:456:54: \x1b[0m\x1b[0;1;36mnote: \x1b[0min implicit copy constructor for 'testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>' first required here\x1b[0m\n"}
+[9.622378] (moveit_task_constructor_visualization) StderrLine: {'line': b'  456 |   explicit PolymorphicMatcher(const Impl& an_impl) : impl_(an_impl) {}\x1b[0m\n'}
+[9.622877] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m                                                     ^\n'}
+[9.623157] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-matchers.h:514:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of member function 'testing::PolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>::PolymorphicMatcher' requested here\x1b[0m\n"}
+[9.623479] (moveit_task_constructor_visualization) StderrLine: {'line': b'  514 |   return PolymorphicMatcher<Impl>(impl);\x1b[0m\n'}
+[9.623766] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.624015] (moveit_task_constructor_visualization) StderrLine: {'line': b"\x1b[0m\x1b[1m/opt/ros/humble/src/gmock_vendor/include/gmock/gmock-matchers.h:3908:10: \x1b[0m\x1b[0;1;36mnote: \x1b[0min instantiation of function template specialization 'testing::MakePolymorphicMatcher<testing::internal::EndsWithMatcher<std::basic_string<wchar_t>>>' requested here\x1b[0m\n"}
+[9.624490] (moveit_task_constructor_visualization) StderrLine: {'line': b' 3908 |   return MakePolymorphicMatcher(\x1b[0m\n'}
+[9.624746] (moveit_task_constructor_visualization) StderrLine: {'line': b'      | \x1b[0;1;32m         ^\n'}
+[9.657635] (-) TimerEvent: {}
+[9.758338] (-) TimerEvent: {}
+[9.859079] (-) TimerEvent: {}
+[9.959772] (-) TimerEvent: {}
+[10.060509] (-) TimerEvent: {}
+[10.161236] (-) TimerEvent: {}
+[10.261981] (-) TimerEvent: {}
+[10.362714] (-) TimerEvent: {}
+[10.463478] (-) TimerEvent: {}
+[10.564186] (-) TimerEvent: {}
+[10.664870] (-) TimerEvent: {}
+[10.765611] (-) TimerEvent: {}
+[10.866319] (-) TimerEvent: {}
+[10.967079] (-) TimerEvent: {}
+[11.042904] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object motion_planning_tasks/utils/CMakeFiles/motion_planning_tasks_utils.dir/icon.cpp.o\x1b[0m\n'}
+[11.067242] (-) TimerEvent: {}
+[11.168972] (-) TimerEvent: {}
+[11.270659] (-) TimerEvent: {}
+[11.372324] (-) TimerEvent: {}
+[11.474078] (-) TimerEvent: {}
+[11.575831] (-) TimerEvent: {}
+[11.677606] (-) TimerEvent: {}
+[11.689984] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object visualization_tools/CMakeFiles/moveit_task_visualization_tools.dir/src/display_solution.cpp.o\x1b[0m\n'}
+[11.777837] (-) TimerEvent: {}
+[11.879572] (-) TimerEvent: {}
+[11.981242] (-) TimerEvent: {}
+[12.082851] (-) TimerEvent: {}
+[12.184559] (-) TimerEvent: {}
+[12.286253] (-) TimerEvent: {}
+[12.388003] (-) TimerEvent: {}
+[12.439589] (moveit_task_constructor_visualization) StderrLine: {'line': b'\x1b[0m8 warnings generated.\n'}
+[12.474353] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object visualization_tools/CMakeFiles/moveit_task_visualization_tools.dir/src/marker_visualization.cpp.o\x1b[0m\n'}
+[12.488217] (-) TimerEvent: {}
+[12.589924] (-) TimerEvent: {}
+[12.691649] (-) TimerEvent: {}
+[12.793395] (-) TimerEvent: {}
+[12.895161] (-) TimerEvent: {}
+[12.995877] (-) TimerEvent: {}
+[13.096597] (-) TimerEvent: {}
+[13.197290] (-) TimerEvent: {}
+[13.298019] (-) TimerEvent: {}
+[13.398733] (-) TimerEvent: {}
+[13.499462] (-) TimerEvent: {}
+[13.600180] (-) TimerEvent: {}
+[13.700911] (-) TimerEvent: {}
+[13.801638] (-) TimerEvent: {}
+[13.902361] (-) TimerEvent: {}
+[14.003111] (-) TimerEvent: {}
+[14.103812] (-) TimerEvent: {}
+[14.190152] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object visualization_tools/CMakeFiles/moveit_task_visualization_tools.dir/src/task_solution_panel.cpp.o\x1b[0m\n'}
+[14.204065] (-) TimerEvent: {}
+[14.304828] (-) TimerEvent: {}
+[14.405614] (-) TimerEvent: {}
+[14.506322] (-) TimerEvent: {}
+[14.607060] (-) TimerEvent: {}
+[14.707726] (-) TimerEvent: {}
+[14.794581] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libmotion_planning_tasks_utils.so\x1b[0m\n'}
+[14.807948] (-) TimerEvent: {}
+[14.908624] (-) TimerEvent: {}
+[15.009343] (-) TimerEvent: {}
+[15.110069] (-) TimerEvent: {}
+[15.210780] (-) TimerEvent: {}
+[15.311499] (-) TimerEvent: {}
+[15.339779] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 46%] Built target motion_planning_tasks_utils\n'}
+[15.360224] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object visualization_tools/CMakeFiles/moveit_task_visualization_tools.dir/src/task_solution_visualization.cpp.o\x1b[0m\n'}
+[15.411710] (-) TimerEvent: {}
+[15.512395] (-) TimerEvent: {}
+[15.613109] (-) TimerEvent: {}
+[15.713832] (-) TimerEvent: {}
+[15.814545] (-) TimerEvent: {}
+[15.915251] (-) TimerEvent: {}
+[16.015951] (-) TimerEvent: {}
+[16.116651] (-) TimerEvent: {}
+[16.217365] (-) TimerEvent: {}
+[16.318095] (-) TimerEvent: {}
+[16.418810] (-) TimerEvent: {}
+[16.519546] (-) TimerEvent: {}
+[16.620252] (-) TimerEvent: {}
+[16.720947] (-) TimerEvent: {}
+[16.821685] (-) TimerEvent: {}
+[16.922422] (-) TimerEvent: {}
+[16.928888] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libmotion_planning_tasks_properties.so\x1b[0m\n'}
+[17.022650] (-) TimerEvent: {}
+[17.123341] (-) TimerEvent: {}
+[17.224051] (-) TimerEvent: {}
+[17.324768] (-) TimerEvent: {}
+[17.425496] (-) TimerEvent: {}
+[17.526206] (-) TimerEvent: {}
+[17.626928] (-) TimerEvent: {}
+[17.727724] (-) TimerEvent: {}
+[17.828476] (-) TimerEvent: {}
+[17.929222] (-) TimerEvent: {}
+[18.029961] (-) TimerEvent: {}
+[18.130725] (-) TimerEvent: {}
+[18.231507] (-) TimerEvent: {}
+[18.332312] (-) TimerEvent: {}
+[18.433163] (-) TimerEvent: {}
+[18.533973] (-) TimerEvent: {}
+[18.634824] (-) TimerEvent: {}
+[18.735608] (-) TimerEvent: {}
+[18.836427] (-) TimerEvent: {}
+[18.937211] (-) TimerEvent: {}
+[19.038000] (-) TimerEvent: {}
+[19.138803] (-) TimerEvent: {}
+[19.239577] (-) TimerEvent: {}
+[19.340356] (-) TimerEvent: {}
+[19.441110] (-) TimerEvent: {}
+[19.541883] (-) TimerEvent: {}
+[19.642630] (-) TimerEvent: {}
+[19.743421] (-) TimerEvent: {}
+[19.844261] (-) TimerEvent: {}
+[19.945078] (-) TimerEvent: {}
+[20.045850] (-) TimerEvent: {}
+[20.146583] (-) TimerEvent: {}
+[20.247371] (-) TimerEvent: {}
+[20.348152] (-) TimerEvent: {}
+[20.448954] (-) TimerEvent: {}
+[20.549762] (-) TimerEvent: {}
+[20.650560] (-) TimerEvent: {}
+[20.751394] (-) TimerEvent: {}
+[20.852196] (-) TimerEvent: {}
+[20.953015] (-) TimerEvent: {}
+[21.053795] (-) TimerEvent: {}
+[21.154583] (-) TimerEvent: {}
+[21.255413] (-) TimerEvent: {}
+[21.356209] (-) TimerEvent: {}
+[21.457039] (-) TimerEvent: {}
+[21.557752] (-) TimerEvent: {}
+[21.658493] (-) TimerEvent: {}
+[21.759241] (-) TimerEvent: {}
+[21.859991] (-) TimerEvent: {}
+[21.888369] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 49%] Built target motion_planning_tasks_properties\n'}
+[21.960195] (-) TimerEvent: {}
+[22.050869] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libgmock.a\x1b[0m\n'}
+[22.060390] (-) TimerEvent: {}
+[22.140270] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[22.157314] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 52%] Built target gmock\n'}
+[22.160547] (-) TimerEvent: {}
+[22.240469] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 52%] Built target gtest\n'}
+[22.260740] (-) TimerEvent: {}
+[22.279669] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 53%] \x1b[34m\x1b[1mAutomatic MOC for target moveit_task_constructor_visualization-test-merge-models\x1b[0m\n'}
+[22.354457] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 53%] Built target moveit_task_constructor_visualization-test-merge-models_autogen\n'}
+[22.360892] (-) TimerEvent: {}
+[22.394172] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object motion_planning_tasks/test/CMakeFiles/moveit_task_constructor_visualization-test-merge-models.dir/moveit_task_constructor_visualization-test-merge-models_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[22.398012] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object motion_planning_tasks/test/CMakeFiles/moveit_task_constructor_visualization-test-merge-models.dir/test_merge_models.cpp.o\x1b[0m\n'}
+[22.461100] (-) TimerEvent: {}
+[22.562510] (-) TimerEvent: {}
+[22.663560] (-) TimerEvent: {}
+[22.764471] (-) TimerEvent: {}
+[22.867228] (-) TimerEvent: {}
+[22.969345] (-) TimerEvent: {}
+[23.070012] (-) TimerEvent: {}
+[23.171580] (-) TimerEvent: {}
+[23.272237] (-) TimerEvent: {}
+[23.372900] (-) TimerEvent: {}
+[23.473560] (-) TimerEvent: {}
+[23.574222] (-) TimerEvent: {}
+[23.674879] (-) TimerEvent: {}
+[23.775561] (-) TimerEvent: {}
+[23.876233] (-) TimerEvent: {}
+[23.976885] (-) TimerEvent: {}
+[24.077541] (-) TimerEvent: {}
+[24.178176] (-) TimerEvent: {}
+[24.278858] (-) TimerEvent: {}
+[24.379541] (-) TimerEvent: {}
+[24.480391] (-) TimerEvent: {}
+[24.581254] (-) TimerEvent: {}
+[24.681958] (-) TimerEvent: {}
+[24.782670] (-) TimerEvent: {}
+[24.883370] (-) TimerEvent: {}
+[24.984076] (-) TimerEvent: {}
+[25.084804] (-) TimerEvent: {}
+[25.185745] (-) TimerEvent: {}
+[25.286479] (-) TimerEvent: {}
+[25.387197] (-) TimerEvent: {}
+[25.488077] (-) TimerEvent: {}
+[25.588922] (-) TimerEvent: {}
+[25.689778] (-) TimerEvent: {}
+[25.790576] (-) TimerEvent: {}
+[25.891394] (-) TimerEvent: {}
+[25.992117] (-) TimerEvent: {}
+[26.093079] (-) TimerEvent: {}
+[26.193806] (-) TimerEvent: {}
+[26.294694] (-) TimerEvent: {}
+[26.396096] (-) TimerEvent: {}
+[26.496772] (-) TimerEvent: {}
+[26.597434] (-) TimerEvent: {}
+[26.698149] (-) TimerEvent: {}
+[26.798802] (-) TimerEvent: {}
+[26.899525] (-) TimerEvent: {}
+[27.000202] (-) TimerEvent: {}
+[27.100869] (-) TimerEvent: {}
+[27.201536] (-) TimerEvent: {}
+[27.302203] (-) TimerEvent: {}
+[27.402862] (-) TimerEvent: {}
+[27.503551] (-) TimerEvent: {}
+[27.604178] (-) TimerEvent: {}
+[27.704880] (-) TimerEvent: {}
+[27.805599] (-) TimerEvent: {}
+[27.818739] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX executable moveit_task_constructor_visualization-test-merge-models\x1b[0m\n'}
+[27.905777] (-) TimerEvent: {}
+[28.006595] (-) TimerEvent: {}
+[28.107334] (-) TimerEvent: {}
+[28.207973] (-) TimerEvent: {}
+[28.308687] (-) TimerEvent: {}
+[28.409390] (-) TimerEvent: {}
+[28.490876] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 58%] Built target moveit_task_constructor_visualization-test-merge-models\n'}
+[28.509505] (-) TimerEvent: {}
+[28.610119] (-) TimerEvent: {}
+[28.710872] (-) TimerEvent: {}
+[28.811548] (-) TimerEvent: {}
+[28.912192] (-) TimerEvent: {}
+[29.012837] (-) TimerEvent: {}
+[29.113488] (-) TimerEvent: {}
+[29.214142] (-) TimerEvent: {}
+[29.314797] (-) TimerEvent: {}
+[29.415481] (-) TimerEvent: {}
+[29.516145] (-) TimerEvent: {}
+[29.616782] (-) TimerEvent: {}
+[29.717427] (-) TimerEvent: {}
+[29.818068] (-) TimerEvent: {}
+[29.918717] (-) TimerEvent: {}
+[30.019577] (-) TimerEvent: {}
+[30.120225] (-) TimerEvent: {}
+[30.220873] (-) TimerEvent: {}
+[30.321526] (-) TimerEvent: {}
+[30.422167] (-) TimerEvent: {}
+[30.522822] (-) TimerEvent: {}
+[30.623624] (-) TimerEvent: {}
+[30.724254] (-) TimerEvent: {}
+[30.824912] (-) TimerEvent: {}
+[30.925577] (-) TimerEvent: {}
+[31.026233] (-) TimerEvent: {}
+[31.126887] (-) TimerEvent: {}
+[31.227554] (-) TimerEvent: {}
+[31.328234] (-) TimerEvent: {}
+[31.428903] (-) TimerEvent: {}
+[31.529557] (-) TimerEvent: {}
+[31.630210] (-) TimerEvent: {}
+[31.731128] (-) TimerEvent: {}
+[31.831779] (-) TimerEvent: {}
+[31.932474] (-) TimerEvent: {}
+[32.033131] (-) TimerEvent: {}
+[32.133805] (-) TimerEvent: {}
+[32.234463] (-) TimerEvent: {}
+[32.335151] (-) TimerEvent: {}
+[32.436068] (-) TimerEvent: {}
+[32.536956] (-) TimerEvent: {}
+[32.637612] (-) TimerEvent: {}
+[32.738437] (-) TimerEvent: {}
+[32.839302] (-) TimerEvent: {}
+[32.939950] (-) TimerEvent: {}
+[33.040830] (-) TimerEvent: {}
+[33.141477] (-) TimerEvent: {}
+[33.242103] (-) TimerEvent: {}
+[33.342759] (-) TimerEvent: {}
+[33.443662] (-) TimerEvent: {}
+[33.544311] (-) TimerEvent: {}
+[33.645152] (-) TimerEvent: {}
+[33.745832] (-) TimerEvent: {}
+[33.846473] (-) TimerEvent: {}
+[33.947151] (-) TimerEvent: {}
+[34.047793] (-) TimerEvent: {}
+[34.148440] (-) TimerEvent: {}
+[34.249084] (-) TimerEvent: {}
+[34.349933] (-) TimerEvent: {}
+[34.450814] (-) TimerEvent: {}
+[34.551508] (-) TimerEvent: {}
+[34.652159] (-) TimerEvent: {}
+[34.753024] (-) TimerEvent: {}
+[34.853660] (-) TimerEvent: {}
+[34.954530] (-) TimerEvent: {}
+[35.055210] (-) TimerEvent: {}
+[35.155865] (-) TimerEvent: {}
+[35.256528] (-) TimerEvent: {}
+[35.357194] (-) TimerEvent: {}
+[35.457848] (-) TimerEvent: {}
+[35.558692] (-) TimerEvent: {}
+[35.659365] (-) TimerEvent: {}
+[35.759999] (-) TimerEvent: {}
+[35.860621] (-) TimerEvent: {}
+[35.961258] (-) TimerEvent: {}
+[36.061917] (-) TimerEvent: {}
+[36.162576] (-) TimerEvent: {}
+[36.263232] (-) TimerEvent: {}
+[36.363875] (-) TimerEvent: {}
+[36.464541] (-) TimerEvent: {}
+[36.565195] (-) TimerEvent: {}
+[36.665834] (-) TimerEvent: {}
+[36.766479] (-) TimerEvent: {}
+[36.867164] (-) TimerEvent: {}
+[36.967813] (-) TimerEvent: {}
+[37.068470] (-) TimerEvent: {}
+[37.169343] (-) TimerEvent: {}
+[37.270029] (-) TimerEvent: {}
+[37.370692] (-) TimerEvent: {}
+[37.471599] (-) TimerEvent: {}
+[37.572465] (-) TimerEvent: {}
+[37.673125] (-) TimerEvent: {}
+[37.773769] (-) TimerEvent: {}
+[37.874401] (-) TimerEvent: {}
+[37.975102] (-) TimerEvent: {}
+[38.075758] (-) TimerEvent: {}
+[38.176403] (-) TimerEvent: {}
+[38.277106] (-) TimerEvent: {}
+[38.377798] (-) TimerEvent: {}
+[38.478465] (-) TimerEvent: {}
+[38.579427] (-) TimerEvent: {}
+[38.680225] (-) TimerEvent: {}
+[38.780966] (-) TimerEvent: {}
+[38.881745] (-) TimerEvent: {}
+[38.982736] (-) TimerEvent: {}
+[39.083548] (-) TimerEvent: {}
+[39.184172] (-) TimerEvent: {}
+[39.284912] (-) TimerEvent: {}
+[39.385707] (-) TimerEvent: {}
+[39.486481] (-) TimerEvent: {}
+[39.587244] (-) TimerEvent: {}
+[39.688018] (-) TimerEvent: {}
+[39.788777] (-) TimerEvent: {}
+[39.889515] (-) TimerEvent: {}
+[39.990248] (-) TimerEvent: {}
+[40.090996] (-) TimerEvent: {}
+[40.191793] (-) TimerEvent: {}
+[40.292521] (-) TimerEvent: {}
+[40.393267] (-) TimerEvent: {}
+[40.493997] (-) TimerEvent: {}
+[40.594703] (-) TimerEvent: {}
+[40.695447] (-) TimerEvent: {}
+[40.796134] (-) TimerEvent: {}
+[40.896853] (-) TimerEvent: {}
+[40.997602] (-) TimerEvent: {}
+[41.098361] (-) TimerEvent: {}
+[41.199134] (-) TimerEvent: {}
+[41.299908] (-) TimerEvent: {}
+[41.400697] (-) TimerEvent: {}
+[41.501443] (-) TimerEvent: {}
+[41.602207] (-) TimerEvent: {}
+[41.702955] (-) TimerEvent: {}
+[41.803741] (-) TimerEvent: {}
+[41.904670] (-) TimerEvent: {}
+[42.005594] (-) TimerEvent: {}
+[42.106326] (-) TimerEvent: {}
+[42.207114] (-) TimerEvent: {}
+[42.308013] (-) TimerEvent: {}
+[42.356205] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libmoveit_task_visualization_tools.so\x1b[0m\n'}
+[42.408181] (-) TimerEvent: {}
+[42.508799] (-) TimerEvent: {}
+[42.609522] (-) TimerEvent: {}
+[42.710236] (-) TimerEvent: {}
+[42.810986] (-) TimerEvent: {}
+[42.911795] (-) TimerEvent: {}
+[43.012568] (-) TimerEvent: {}
+[43.113327] (-) TimerEvent: {}
+[43.214092] (-) TimerEvent: {}
+[43.314823] (-) TimerEvent: {}
+[43.415563] (-) TimerEvent: {}
+[43.516269] (-) TimerEvent: {}
+[43.616973] (-) TimerEvent: {}
+[43.717701] (-) TimerEvent: {}
+[43.818430] (-) TimerEvent: {}
+[43.919165] (-) TimerEvent: {}
+[44.019897] (-) TimerEvent: {}
+[44.120674] (-) TimerEvent: {}
+[44.221444] (-) TimerEvent: {}
+[44.322195] (-) TimerEvent: {}
+[44.422954] (-) TimerEvent: {}
+[44.523711] (-) TimerEvent: {}
+[44.624417] (-) TimerEvent: {}
+[44.725133] (-) TimerEvent: {}
+[44.825856] (-) TimerEvent: {}
+[44.926574] (-) TimerEvent: {}
+[45.027316] (-) TimerEvent: {}
+[45.128039] (-) TimerEvent: {}
+[45.228855] (-) TimerEvent: {}
+[45.329645] (-) TimerEvent: {}
+[45.430386] (-) TimerEvent: {}
+[45.531131] (-) TimerEvent: {}
+[45.631845] (-) TimerEvent: {}
+[45.732569] (-) TimerEvent: {}
+[45.833318] (-) TimerEvent: {}
+[45.934077] (-) TimerEvent: {}
+[46.034842] (-) TimerEvent: {}
+[46.135632] (-) TimerEvent: {}
+[46.236391] (-) TimerEvent: {}
+[46.337122] (-) TimerEvent: {}
+[46.437834] (-) TimerEvent: {}
+[46.538563] (-) TimerEvent: {}
+[46.639330] (-) TimerEvent: {}
+[46.697847] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 60%] Built target moveit_task_visualization_tools\n'}
+[46.733966] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 61%] \x1b[34m\x1b[1mAutomatic MOC for target motion_planning_tasks_rviz_plugin\x1b[0m\n'}
+[46.739405] (-) TimerEvent: {}
+[46.839943] (-) TimerEvent: {}
+[46.940705] (-) TimerEvent: {}
+[47.041448] (-) TimerEvent: {}
+[47.142221] (-) TimerEvent: {}
+[47.242990] (-) TimerEvent: {}
+[47.343750] (-) TimerEvent: {}
+[47.444502] (-) TimerEvent: {}
+[47.545298] (-) TimerEvent: {}
+[47.646103] (-) TimerEvent: {}
+[47.746923] (-) TimerEvent: {}
+[47.847738] (-) TimerEvent: {}
+[47.948528] (-) TimerEvent: {}
+[48.049270] (-) TimerEvent: {}
+[48.149932] (-) TimerEvent: {}
+[48.250746] (-) TimerEvent: {}
+[48.351562] (-) TimerEvent: {}
+[48.452519] (-) TimerEvent: {}
+[48.553288] (-) TimerEvent: {}
+[48.654032] (-) TimerEvent: {}
+[48.754788] (-) TimerEvent: {}
+[48.855590] (-) TimerEvent: {}
+[48.956369] (-) TimerEvent: {}
+[49.057132] (-) TimerEvent: {}
+[49.157900] (-) TimerEvent: {}
+[49.258663] (-) TimerEvent: {}
+[49.359636] (-) TimerEvent: {}
+[49.460447] (-) TimerEvent: {}
+[49.561242] (-) TimerEvent: {}
+[49.662006] (-) TimerEvent: {}
+[49.762779] (-) TimerEvent: {}
+[49.863618] (-) TimerEvent: {}
+[49.964354] (-) TimerEvent: {}
+[50.065084] (-) TimerEvent: {}
+[50.165842] (-) TimerEvent: {}
+[50.266627] (-) TimerEvent: {}
+[50.367476] (-) TimerEvent: {}
+[50.468239] (-) TimerEvent: {}
+[50.499843] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 61%] Built target motion_planning_tasks_rviz_plugin_autogen\n'}
+[50.520515] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 67%] \x1b[34m\x1b[1mGenerating ui_task_panel.h\x1b[0m\n'}
+[50.520929] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 67%] \x1b[34m\x1b[1mAutomatic RCC for resources.qrc\x1b[0m\n'}
+[50.521062] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 67%] \x1b[34m\x1b[1mGenerating ui_global_settings.h\x1b[0m\n'}
+[50.521196] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 67%] \x1b[34m\x1b[1mGenerating ui_task_view.h\x1b[0m\n'}
+[50.568423] (-) TimerEvent: {}
+[50.589337] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/factory_model.cpp.o\x1b[0m\n'}
+[50.589952] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/icons.cpp.o\x1b[0m\n'}
+[50.590133] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/local_task_model.cpp.o\x1b[0m\n'}
+[50.590250] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/plugin_init.cpp.o\x1b[0m\n'}
+[50.590383] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/job_queue.cpp.o\x1b[0m\n'}
+[50.590485] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/meta_task_list_model.cpp.o\x1b[0m\n'}
+[50.590705] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/motion_planning_tasks_rviz_plugin_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[50.593284] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/remote_task_model.cpp.o\x1b[0m\n'}
+[50.668645] (-) TimerEvent: {}
+[50.769346] (-) TimerEvent: {}
+[50.870045] (-) TimerEvent: {}
+[50.970762] (-) TimerEvent: {}
+[51.071451] (-) TimerEvent: {}
+[51.172157] (-) TimerEvent: {}
+[51.272859] (-) TimerEvent: {}
+[51.373565] (-) TimerEvent: {}
+[51.474291] (-) TimerEvent: {}
+[51.574987] (-) TimerEvent: {}
+[51.675703] (-) TimerEvent: {}
+[51.776396] (-) TimerEvent: {}
+[51.877085] (-) TimerEvent: {}
+[51.977812] (-) TimerEvent: {}
+[52.078521] (-) TimerEvent: {}
+[52.179229] (-) TimerEvent: {}
+[52.279927] (-) TimerEvent: {}
+[52.380646] (-) TimerEvent: {}
+[52.425085] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/task_display.cpp.o\x1b[0m\n'}
+[52.480860] (-) TimerEvent: {}
+[52.581550] (-) TimerEvent: {}
+[52.682271] (-) TimerEvent: {}
+[52.782986] (-) TimerEvent: {}
+[52.883701] (-) TimerEvent: {}
+[52.984374] (-) TimerEvent: {}
+[53.085052] (-) TimerEvent: {}
+[53.185754] (-) TimerEvent: {}
+[53.286460] (-) TimerEvent: {}
+[53.387209] (-) TimerEvent: {}
+[53.487904] (-) TimerEvent: {}
+[53.588626] (-) TimerEvent: {}
+[53.689383] (-) TimerEvent: {}
+[53.790167] (-) TimerEvent: {}
+[53.890920] (-) TimerEvent: {}
+[53.991684] (-) TimerEvent: {}
+[54.092418] (-) TimerEvent: {}
+[54.193209] (-) TimerEvent: {}
+[54.267177] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/task_list_model.cpp.o\x1b[0m\n'}
+[54.293432] (-) TimerEvent: {}
+[54.394200] (-) TimerEvent: {}
+[54.494904] (-) TimerEvent: {}
+[54.595621] (-) TimerEvent: {}
+[54.696352] (-) TimerEvent: {}
+[54.797071] (-) TimerEvent: {}
+[54.897819] (-) TimerEvent: {}
+[54.998538] (-) TimerEvent: {}
+[55.099237] (-) TimerEvent: {}
+[55.199926] (-) TimerEvent: {}
+[55.300652] (-) TimerEvent: {}
+[55.312081] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/task_panel.cpp.o\x1b[0m\n'}
+[55.400864] (-) TimerEvent: {}
+[55.501594] (-) TimerEvent: {}
+[55.602312] (-) TimerEvent: {}
+[55.703027] (-) TimerEvent: {}
+[55.803771] (-) TimerEvent: {}
+[55.904466] (-) TimerEvent: {}
+[56.005195] (-) TimerEvent: {}
+[56.105911] (-) TimerEvent: {}
+[56.206644] (-) TimerEvent: {}
+[56.307367] (-) TimerEvent: {}
+[56.408075] (-) TimerEvent: {}
+[56.508792] (-) TimerEvent: {}
+[56.609510] (-) TimerEvent: {}
+[56.710237] (-) TimerEvent: {}
+[56.810981] (-) TimerEvent: {}
+[56.911727] (-) TimerEvent: {}
+[57.012444] (-) TimerEvent: {}
+[57.113159] (-) TimerEvent: {}
+[57.213883] (-) TimerEvent: {}
+[57.314620] (-) TimerEvent: {}
+[57.415370] (-) TimerEvent: {}
+[57.516070] (-) TimerEvent: {}
+[57.616785] (-) TimerEvent: {}
+[57.717485] (-) TimerEvent: {}
+[57.818190] (-) TimerEvent: {}
+[57.918924] (-) TimerEvent: {}
+[58.019670] (-) TimerEvent: {}
+[58.120377] (-) TimerEvent: {}
+[58.221088] (-) TimerEvent: {}
+[58.321800] (-) TimerEvent: {}
+[58.422523] (-) TimerEvent: {}
+[58.523240] (-) TimerEvent: {}
+[58.623937] (-) TimerEvent: {}
+[58.724644] (-) TimerEvent: {}
+[58.825391] (-) TimerEvent: {}
+[58.926119] (-) TimerEvent: {}
+[59.026927] (-) TimerEvent: {}
+[59.127711] (-) TimerEvent: {}
+[59.228508] (-) TimerEvent: {}
+[59.329265] (-) TimerEvent: {}
+[59.430003] (-) TimerEvent: {}
+[59.530741] (-) TimerEvent: {}
+[59.631483] (-) TimerEvent: {}
+[59.732239] (-) TimerEvent: {}
+[59.832978] (-) TimerEvent: {}
+[59.933720] (-) TimerEvent: {}
+[60.034469] (-) TimerEvent: {}
+[60.135220] (-) TimerEvent: {}
+[60.235888] (-) TimerEvent: {}
+[60.336562] (-) TimerEvent: {}
+[60.437268] (-) TimerEvent: {}
+[60.537974] (-) TimerEvent: {}
+[60.638697] (-) TimerEvent: {}
+[60.739450] (-) TimerEvent: {}
+[60.840113] (-) TimerEvent: {}
+[60.940800] (-) TimerEvent: {}
+[61.041481] (-) TimerEvent: {}
+[61.142176] (-) TimerEvent: {}
+[61.242834] (-) TimerEvent: {}
+[61.343526] (-) TimerEvent: {}
+[61.444242] (-) TimerEvent: {}
+[61.544963] (-) TimerEvent: {}
+[61.645657] (-) TimerEvent: {}
+[61.746379] (-) TimerEvent: {}
+[61.847068] (-) TimerEvent: {}
+[61.947749] (-) TimerEvent: {}
+[62.048409] (-) TimerEvent: {}
+[62.149072] (-) TimerEvent: {}
+[62.249772] (-) TimerEvent: {}
+[62.350466] (-) TimerEvent: {}
+[62.451190] (-) TimerEvent: {}
+[62.551866] (-) TimerEvent: {}
+[62.652960] (-) TimerEvent: {}
+[62.753656] (-) TimerEvent: {}
+[62.854382] (-) TimerEvent: {}
+[62.955171] (-) TimerEvent: {}
+[63.067218] (-) TimerEvent: {}
+[63.167892] (-) TimerEvent: {}
+[63.268572] (-) TimerEvent: {}
+[63.369239] (-) TimerEvent: {}
+[63.469925] (-) TimerEvent: {}
+[63.570632] (-) TimerEvent: {}
+[63.671370] (-) TimerEvent: {}
+[63.772054] (-) TimerEvent: {}
+[63.872721] (-) TimerEvent: {}
+[63.973383] (-) TimerEvent: {}
+[64.074076] (-) TimerEvent: {}
+[64.174806] (-) TimerEvent: {}
+[64.275540] (-) TimerEvent: {}
+[64.376286] (-) TimerEvent: {}
+[64.477031] (-) TimerEvent: {}
+[64.577764] (-) TimerEvent: {}
+[64.594612] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/motion_planning_tasks_rviz_plugin_autogen/EWIEGA46WW/qrc_resources.cpp.o\x1b[0m\n'}
+[64.677976] (-) TimerEvent: {}
+[64.778703] (-) TimerEvent: {}
+[64.879432] (-) TimerEvent: {}
+[64.980110] (-) TimerEvent: {}
+[65.080794] (-) TimerEvent: {}
+[65.181481] (-) TimerEvent: {}
+[65.282180] (-) TimerEvent: {}
+[65.382883] (-) TimerEvent: {}
+[65.483575] (-) TimerEvent: {}
+[65.584269] (-) TimerEvent: {}
+[65.684980] (-) TimerEvent: {}
+[65.785676] (-) TimerEvent: {}
+[65.886377] (-) TimerEvent: {}
+[65.987102] (-) TimerEvent: {}
+[66.087779] (-) TimerEvent: {}
+[66.188467] (-) TimerEvent: {}
+[66.289160] (-) TimerEvent: {}
+[66.389861] (-) TimerEvent: {}
+[66.490566] (-) TimerEvent: {}
+[66.591369] (-) TimerEvent: {}
+[66.692059] (-) TimerEvent: {}
+[66.792752] (-) TimerEvent: {}
+[66.893431] (-) TimerEvent: {}
+[66.994134] (-) TimerEvent: {}
+[67.094826] (-) TimerEvent: {}
+[67.195532] (-) TimerEvent: {}
+[67.296224] (-) TimerEvent: {}
+[67.396928] (-) TimerEvent: {}
+[67.497608] (-) TimerEvent: {}
+[67.598303] (-) TimerEvent: {}
+[67.699006] (-) TimerEvent: {}
+[67.799732] (-) TimerEvent: {}
+[67.900427] (-) TimerEvent: {}
+[68.001128] (-) TimerEvent: {}
+[68.101824] (-) TimerEvent: {}
+[68.204293] (-) TimerEvent: {}
+[68.306257] (-) TimerEvent: {}
+[68.408539] (-) TimerEvent: {}
+[68.510383] (-) TimerEvent: {}
+[68.612934] (-) TimerEvent: {}
+[68.715459] (-) TimerEvent: {}
+[68.817667] (-) TimerEvent: {}
+[68.918342] (-) TimerEvent: {}
+[69.020195] (-) TimerEvent: {}
+[69.122289] (-) TimerEvent: {}
+[69.223764] (-) TimerEvent: {}
+[69.324393] (-) TimerEvent: {}
+[69.425047] (-) TimerEvent: {}
+[69.525684] (-) TimerEvent: {}
+[69.626331] (-) TimerEvent: {}
+[69.726970] (-) TimerEvent: {}
+[69.827626] (-) TimerEvent: {}
+[69.928243] (-) TimerEvent: {}
+[70.028863] (-) TimerEvent: {}
+[70.129496] (-) TimerEvent: {}
+[70.230150] (-) TimerEvent: {}
+[70.330781] (-) TimerEvent: {}
+[70.431444] (-) TimerEvent: {}
+[70.532099] (-) TimerEvent: {}
+[70.632762] (-) TimerEvent: {}
+[70.733437] (-) TimerEvent: {}
+[70.834120] (-) TimerEvent: {}
+[70.934790] (-) TimerEvent: {}
+[71.035500] (-) TimerEvent: {}
+[71.136165] (-) TimerEvent: {}
+[71.236821] (-) TimerEvent: {}
+[71.337473] (-) TimerEvent: {}
+[71.438107] (-) TimerEvent: {}
+[71.538777] (-) TimerEvent: {}
+[71.639449] (-) TimerEvent: {}
+[71.740127] (-) TimerEvent: {}
+[71.840778] (-) TimerEvent: {}
+[71.941429] (-) TimerEvent: {}
+[72.042063] (-) TimerEvent: {}
+[72.142909] (-) TimerEvent: {}
+[72.243645] (-) TimerEvent: {}
+[72.344292] (-) TimerEvent: {}
+[72.444936] (-) TimerEvent: {}
+[72.545596] (-) TimerEvent: {}
+[72.646297] (-) TimerEvent: {}
+[72.746936] (-) TimerEvent: {}
+[72.847629] (-) TimerEvent: {}
+[72.948295] (-) TimerEvent: {}
+[73.048951] (-) TimerEvent: {}
+[73.151096] (-) TimerEvent: {}
+[73.251768] (-) TimerEvent: {}
+[73.352422] (-) TimerEvent: {}
+[73.453058] (-) TimerEvent: {}
+[73.553831] (-) TimerEvent: {}
+[73.654468] (-) TimerEvent: {}
+[73.755210] (-) TimerEvent: {}
+[73.855849] (-) TimerEvent: {}
+[73.956634] (-) TimerEvent: {}
+[74.057280] (-) TimerEvent: {}
+[74.157936] (-) TimerEvent: {}
+[74.258714] (-) TimerEvent: {}
+[74.359393] (-) TimerEvent: {}
+[74.460018] (-) TimerEvent: {}
+[74.560668] (-) TimerEvent: {}
+[74.661308] (-) TimerEvent: {}
+[74.761956] (-) TimerEvent: {}
+[74.863020] (-) TimerEvent: {}
+[74.963691] (-) TimerEvent: {}
+[75.064349] (-) TimerEvent: {}
+[75.165192] (-) TimerEvent: {}
+[75.266005] (-) TimerEvent: {}
+[75.366653] (-) TimerEvent: {}
+[75.467324] (-) TimerEvent: {}
+[75.567964] (-) TimerEvent: {}
+[75.668608] (-) TimerEvent: {}
+[75.769262] (-) TimerEvent: {}
+[75.869910] (-) TimerEvent: {}
+[75.970532] (-) TimerEvent: {}
+[76.071360] (-) TimerEvent: {}
+[76.171972] (-) TimerEvent: {}
+[76.272856] (-) TimerEvent: {}
+[76.373492] (-) TimerEvent: {}
+[76.474116] (-) TimerEvent: {}
+[76.574754] (-) TimerEvent: {}
+[76.675418] (-) TimerEvent: {}
+[76.776396] (-) TimerEvent: {}
+[76.877040] (-) TimerEvent: {}
+[76.977740] (-) TimerEvent: {}
+[77.078375] (-) TimerEvent: {}
+[77.179060] (-) TimerEvent: {}
+[77.279686] (-) TimerEvent: {}
+[77.380324] (-) TimerEvent: {}
+[77.481413] (-) TimerEvent: {}
+[77.582071] (-) TimerEvent: {}
+[77.682900] (-) TimerEvent: {}
+[77.783722] (-) TimerEvent: {}
+[77.884581] (-) TimerEvent: {}
+[77.985468] (-) TimerEvent: {}
+[78.086124] (-) TimerEvent: {}
+[78.186772] (-) TimerEvent: {}
+[78.287530] (-) TimerEvent: {}
+[78.388172] (-) TimerEvent: {}
+[78.488875] (-) TimerEvent: {}
+[78.589520] (-) TimerEvent: {}
+[78.690579] (-) TimerEvent: {}
+[78.791240] (-) TimerEvent: {}
+[78.892249] (-) TimerEvent: {}
+[78.992895] (-) TimerEvent: {}
+[79.093942] (-) TimerEvent: {}
+[79.194652] (-) TimerEvent: {}
+[79.295356] (-) TimerEvent: {}
+[79.396007] (-) TimerEvent: {}
+[79.496666] (-) TimerEvent: {}
+[79.597323] (-) TimerEvent: {}
+[79.698243] (-) TimerEvent: {}
+[79.798907] (-) TimerEvent: {}
+[79.899572] (-) TimerEvent: {}
+[80.000195] (-) TimerEvent: {}
+[80.100808] (-) TimerEvent: {}
+[80.201462] (-) TimerEvent: {}
+[80.302106] (-) TimerEvent: {}
+[80.402744] (-) TimerEvent: {}
+[80.503641] (-) TimerEvent: {}
+[80.604282] (-) TimerEvent: {}
+[80.704915] (-) TimerEvent: {}
+[80.805540] (-) TimerEvent: {}
+[80.906163] (-) TimerEvent: {}
+[81.006790] (-) TimerEvent: {}
+[81.107435] (-) TimerEvent: {}
+[81.208059] (-) TimerEvent: {}
+[81.308683] (-) TimerEvent: {}
+[81.409317] (-) TimerEvent: {}
+[81.510158] (-) TimerEvent: {}
+[81.610810] (-) TimerEvent: {}
+[81.711484] (-) TimerEvent: {}
+[81.812123] (-) TimerEvent: {}
+[81.912760] (-) TimerEvent: {}
+[82.013423] (-) TimerEvent: {}
+[82.114246] (-) TimerEvent: {}
+[82.214897] (-) TimerEvent: {}
+[82.315789] (-) TimerEvent: {}
+[82.416663] (-) TimerEvent: {}
+[82.517320] (-) TimerEvent: {}
+[82.618197] (-) TimerEvent: {}
+[82.718872] (-) TimerEvent: {}
+[82.819525] (-) TimerEvent: {}
+[82.920141] (-) TimerEvent: {}
+[83.020764] (-) TimerEvent: {}
+[83.121396] (-) TimerEvent: {}
+[83.222031] (-) TimerEvent: {}
+[83.322651] (-) TimerEvent: {}
+[83.423595] (-) TimerEvent: {}
+[83.524519] (-) TimerEvent: {}
+[83.625098] (-) TimerEvent: {}
+[83.725644] (-) TimerEvent: {}
+[83.826185] (-) TimerEvent: {}
+[83.926932] (-) TimerEvent: {}
+[84.027543] (-) TimerEvent: {}
+[84.128196] (-) TimerEvent: {}
+[84.228966] (-) TimerEvent: {}
+[84.329695] (-) TimerEvent: {}
+[84.430419] (-) TimerEvent: {}
+[84.531165] (-) TimerEvent: {}
+[84.631912] (-) TimerEvent: {}
+[84.732624] (-) TimerEvent: {}
+[84.833371] (-) TimerEvent: {}
+[84.934119] (-) TimerEvent: {}
+[85.034922] (-) TimerEvent: {}
+[85.135708] (-) TimerEvent: {}
+[85.236470] (-) TimerEvent: {}
+[85.337214] (-) TimerEvent: {}
+[85.437953] (-) TimerEvent: {}
+[85.538675] (-) TimerEvent: {}
+[85.639426] (-) TimerEvent: {}
+[85.740233] (-) TimerEvent: {}
+[85.841024] (-) TimerEvent: {}
+[85.941806] (-) TimerEvent: {}
+[86.042603] (-) TimerEvent: {}
+[86.143408] (-) TimerEvent: {}
+[86.244191] (-) TimerEvent: {}
+[86.344982] (-) TimerEvent: {}
+[86.445753] (-) TimerEvent: {}
+[86.546555] (-) TimerEvent: {}
+[86.647348] (-) TimerEvent: {}
+[86.748112] (-) TimerEvent: {}
+[86.848852] (-) TimerEvent: {}
+[86.949551] (-) TimerEvent: {}
+[87.050259] (-) TimerEvent: {}
+[87.151197] (-) TimerEvent: {}
+[87.251925] (-) TimerEvent: {}
+[87.352656] (-) TimerEvent: {}
+[87.453564] (-) TimerEvent: {}
+[87.554265] (-) TimerEvent: {}
+[87.654947] (-) TimerEvent: {}
+[87.755908] (-) TimerEvent: {}
+[87.856830] (-) TimerEvent: {}
+[87.957739] (-) TimerEvent: {}
+[88.058455] (-) TimerEvent: {}
+[88.159109] (-) TimerEvent: {}
+[88.259868] (-) TimerEvent: {}
+[88.360581] (-) TimerEvent: {}
+[88.461276] (-) TimerEvent: {}
+[88.561966] (-) TimerEvent: {}
+[88.662672] (-) TimerEvent: {}
+[88.763434] (-) TimerEvent: {}
+[88.864159] (-) TimerEvent: {}
+[88.964872] (-) TimerEvent: {}
+[89.065618] (-) TimerEvent: {}
+[89.166405] (-) TimerEvent: {}
+[89.267180] (-) TimerEvent: {}
+[89.367877] (-) TimerEvent: {}
+[89.468576] (-) TimerEvent: {}
+[89.569272] (-) TimerEvent: {}
+[89.670002] (-) TimerEvent: {}
+[89.770703] (-) TimerEvent: {}
+[89.871428] (-) TimerEvent: {}
+[89.972136] (-) TimerEvent: {}
+[90.072873] (-) TimerEvent: {}
+[90.173616] (-) TimerEvent: {}
+[90.274351] (-) TimerEvent: {}
+[90.375127] (-) TimerEvent: {}
+[90.475857] (-) TimerEvent: {}
+[90.576586] (-) TimerEvent: {}
+[90.677308] (-) TimerEvent: {}
+[90.778008] (-) TimerEvent: {}
+[90.878708] (-) TimerEvent: {}
+[90.979451] (-) TimerEvent: {}
+[91.080155] (-) TimerEvent: {}
+[91.180854] (-) TimerEvent: {}
+[91.281543] (-) TimerEvent: {}
+[91.382254] (-) TimerEvent: {}
+[91.482984] (-) TimerEvent: {}
+[91.583702] (-) TimerEvent: {}
+[91.684392] (-) TimerEvent: {}
+[91.785121] (-) TimerEvent: {}
+[91.885899] (-) TimerEvent: {}
+[91.986648] (-) TimerEvent: {}
+[92.087439] (-) TimerEvent: {}
+[92.188218] (-) TimerEvent: {}
+[92.288905] (-) TimerEvent: {}
+[92.389543] (-) TimerEvent: {}
+[92.490182] (-) TimerEvent: {}
+[92.590798] (-) TimerEvent: {}
+[92.691497] (-) TimerEvent: {}
+[92.792249] (-) TimerEvent: {}
+[92.892988] (-) TimerEvent: {}
+[92.993741] (-) TimerEvent: {}
+[93.094498] (-) TimerEvent: {}
+[93.195203] (-) TimerEvent: {}
+[93.295929] (-) TimerEvent: {}
+[93.396636] (-) TimerEvent: {}
+[93.497335] (-) TimerEvent: {}
+[93.598011] (-) TimerEvent: {}
+[93.698680] (-) TimerEvent: {}
+[93.799425] (-) TimerEvent: {}
+[93.900200] (-) TimerEvent: {}
+[94.000969] (-) TimerEvent: {}
+[94.101749] (-) TimerEvent: {}
+[94.202522] (-) TimerEvent: {}
+[94.303246] (-) TimerEvent: {}
+[94.403994] (-) TimerEvent: {}
+[94.504732] (-) TimerEvent: {}
+[94.605450] (-) TimerEvent: {}
+[94.706167] (-) TimerEvent: {}
+[94.806870] (-) TimerEvent: {}
+[94.907612] (-) TimerEvent: {}
+[95.008335] (-) TimerEvent: {}
+[95.109099] (-) TimerEvent: {}
+[95.209845] (-) TimerEvent: {}
+[95.310570] (-) TimerEvent: {}
+[95.411286] (-) TimerEvent: {}
+[95.511935] (-) TimerEvent: {}
+[95.612577] (-) TimerEvent: {}
+[95.713264] (-) TimerEvent: {}
+[95.814013] (-) TimerEvent: {}
+[95.914803] (-) TimerEvent: {}
+[96.015616] (-) TimerEvent: {}
+[96.116386] (-) TimerEvent: {}
+[96.217140] (-) TimerEvent: {}
+[96.317883] (-) TimerEvent: {}
+[96.418622] (-) TimerEvent: {}
+[96.519385] (-) TimerEvent: {}
+[96.620135] (-) TimerEvent: {}
+[96.720923] (-) TimerEvent: {}
+[96.821656] (-) TimerEvent: {}
+[96.922373] (-) TimerEvent: {}
+[97.023155] (-) TimerEvent: {}
+[97.123861] (-) TimerEvent: {}
+[97.224578] (-) TimerEvent: {}
+[97.325285] (-) TimerEvent: {}
+[97.426004] (-) TimerEvent: {}
+[97.526716] (-) TimerEvent: {}
+[97.627433] (-) TimerEvent: {}
+[97.728185] (-) TimerEvent: {}
+[97.828923] (-) TimerEvent: {}
+[97.929636] (-) TimerEvent: {}
+[98.030323] (-) TimerEvent: {}
+[98.131097] (-) TimerEvent: {}
+[98.231849] (-) TimerEvent: {}
+[98.332537] (-) TimerEvent: {}
+[98.433252] (-) TimerEvent: {}
+[98.533962] (-) TimerEvent: {}
+[98.634691] (-) TimerEvent: {}
+[98.735466] (-) TimerEvent: {}
+[98.836230] (-) TimerEvent: {}
+[98.937002] (-) TimerEvent: {}
+[99.037770] (-) TimerEvent: {}
+[99.138543] (-) TimerEvent: {}
+[99.239350] (-) TimerEvent: {}
+[99.340255] (-) TimerEvent: {}
+[99.441181] (-) TimerEvent: {}
+[99.541920] (-) TimerEvent: {}
+[99.642639] (-) TimerEvent: {}
+[99.743570] (-) TimerEvent: {}
+[99.844381] (-) TimerEvent: {}
+[99.945313] (-) TimerEvent: {}
+[100.046275] (-) TimerEvent: {}
+[100.147093] (-) TimerEvent: {}
+[100.247867] (-) TimerEvent: {}
+[100.348661] (-) TimerEvent: {}
+[100.449448] (-) TimerEvent: {}
+[100.550260] (-) TimerEvent: {}
+[100.651001] (-) TimerEvent: {}
+[100.745888] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libmotion_planning_tasks_rviz_plugin.so\x1b[0m\n'}
+[100.751057] (-) TimerEvent: {}
+[100.851509] (-) TimerEvent: {}
+[100.952141] (-) TimerEvent: {}
+[101.052805] (-) TimerEvent: {}
+[101.153614] (-) TimerEvent: {}
+[101.254237] (-) TimerEvent: {}
+[101.354853] (-) TimerEvent: {}
+[101.455498] (-) TimerEvent: {}
+[101.556182] (-) TimerEvent: {}
+[101.656936] (-) TimerEvent: {}
+[101.757815] (-) TimerEvent: {}
+[101.858487] (-) TimerEvent: {}
+[101.959162] (-) TimerEvent: {}
+[102.059783] (-) TimerEvent: {}
+[102.160416] (-) TimerEvent: {}
+[102.261109] (-) TimerEvent: {}
+[102.361773] (-) TimerEvent: {}
+[102.462388] (-) TimerEvent: {}
+[102.562986] (-) TimerEvent: {}
+[102.663608] (-) TimerEvent: {}
+[102.764245] (-) TimerEvent: {}
+[102.864886] (-) TimerEvent: {}
+[102.965517] (-) TimerEvent: {}
+[103.066160] (-) TimerEvent: {}
+[103.166808] (-) TimerEvent: {}
+[103.267667] (-) TimerEvent: {}
+[103.368422] (-) TimerEvent: {}
+[103.469074] (-) TimerEvent: {}
+[103.569743] (-) TimerEvent: {}
+[103.670427] (-) TimerEvent: {}
+[103.771179] (-) TimerEvent: {}
+[103.871901] (-) TimerEvent: {}
+[103.972610] (-) TimerEvent: {}
+[104.073375] (-) TimerEvent: {}
+[104.174185] (-) TimerEvent: {}
+[104.274994] (-) TimerEvent: {}
+[104.375778] (-) TimerEvent: {}
+[104.476481] (-) TimerEvent: {}
+[104.577173] (-) TimerEvent: {}
+[104.677873] (-) TimerEvent: {}
+[104.778733] (-) TimerEvent: {}
+[104.879460] (-) TimerEvent: {}
+[104.980375] (-) TimerEvent: {}
+[105.081238] (-) TimerEvent: {}
+[105.182093] (-) TimerEvent: {}
+[105.282966] (-) TimerEvent: {}
+[105.383828] (-) TimerEvent: {}
+[105.484665] (-) TimerEvent: {}
+[105.585342] (-) TimerEvent: {}
+[105.686200] (-) TimerEvent: {}
+[105.787125] (-) TimerEvent: {}
+[105.887998] (-) TimerEvent: {}
+[105.988641] (-) TimerEvent: {}
+[106.089485] (-) TimerEvent: {}
+[106.190167] (-) TimerEvent: {}
+[106.290807] (-) TimerEvent: {}
+[106.391484] (-) TimerEvent: {}
+[106.492132] (-) TimerEvent: {}
+[106.592996] (-) TimerEvent: {}
+[106.693667] (-) TimerEvent: {}
+[106.794345] (-) TimerEvent: {}
+[106.895063] (-) TimerEvent: {}
+[106.995735] (-) TimerEvent: {}
+[107.096564] (-) TimerEvent: {}
+[107.197268] (-) TimerEvent: {}
+[107.298129] (-) TimerEvent: {}
+[107.398976] (-) TimerEvent: {}
+[107.499673] (-) TimerEvent: {}
+[107.600513] (-) TimerEvent: {}
+[107.701186] (-) TimerEvent: {}
+[107.801894] (-) TimerEvent: {}
+[107.813862] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 87%] Built target motion_planning_tasks_rviz_plugin\n'}
+[107.849185] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 90%] \x1b[34m\x1b[1mAutomatic MOC for target moveit_task_constructor_visualization-test-task_model\x1b[0m\n'}
+[107.849570] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 90%] \x1b[34m\x1b[1mAutomatic MOC for target moveit_task_constructor_visualization-test-solution-models\x1b[0m\n'}
+[107.902069] (-) TimerEvent: {}
+[107.922986] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 90%] Built target moveit_task_constructor_visualization-test-task_model_autogen\n'}
+[107.923395] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 90%] Built target moveit_task_constructor_visualization-test-solution-models_autogen\n'}
+[107.962659] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding CXX object motion_planning_tasks/test/CMakeFiles/moveit_task_constructor_visualization-test-task_model.dir/test_task_model.cpp.o\x1b[0m\n'}
+[107.963074] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding CXX object motion_planning_tasks/test/CMakeFiles/moveit_task_constructor_visualization-test-task_model.dir/moveit_task_constructor_visualization-test-task_model_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[107.963236] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding CXX object motion_planning_tasks/test/CMakeFiles/moveit_task_constructor_visualization-test-solution-models.dir/test_solution_models.cpp.o\x1b[0m\n'}
+[107.963346] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding CXX object motion_planning_tasks/test/CMakeFiles/moveit_task_constructor_visualization-test-solution-models.dir/moveit_task_constructor_visualization-test-solution-models_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[108.002254] (-) TimerEvent: {}
+[108.102880] (-) TimerEvent: {}
+[108.203510] (-) TimerEvent: {}
+[108.304145] (-) TimerEvent: {}
+[108.404798] (-) TimerEvent: {}
+[108.505450] (-) TimerEvent: {}
+[108.606270] (-) TimerEvent: {}
+[108.706909] (-) TimerEvent: {}
+[108.807554] (-) TimerEvent: {}
+[108.908200] (-) TimerEvent: {}
+[109.008861] (-) TimerEvent: {}
+[109.109492] (-) TimerEvent: {}
+[109.210210] (-) TimerEvent: {}
+[109.310844] (-) TimerEvent: {}
+[109.411514] (-) TimerEvent: {}
+[109.512149] (-) TimerEvent: {}
+[109.612758] (-) TimerEvent: {}
+[109.713391] (-) TimerEvent: {}
+[109.814033] (-) TimerEvent: {}
+[109.914862] (-) TimerEvent: {}
+[110.015527] (-) TimerEvent: {}
+[110.116163] (-) TimerEvent: {}
+[110.216792] (-) TimerEvent: {}
+[110.317613] (-) TimerEvent: {}
+[110.418465] (-) TimerEvent: {}
+[110.519123] (-) TimerEvent: {}
+[110.619743] (-) TimerEvent: {}
+[110.720394] (-) TimerEvent: {}
+[110.821242] (-) TimerEvent: {}
+[110.921898] (-) TimerEvent: {}
+[111.022549] (-) TimerEvent: {}
+[111.123402] (-) TimerEvent: {}
+[111.224053] (-) TimerEvent: {}
+[111.324685] (-) TimerEvent: {}
+[111.425300] (-) TimerEvent: {}
+[111.526103] (-) TimerEvent: {}
+[111.626938] (-) TimerEvent: {}
+[111.727776] (-) TimerEvent: {}
+[111.828409] (-) TimerEvent: {}
+[111.929030] (-) TimerEvent: {}
+[112.029649] (-) TimerEvent: {}
+[112.130254] (-) TimerEvent: {}
+[112.230870] (-) TimerEvent: {}
+[112.332079] (-) TimerEvent: {}
+[112.432722] (-) TimerEvent: {}
+[112.533561] (-) TimerEvent: {}
+[112.634191] (-) TimerEvent: {}
+[112.734815] (-) TimerEvent: {}
+[112.835477] (-) TimerEvent: {}
+[112.936323] (-) TimerEvent: {}
+[113.036963] (-) TimerEvent: {}
+[113.137584] (-) TimerEvent: {}
+[113.238425] (-) TimerEvent: {}
+[113.339279] (-) TimerEvent: {}
+[113.439907] (-) TimerEvent: {}
+[113.540537] (-) TimerEvent: {}
+[113.641159] (-) TimerEvent: {}
+[113.741817] (-) TimerEvent: {}
+[113.842760] (-) TimerEvent: {}
+[113.943463] (-) TimerEvent: {}
+[114.044112] (-) TimerEvent: {}
+[114.144750] (-) TimerEvent: {}
+[114.245400] (-) TimerEvent: {}
+[114.346258] (-) TimerEvent: {}
+[114.446905] (-) TimerEvent: {}
+[114.547571] (-) TimerEvent: {}
+[114.648227] (-) TimerEvent: {}
+[114.748842] (-) TimerEvent: {}
+[114.849449] (-) TimerEvent: {}
+[114.950286] (-) TimerEvent: {}
+[115.051169] (-) TimerEvent: {}
+[115.152007] (-) TimerEvent: {}
+[115.252862] (-) TimerEvent: {}
+[115.353505] (-) TimerEvent: {}
+[115.454420] (-) TimerEvent: {}
+[115.555094] (-) TimerEvent: {}
+[115.655712] (-) TimerEvent: {}
+[115.756545] (-) TimerEvent: {}
+[115.857395] (-) TimerEvent: {}
+[115.958257] (-) TimerEvent: {}
+[116.058894] (-) TimerEvent: {}
+[116.159754] (-) TimerEvent: {}
+[116.260604] (-) TimerEvent: {}
+[116.361460] (-) TimerEvent: {}
+[116.462101] (-) TimerEvent: {}
+[116.562732] (-) TimerEvent: {}
+[116.663590] (-) TimerEvent: {}
+[116.764328] (-) TimerEvent: {}
+[116.865027] (-) TimerEvent: {}
+[116.965697] (-) TimerEvent: {}
+[117.066568] (-) TimerEvent: {}
+[117.167421] (-) TimerEvent: {}
+[117.268046] (-) TimerEvent: {}
+[117.368923] (-) TimerEvent: {}
+[117.469789] (-) TimerEvent: {}
+[117.570437] (-) TimerEvent: {}
+[117.671098] (-) TimerEvent: {}
+[117.771690] (-) TimerEvent: {}
+[117.872303] (-) TimerEvent: {}
+[117.972938] (-) TimerEvent: {}
+[118.073793] (-) TimerEvent: {}
+[118.174426] (-) TimerEvent: {}
+[118.275084] (-) TimerEvent: {}
+[118.375701] (-) TimerEvent: {}
+[118.476330] (-) TimerEvent: {}
+[118.577021] (-) TimerEvent: {}
+[118.677652] (-) TimerEvent: {}
+[118.778301] (-) TimerEvent: {}
+[118.878927] (-) TimerEvent: {}
+[118.979617] (-) TimerEvent: {}
+[119.080237] (-) TimerEvent: {}
+[119.180971] (-) TimerEvent: {}
+[119.281598] (-) TimerEvent: {}
+[119.382228] (-) TimerEvent: {}
+[119.482872] (-) TimerEvent: {}
+[119.583526] (-) TimerEvent: {}
+[119.684151] (-) TimerEvent: {}
+[119.784862] (-) TimerEvent: {}
+[119.885495] (-) TimerEvent: {}
+[119.986147] (-) TimerEvent: {}
+[120.086793] (-) TimerEvent: {}
+[120.187446] (-) TimerEvent: {}
+[120.288045] (-) TimerEvent: {}
+[120.388662] (-) TimerEvent: {}
+[120.489277] (-) TimerEvent: {}
+[120.589955] (-) TimerEvent: {}
+[120.690594] (-) TimerEvent: {}
+[120.791234] (-) TimerEvent: {}
+[120.891877] (-) TimerEvent: {}
+[120.992524] (-) TimerEvent: {}
+[121.093157] (-) TimerEvent: {}
+[121.193802] (-) TimerEvent: {}
+[121.294444] (-) TimerEvent: {}
+[121.395126] (-) TimerEvent: {}
+[121.495763] (-) TimerEvent: {}
+[121.596404] (-) TimerEvent: {}
+[121.676889] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX executable moveit_task_constructor_visualization-test-solution-models\x1b[0m\n'}
+[121.696525] (-) TimerEvent: {}
+[121.797113] (-) TimerEvent: {}
+[121.897774] (-) TimerEvent: {}
+[121.998407] (-) TimerEvent: {}
+[122.099049] (-) TimerEvent: {}
+[122.157272] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable moveit_task_constructor_visualization-test-task_model\x1b[0m\n'}
+[122.199207] (-) TimerEvent: {}
+[122.300000] (-) TimerEvent: {}
+[122.400723] (-) TimerEvent: {}
+[122.501650] (-) TimerEvent: {}
+[122.602328] (-) TimerEvent: {}
+[122.703137] (-) TimerEvent: {}
+[122.803798] (-) TimerEvent: {}
+[122.904420] (-) TimerEvent: {}
+[123.005097] (-) TimerEvent: {}
+[123.105719] (-) TimerEvent: {}
+[123.206349] (-) TimerEvent: {}
+[123.306992] (-) TimerEvent: {}
+[123.407629] (-) TimerEvent: {}
+[123.508268] (-) TimerEvent: {}
+[123.599598] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[100%] Built target moveit_task_constructor_visualization-test-solution-models\n'}
+[123.608336] (-) TimerEvent: {}
+[123.709017] (-) TimerEvent: {}
+[123.809829] (-) TimerEvent: {}
+[123.910439] (-) TimerEvent: {}
+[124.010087] (moveit_task_constructor_visualization) StdoutLine: {'line': b'[100%] Built target moveit_task_constructor_visualization-test-task_model\n'}
+[124.010482] (-) TimerEvent: {}
+[124.038648] (moveit_task_constructor_visualization) CommandEnded: {'returncode': 0}
+[124.041209] (moveit_task_constructor_visualization) JobProgress: {'identifier': 'moveit_task_constructor_visualization', 'progress': 'install'}
+[124.057199] (moveit_task_constructor_visualization) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_visualization'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_visualization', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws/roarm_ws-ros2-humble'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('CMAKE_MODULE_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_visualization'), ('PYTHONPATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/opt/ros/humble')]), 'shell': False}
+[124.071265] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[124.071573] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/include\n'}
+[124.071822] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/include/moveit\n'}
+[124.072004] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/include/moveit/visualization_tools\n'}
+[124.072157] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/include/moveit/visualization_tools/task_solution_visualization.h\n'}
+[124.072310] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/include/moveit/visualization_tools/display_solution.h\n'}
+[124.072490] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/include/moveit/visualization_tools/marker_visualization.h\n'}
+[124.072655] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/include/moveit/visualization_tools/task_solution_panel.h\n'}
+[124.072934] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib/libmoveit_task_visualization_tools.so.0.1.3\n'}
+[124.074628] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib/libmoveit_task_visualization_tools.so.0.1.3" to ""\n'}
+[124.074780] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib/libmoveit_task_visualization_tools.so\n'}
+[124.075256] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib/libmotion_planning_tasks_utils.so\n'}
+[124.075912] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib/libmotion_planning_tasks_properties.so\n'}
+[124.077110] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib/libmotion_planning_tasks_properties.so" to ""\n'}
+[124.077430] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib/libmotion_planning_tasks_rviz_plugin.so.0.1.3\n'}
+[124.084971] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib/libmotion_planning_tasks_rviz_plugin.so.0.1.3" to ""\n'}
+[124.085327] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib/libmotion_planning_tasks_rviz_plugin.so\n'}
+[124.085587] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/icons\n'}
+[124.085774] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/icons/classes\n'}
+[124.085912] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/icons/classes/Motion Planning Tasks.svg\n'}
+[124.086591] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/motion_planning_tasks_rviz_plugin_description.xml\n'}
+[124.087073] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/environment/library_path.sh\n'}
+[124.087399] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/environment/library_path.dsv\n'}
+[124.087651] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/ament_index/resource_index/package_run_dependencies/moveit_task_constructor_visualization\n'}
+[124.087938] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/ament_index/resource_index/parent_prefix_path/moveit_task_constructor_visualization\n'}
+[124.088173] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/environment/ament_prefix_path.sh\n'}
+[124.088386] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/environment/ament_prefix_path.dsv\n'}
+[124.088571] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/environment/path.sh\n'}
+[124.088768] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/environment/path.dsv\n'}
+[124.088972] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/local_setup.bash\n'}
+[124.089184] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/local_setup.sh\n'}
+[124.089411] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/local_setup.zsh\n'}
+[124.089583] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/local_setup.dsv\n'}
+[124.089778] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/package.dsv\n'}
+[124.090052] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/ament_index/resource_index/packages/moveit_task_constructor_visualization\n'}
+[124.090314] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/ament_index/resource_index/rviz_common__pluginlib__plugin/moveit_task_constructor_visualization\n'}
+[124.090569] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[124.090773] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[124.090999] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[124.091243] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/cmake/moveit_task_constructor_visualizationConfig.cmake\n'}
+[124.091406] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/cmake/moveit_task_constructor_visualizationConfig-version.cmake\n'}
+[124.091601] (moveit_task_constructor_visualization) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/share/moveit_task_constructor_visualization/package.xml\n'}
+[124.095486] (moveit_task_constructor_visualization) CommandEnded: {'returncode': 0}
+[124.110631] (-) TimerEvent: {}
+[124.158064] (moveit_task_constructor_visualization) JobEnded: {'identifier': 'moveit_task_constructor_visualization', 'rc': 0}
+[124.159852] (-) EventReactorShutdown: {}

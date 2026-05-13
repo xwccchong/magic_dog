@@ -1,0 +1,99 @@
+[0.016s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins
+[0.157s] -- The C compiler identification is Clang 18.1.8
+[0.338s] -- The CXX compiler identification is Clang 18.1.8
+[0.348s] -- Detecting C compiler ABI info
+[0.518s] -- Detecting C compiler ABI info - done
+[0.536s] -- Check for working C compiler: /usr/bin/clang-18 - skipped
+[0.537s] -- Detecting C compile features
+[0.538s] -- Detecting C compile features - done
+[0.547s] -- Detecting CXX compiler ABI info
+[0.766s] -- Detecting CXX compiler ABI info - done
+[0.789s] -- Check for working CXX compiler: /usr/bin/clang++-18 - skipped
+[0.790s] -- Detecting CXX compile features
+[0.792s] -- Detecting CXX compile features - done
+[0.804s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.051s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.259s] -- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)
+[1.672s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.773s] -- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.848s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.858s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.875s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.896s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.926s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.007s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.013s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.191s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.236s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.318s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.337s] -- Found Threads: TRUE  
+[2.443s] -- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.484s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.690s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[2.798s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.798s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.202s] -- Looking for sgemm_
+[3.360s] -- Looking for sgemm_ - not found
+[3.422s] -- Looking for sgemm_
+[3.585s] -- Looking for sgemm_ - found
+[3.585s] -- Found BLAS: /usr/lib/aarch64-linux-gnu/libblas.so  
+[3.591s] -- Looking for cheev_
+[3.764s] -- Looking for cheev_ - not found
+[3.794s] -- Looking for cheev_
+[3.938s] -- Looking for cheev_ - not found
+[3.939s] -- Looking for cheev_
+[4.139s] -- Looking for cheev_ - found
+[4.140s] -- Found LAPACK: /usr/lib/aarch64-linux-gnu/liblapack.so;/usr/lib/aarch64-linux-gnu/libblas.so  
+[4.280s] -- Configuring done
+[4.353s] -- Generating done
+[4.371s] -- Build files have been written to: /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins
+[4.404s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins
+[4.407s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins -- -j8 -l8
+[4.504s] [ 50%] [32mBuilding CXX object CMakeFiles/roarm_m2_hand_moveit_ikfast_plugin.dir/src/roarm_m2_hand_moveit_ikfast_plugin.cpp.o[0m
+[4.504s] [ 50%] [32mBuilding CXX object CMakeFiles/roarm_m3_hand_moveit_ikfast_plugin.dir/src/roarm_m3_hand_moveit_ikfast_plugin.cpp.o[0m
+[14.588s] [1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m2_hand_moveit_ikfast_plugin.cpp:803:17: [0m[0;1;35mwarning: [0m[1mvariable length arrays in C++ are a Clang extension [-Wvla-cxx-extension][0m
+[14.588s]   803 |   IkReal angles[num_joints_];[0m
+[14.588s]       | [0;1;32m                ^~~~~~~~~~~
+[14.588s] [0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m2_hand_moveit_ikfast_plugin.cpp:803:17: [0m[0;1;36mnote: [0mimplicit use of 'this' pointer is only allowed within the evaluation of a call to a 'constexpr' member function[0m
+[15.687s] [1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m3_hand_moveit_ikfast_plugin.cpp:803:17: [0m[0;1;35mwarning: [0m[1mvariable length arrays in C++ are a Clang extension [-Wvla-cxx-extension][0m
+[15.688s]   803 |   IkReal angles[num_joints_];[0m
+[15.688s]       | [0;1;32m                ^~~~~~~~~~~
+[15.688s] [0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m3_hand_moveit_ikfast_plugin.cpp:803:17: [0m[0;1;36mnote: [0mimplicit use of 'this' pointer is only allowed within the evaluation of a call to a 'constexpr' member function[0m
+[21.347s] 1 warning generated.
+[21.396s] [ 75%] [32m[1mLinking CXX shared library libroarm_m2_hand_moveit_ikfast_plugin.so[0m
+[22.516s] [ 75%] Built target roarm_m2_hand_moveit_ikfast_plugin
+[23.313s] 1 warning generated.
+[23.369s] [100%] [32m[1mLinking CXX shared library libroarm_m3_hand_moveit_ikfast_plugin.so[0m
+[24.472s] [100%] Built target roarm_m3_hand_moveit_ikfast_plugin
+[24.496s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins -- -j8 -l8
+[24.516s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins
+[24.528s] -- Install configuration: ""
+[24.528s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib/libroarm_m2_hand_moveit_ikfast_plugin.so
+[24.532s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib/libroarm_m2_hand_moveit_ikfast_plugin.so" to ""
+[24.532s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib/libroarm_m3_hand_moveit_ikfast_plugin.so
+[24.536s] -- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib/libroarm_m3_hand_moveit_ikfast_plugin.so" to ""
+[24.536s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/roarm_m2_hand_moveit_ikfast_plugin.xml
+[24.536s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/roarm_m3_hand_moveit_ikfast_plugin.xml
+[24.537s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/library_path.sh
+[24.537s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/library_path.dsv
+[24.537s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/ament_index/resource_index/package_run_dependencies/roarm_moveit_ikfast_plugins
+[24.537s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/ament_index/resource_index/parent_prefix_path/roarm_moveit_ikfast_plugins
+[24.538s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/ament_prefix_path.sh
+[24.538s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/ament_prefix_path.dsv
+[24.538s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/path.sh
+[24.538s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/path.dsv
+[24.538s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/local_setup.bash
+[24.539s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/local_setup.sh
+[24.539s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/local_setup.zsh
+[24.540s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/local_setup.dsv
+[24.540s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/package.dsv
+[24.540s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/ament_index/resource_index/packages/roarm_moveit_ikfast_plugins
+[24.540s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/ament_index/resource_index/moveit_core__pluginlib__plugin/roarm_moveit_ikfast_plugins
+[24.540s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/export_roarm_moveit_ikfast_pluginsExport.cmake
+[24.540s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/export_roarm_moveit_ikfast_pluginsExport-noconfig.cmake
+[24.541s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/ament_cmake_export_targets-extras.cmake
+[24.541s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.541s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/roarm_moveit_ikfast_pluginsConfig.cmake
+[24.541s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/roarm_moveit_ikfast_pluginsConfig-version.cmake
+[24.541s] -- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/package.xml
+[24.546s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins

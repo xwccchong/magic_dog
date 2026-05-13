@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo/keyboardcontrol" "TARGETS" "keyboardcontrol" "DESTINATION" "lib/roarm_moveit_servo")

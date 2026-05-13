@@ -1,0 +1,11 @@
+考拉一号
+去吧台拿瓶水然后送到办公室
+考拉一号
+去前台拿雨伞
+
+conda activate go2_navi
+
+bash /home/unitree/unitree_sdk2_python/navi_update/server.sh
+bash /home/unitree/unitree_sdk2_python/navi_update/client.sh
+python /home/unitree/unitree_sdk2_python/navi_update/send_message.py
+上海天气怎么样

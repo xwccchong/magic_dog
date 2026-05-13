@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/subscribe_pointcloud.dir/subscribe_pointcloud.cpp.o  -o subscribe_pointcloud  -lunitree_sdk2 -lddsc -lddscxx -lrt -lpthread 

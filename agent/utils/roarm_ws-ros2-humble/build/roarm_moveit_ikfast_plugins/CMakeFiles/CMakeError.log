@@ -1,0 +1,55 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_861da/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_861da.dir/build.make CMakeFiles/cmTC_861da.dir/build
+gmake[1]: Entering directory '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_861da.dir/CheckFunctionExists.c.o
+/usr/bin/clang-18   -DCHECK_FUNCTION_EXISTS=sgemm_ -MD -MT CMakeFiles/cmTC_861da.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_861da.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_861da.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_861da
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_861da.dir/link.txt --verbose=1
+/usr/bin/clang-18  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_861da.dir/CheckFunctionExists.c.o -o cmTC_861da 
+/usr/bin/ld: CMakeFiles/cmTC_861da.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x18): undefined reference to `sgemm_'
+clang-18: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_861da.dir/build.make:100: cmTC_861da] Error 1
+gmake[1]: Leaving directory '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_861da/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f77d6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f77d6.dir/build.make CMakeFiles/cmTC_f77d6.dir/build
+gmake[1]: Entering directory '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f77d6.dir/CheckFunctionExists.c.o
+/usr/bin/clang-18   -DCHECK_FUNCTION_EXISTS=cheev_ -MD -MT CMakeFiles/cmTC_f77d6.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_f77d6.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_f77d6.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f77d6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f77d6.dir/link.txt --verbose=1
+/usr/bin/clang-18  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_f77d6.dir/CheckFunctionExists.c.o -o cmTC_f77d6  /usr/lib/aarch64-linux-gnu/libblas.so -lm -ldl 
+/usr/bin/ld: CMakeFiles/cmTC_f77d6.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x18): undefined reference to `cheev_'
+clang-18: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_f77d6.dir/build.make:101: cmTC_f77d6] Error 1
+gmake[1]: Leaving directory '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_f77d6/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1c803/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1c803.dir/build.make CMakeFiles/cmTC_1c803.dir/build
+gmake[1]: Entering directory '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c803.dir/CheckFunctionExists.c.o
+/usr/bin/clang-18   -DCHECK_FUNCTION_EXISTS=cheev_ -MD -MT CMakeFiles/cmTC_1c803.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_1c803.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_1c803.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1c803
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c803.dir/link.txt --verbose=1
+/usr/bin/clang-18  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_1c803.dir/CheckFunctionExists.c.o -o cmTC_1c803  /usr/lib/aarch64-linux-gnu/liblapack.so /usr/lib/aarch64-linux-gnu/libblas.so -fortranlibs 
+clang-18: error: unknown argument: '-fortranlibs'
+gmake[1]: *** [CMakeFiles/cmTC_1c803.dir/build.make:102: cmTC_1c803] Error 1
+gmake[1]: Leaving directory '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1c803/fast] Error 2
+
+
+

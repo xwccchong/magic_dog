@@ -1,0 +1,43 @@
+[0.018s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_servo -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo
+[0.054s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time thread 
+[0.056s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.258s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.268s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.310s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.314s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.323s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.337s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.354s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.611s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.646s] -- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.686s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.688s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.875s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.940s] -- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.970s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.032s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[1.070s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.238s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.279s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[1.307s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.348s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[1.408s] [31mCMake Error at CMakeLists.txt:17 (find_package):
+[1.408s]   By not providing "Findroarm_msgs.cmake" in CMAKE_MODULE_PATH this project
+[1.408s]   has asked CMake to find a package configuration file provided by
+[1.408s]   "roarm_msgs", but CMake did not find one.
+[1.408s] 
+[1.409s]   Could not find a package configuration file provided by "roarm_msgs" with
+[1.409s]   any of the following names:
+[1.409s] 
+[1.409s]     roarm_msgsConfig.cmake
+[1.409s]     roarm_msgs-config.cmake
+[1.409s] 
+[1.409s]   Add the installation prefix of "roarm_msgs" to CMAKE_PREFIX_PATH or set
+[1.409s]   "roarm_msgs_DIR" to a directory containing one of the above files.  If
+[1.410s]   "roarm_msgs" provides a separate development package or SDK, be sure it has
+[1.410s]   been installed.
+[1.410s] 
+[1.410s] [0m
+[1.410s] -- Configuring incomplete, errors occurred!
+[1.411s] See also "/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo/CMakeFiles/CMakeOutput.log".
+[1.434s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_servo -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo

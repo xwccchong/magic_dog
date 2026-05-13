@@ -1,0 +1,45 @@
+[0.033s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/workspace/roarm_ws/install/roarm_driver:/opt/ros/humble /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_description -- -j8 -l8
+[0.485s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/workspace/roarm_ws/install/roarm_driver:/opt/ros/humble /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_description -- -j8 -l8
+[0.503s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/workspace/roarm_ws/install/roarm_driver:/opt/ros/humble /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_description
+[0.517s] -- Install configuration: ""
+[0.517s] -- Execute custom install script
+[0.518s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/launch/display.launch.py
+[0.518s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/launch/gazebo.launch.py
+[0.519s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m2/base_link.stl
+[0.519s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m2/gripper_link.stl
+[0.519s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m2/link1.stl
+[0.519s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m2/link2.stl
+[0.519s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m2/link3.stl
+[0.520s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m3/base_link.stl
+[0.520s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m3/gripper_left_link.stl
+[0.520s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m3/gripper_link.stl
+[0.520s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m3/link1.stl
+[0.520s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m3/link2.stl
+[0.520s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m3/link3.stl
+[0.521s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m3/link4.stl
+[0.521s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/meshes/roarm_m3/link5.stl
+[0.521s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/urdf/roarm_m2/materials.xacro
+[0.521s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/urdf/roarm_m2/roarm_m2.gazebo
+[0.521s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/urdf/roarm_m2/roarm_m2.trans
+[0.522s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/urdf/roarm_m2/roarm_m2.xacro
+[0.522s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/urdf/roarm_m3/materials.xacro
+[0.522s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/urdf/roarm_m3/roarm_m3.gazebo
+[0.522s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/urdf/roarm_m3/roarm_m3.trans
+[0.522s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/urdf/roarm_m3/roarm_m3.xacro
+[0.523s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/rviz/view_description.rviz
+[0.523s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/ament_index/resource_index/package_run_dependencies/roarm_description
+[0.523s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/ament_index/resource_index/parent_prefix_path/roarm_description
+[0.523s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/environment/ament_prefix_path.sh
+[0.524s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/environment/ament_prefix_path.dsv
+[0.524s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/environment/path.sh
+[0.524s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/environment/path.dsv
+[0.524s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/local_setup.bash
+[0.525s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/local_setup.sh
+[0.525s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/local_setup.zsh
+[0.525s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/local_setup.dsv
+[0.525s] -- Symlinking: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/package.dsv
+[0.542s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/ament_index/resource_index/packages/roarm_description
+[0.542s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/cmake/roarm_descriptionConfig.cmake
+[0.542s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/cmake/roarm_descriptionConfig-version.cmake
+[0.542s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description/share/roarm_description/package.xml
+[0.546s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/workspace/roarm_ws/install/roarm_driver:/opt/ros/humble /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_description

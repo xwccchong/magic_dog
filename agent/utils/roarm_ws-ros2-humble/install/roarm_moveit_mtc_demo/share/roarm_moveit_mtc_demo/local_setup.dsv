@@ -1,0 +1,2 @@
+source;share/roarm_moveit_mtc_demo/environment/ament_prefix_path.sh
+source;share/roarm_moveit_mtc_demo/environment/path.sh

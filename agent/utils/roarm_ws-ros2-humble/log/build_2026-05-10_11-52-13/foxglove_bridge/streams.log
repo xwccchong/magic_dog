@@ -1,0 +1,53 @@
+[0.027s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/foxglove_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/opt/ros/humble /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/foxglove-sdk/ros/src/foxglove_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/foxglove_bridge
+[0.296s] -- The CXX compiler identification is Clang 18.1.8
+[0.312s] -- Detecting CXX compiler ABI info
+[0.554s] -- Detecting CXX compiler ABI info - done
+[0.562s] -- Check for working CXX compiler: /usr/bin/clang++-18 - skipped
+[0.569s] -- Detecting CXX compile features
+[0.570s] -- Detecting CXX compile features - done
+[0.606s] -- Looking for C++ include pthread.h
+[0.889s] -- Looking for C++ include pthread.h - found
+[0.890s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.151s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.153s] -- Found Threads: TRUE  
+[1.153s] -- Using standalone ASIO
+[6.807s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[7.081s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[7.201s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.298s] -- Found rosgraph_msgs: 1.2.2 (/opt/ros/humble/share/rosgraph_msgs/cmake)
+[7.389s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.405s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.428s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.458s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.501s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.559s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[7.664s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.672s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[7.725s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[7.835s] -- Found rclcpp_components: 16.0.19 (/opt/ros/humble/share/rclcpp_components/cmake)
+[7.901s] -- Found resource_retriever: 3.1.3 (/opt/ros/humble/share/resource_retriever/cmake)
+[8.056s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[8.064s] -- Found rosx_introspection: 2.2.0 (/opt/ros/humble/share/rosx_introspection/cmake)
+[8.224s] -- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[8.231s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.336s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[8.364s] [31mCMake Error at CMakeLists.txt:240 (find_package):
+[8.364s]   By not providing "Findwebsocketpp.cmake" in CMAKE_MODULE_PATH this project
+[8.364s]   has asked CMake to find a package configuration file provided by
+[8.364s]   "websocketpp", but CMake did not find one.
+[8.365s] 
+[8.365s]   Could not find a package configuration file provided by "websocketpp" with
+[8.365s]   any of the following names:
+[8.365s] 
+[8.365s]     websocketppConfig.cmake
+[8.365s]     websocketpp-config.cmake
+[8.365s] 
+[8.365s]   Add the installation prefix of "websocketpp" to CMAKE_PREFIX_PATH or set
+[8.365s]   "websocketpp_DIR" to a directory containing one of the above files.  If
+[8.365s]   "websocketpp" provides a separate development package or SDK, be sure it
+[8.365s]   has been installed.
+[8.365s] 
+[8.366s] [0m
+[8.366s] -- Configuring incomplete, errors occurred!
+[8.366s] See also "/workspace/roarm_ws/roarm_ws-ros2-humble/build/foxglove_bridge/CMakeFiles/CMakeOutput.log".
+[8.387s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/foxglove_bridge' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/opt/ros/humble /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/foxglove-sdk/ros/src/foxglove_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/foxglove_bridge

@@ -1,0 +1,223 @@
+[0.000000] (-) TimerEvent: {}
+[0.000773] (-) JobUnselected: {'identifier': 'moveit_servo'}
+[0.001020] (-) JobUnselected: {'identifier': 'moveit_task_constructor_capabilities'}
+[0.001218] (-) JobUnselected: {'identifier': 'moveit_task_constructor_core'}
+[0.001294] (-) JobUnselected: {'identifier': 'moveit_task_constructor_msgs'}
+[0.001413] (-) JobUnselected: {'identifier': 'moveit_task_constructor_visualization'}
+[0.001478] (-) JobUnselected: {'identifier': 'roarm_description'}
+[0.001535] (-) JobUnselected: {'identifier': 'roarm_driver'}
+[0.001606] (-) JobUnselected: {'identifier': 'roarm_moveit'}
+[0.001643] (-) JobUnselected: {'identifier': 'roarm_moveit_cmd'}
+[0.001970] (-) JobUnselected: {'identifier': 'roarm_moveit_ikfast_plugins'}
+[0.002001] (-) JobUnselected: {'identifier': 'roarm_moveit_mtc_demo'}
+[0.002063] (-) JobUnselected: {'identifier': 'roarm_msgs'}
+[0.002160] (-) JobUnselected: {'identifier': 'rviz_marker_tools'}
+[0.002224] (roarm_moveit_servo) JobQueued: {'identifier': 'roarm_moveit_servo', 'dependencies': OrderedDict()}
+[0.002269] (roarm_moveit_servo) JobStarted: {'identifier': 'roarm_moveit_servo'}
+[0.020678] (roarm_moveit_servo) JobProgress: {'identifier': 'roarm_moveit_servo', 'progress': 'cmake'}
+[0.021907] (roarm_moveit_servo) Command: {'cmd': ['/usr/bin/cmake', '/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_servo', '-DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/workspace/roarm_ws/install/roarm_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('COLCON_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install:/workspace/roarm_ws/install'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/workspace/roarm_ws/install/roarm_msgs:/workspace/roarm_ws/install/roarm_driver:/workspace/roarm_ws/install/roarm_description:/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('CMAKE_MODULE_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo'), ('PYTHONPATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/lib/python3.10/site-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/workspace/roarm_ws/install/roarm_msgs/local/lib/python3.10/dist-packages:/workspace/roarm_ws/build/roarm_driver:/workspace/roarm_ws/install/roarm_driver/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/workspace/roarm_ws/install/roarm_msgs:/workspace/roarm_ws/install/roarm_description:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/workspace/roarm_ws/install/roarm_driver:/opt/ros/humble')]), 'shell': False}
+[0.064036] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time thread \n'}
+[0.065304] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099249] (-) TimerEvent: {}
+[0.200225] (-) TimerEvent: {}
+[0.282789] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[0.291791] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[0.300256] (-) TimerEvent: {}
+[0.334820] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.338346] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.347528] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.361964] (roarm_moveit_servo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.380736] (roarm_moveit_servo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.400346] (-) TimerEvent: {}
+[0.500742] (-) TimerEvent: {}
+[0.601223] (-) TimerEvent: {}
+[0.637600] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[0.675199] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[0.701311] (-) TimerEvent: {}
+[0.716061] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.718897] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.801551] (-) TimerEvent: {}
+[0.902308] (-) TimerEvent: {}
+[0.917716] (roarm_moveit_servo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.983472] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[1.002376] (-) TimerEvent: {}
+[1.013733] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[1.076318] (roarm_moveit_servo) StdoutLine: {'line': b'-- library: /usr/lib/aarch64-linux-gnu/libcurl.so\n'}
+[1.102480] (-) TimerEvent: {}
+[1.115154] (roarm_moveit_servo) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.202616] (-) TimerEvent: {}
+[1.283731] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[1.302708] (-) TimerEvent: {}
+[1.325759] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[1.353786] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[1.394555] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[1.402790] (-) TimerEvent: {}
+[1.432820] (roarm_moveit_servo) StdoutLine: {'line': b'-- Found roarm_msgs: 0.0.0 (/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/share/roarm_msgs/cmake)\n'}
+[1.502992] (-) TimerEvent: {}
+[1.589550] (roarm_moveit_servo) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.603069] (-) TimerEvent: {}
+[1.638597] (roarm_moveit_servo) StdoutLine: {'line': b'-- Generating done\n'}
+[1.650515] (roarm_moveit_servo) StdoutLine: {'line': b'-- Build files have been written to: /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo\n'}
+[1.678886] (roarm_moveit_servo) CommandEnded: {'returncode': 0}
+[1.681946] (roarm_moveit_servo) JobProgress: {'identifier': 'roarm_moveit_servo', 'progress': 'build'}
+[1.682836] (roarm_moveit_servo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo', '--', '-j8', '-l8'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/workspace/roarm_ws/install/roarm_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('COLCON_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install:/workspace/roarm_ws/install'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/workspace/roarm_ws/install/roarm_msgs:/workspace/roarm_ws/install/roarm_driver:/workspace/roarm_ws/install/roarm_description:/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('CMAKE_MODULE_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo'), ('PYTHONPATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/lib/python3.10/site-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/workspace/roarm_ws/install/roarm_msgs/local/lib/python3.10/dist-packages:/workspace/roarm_ws/build/roarm_driver:/workspace/roarm_ws/install/roarm_driver/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/workspace/roarm_ws/install/roarm_msgs:/workspace/roarm_ws/install/roarm_description:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/workspace/roarm_ws/install/roarm_driver:/opt/ros/humble')]), 'shell': False}
+[1.703196] (-) TimerEvent: {}
+[1.786179] (roarm_moveit_servo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/keyboardcontrol.dir/src/keyboardcontrol.cpp.o\x1b[0m\n'}
+[1.803285] (-) TimerEvent: {}
+[1.903798] (-) TimerEvent: {}
+[2.004469] (-) TimerEvent: {}
+[2.105159] (-) TimerEvent: {}
+[2.205905] (-) TimerEvent: {}
+[2.306741] (-) TimerEvent: {}
+[2.407384] (-) TimerEvent: {}
+[2.508194] (-) TimerEvent: {}
+[2.608829] (-) TimerEvent: {}
+[2.709468] (-) TimerEvent: {}
+[2.810135] (-) TimerEvent: {}
+[2.910994] (-) TimerEvent: {}
+[3.011734] (-) TimerEvent: {}
+[3.112491] (-) TimerEvent: {}
+[3.213368] (-) TimerEvent: {}
+[3.314257] (-) TimerEvent: {}
+[3.414892] (-) TimerEvent: {}
+[3.515523] (-) TimerEvent: {}
+[3.616179] (-) TimerEvent: {}
+[3.716802] (-) TimerEvent: {}
+[3.817421] (-) TimerEvent: {}
+[3.918088] (-) TimerEvent: {}
+[4.018739] (-) TimerEvent: {}
+[4.119405] (-) TimerEvent: {}
+[4.220149] (-) TimerEvent: {}
+[4.320935] (-) TimerEvent: {}
+[4.421672] (-) TimerEvent: {}
+[4.522375] (-) TimerEvent: {}
+[4.623092] (-) TimerEvent: {}
+[4.723805] (-) TimerEvent: {}
+[4.824514] (-) TimerEvent: {}
+[4.925152] (-) TimerEvent: {}
+[5.025913] (-) TimerEvent: {}
+[5.126633] (-) TimerEvent: {}
+[5.227504] (-) TimerEvent: {}
+[5.328156] (-) TimerEvent: {}
+[5.429053] (-) TimerEvent: {}
+[5.529948] (-) TimerEvent: {}
+[5.630630] (-) TimerEvent: {}
+[5.731367] (-) TimerEvent: {}
+[5.832136] (-) TimerEvent: {}
+[5.932750] (-) TimerEvent: {}
+[6.033477] (-) TimerEvent: {}
+[6.134252] (-) TimerEvent: {}
+[6.234977] (-) TimerEvent: {}
+[6.335702] (-) TimerEvent: {}
+[6.436449] (-) TimerEvent: {}
+[6.537199] (-) TimerEvent: {}
+[6.637959] (-) TimerEvent: {}
+[6.738690] (-) TimerEvent: {}
+[6.839396] (-) TimerEvent: {}
+[6.940103] (-) TimerEvent: {}
+[7.040797] (-) TimerEvent: {}
+[7.141595] (-) TimerEvent: {}
+[7.242308] (-) TimerEvent: {}
+[7.343016] (-) TimerEvent: {}
+[7.443759] (-) TimerEvent: {}
+[7.544490] (-) TimerEvent: {}
+[7.645217] (-) TimerEvent: {}
+[7.745990] (-) TimerEvent: {}
+[7.846703] (-) TimerEvent: {}
+[7.947440] (-) TimerEvent: {}
+[8.048178] (-) TimerEvent: {}
+[8.148911] (-) TimerEvent: {}
+[8.249684] (-) TimerEvent: {}
+[8.350463] (-) TimerEvent: {}
+[8.451279] (-) TimerEvent: {}
+[8.552082] (-) TimerEvent: {}
+[8.652849] (-) TimerEvent: {}
+[8.753646] (-) TimerEvent: {}
+[8.854445] (-) TimerEvent: {}
+[8.955209] (-) TimerEvent: {}
+[9.055953] (-) TimerEvent: {}
+[9.156706] (-) TimerEvent: {}
+[9.257475] (-) TimerEvent: {}
+[9.358284] (-) TimerEvent: {}
+[9.459055] (-) TimerEvent: {}
+[9.559830] (-) TimerEvent: {}
+[9.660575] (-) TimerEvent: {}
+[9.761259] (-) TimerEvent: {}
+[9.861993] (-) TimerEvent: {}
+[9.962641] (-) TimerEvent: {}
+[10.063516] (-) TimerEvent: {}
+[10.164353] (-) TimerEvent: {}
+[10.265151] (-) TimerEvent: {}
+[10.365984] (-) TimerEvent: {}
+[10.466592] (-) TimerEvent: {}
+[10.567403] (-) TimerEvent: {}
+[10.668276] (-) TimerEvent: {}
+[10.769145] (-) TimerEvent: {}
+[10.869919] (-) TimerEvent: {}
+[10.970664] (-) TimerEvent: {}
+[11.071551] (-) TimerEvent: {}
+[11.172446] (-) TimerEvent: {}
+[11.273112] (-) TimerEvent: {}
+[11.373776] (-) TimerEvent: {}
+[11.474587] (-) TimerEvent: {}
+[11.575425] (-) TimerEvent: {}
+[11.676326] (-) TimerEvent: {}
+[11.777084] (-) TimerEvent: {}
+[11.875467] (roarm_moveit_servo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable keyboardcontrol\x1b[0m\n'}
+[11.877134] (-) TimerEvent: {}
+[11.977802] (-) TimerEvent: {}
+[12.078436] (-) TimerEvent: {}
+[12.179313] (-) TimerEvent: {}
+[12.280009] (-) TimerEvent: {}
+[12.380935] (-) TimerEvent: {}
+[12.481678] (-) TimerEvent: {}
+[12.582616] (-) TimerEvent: {}
+[12.683499] (-) TimerEvent: {}
+[12.784419] (-) TimerEvent: {}
+[12.885309] (-) TimerEvent: {}
+[12.986030] (-) TimerEvent: {}
+[13.086743] (-) TimerEvent: {}
+[13.187494] (-) TimerEvent: {}
+[13.288181] (-) TimerEvent: {}
+[13.388944] (-) TimerEvent: {}
+[13.489679] (-) TimerEvent: {}
+[13.590433] (-) TimerEvent: {}
+[13.691209] (-) TimerEvent: {}
+[13.791989] (-) TimerEvent: {}
+[13.892749] (-) TimerEvent: {}
+[13.990189] (roarm_moveit_servo) StdoutLine: {'line': b'[100%] Built target keyboardcontrol\n'}
+[13.992793] (-) TimerEvent: {}
+[14.014155] (roarm_moveit_servo) CommandEnded: {'returncode': 0}
+[14.016276] (roarm_moveit_servo) JobProgress: {'identifier': 'roarm_moveit_servo', 'progress': 'install'}
+[14.033308] (roarm_moveit_servo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo'], 'cwd': '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo', 'env': OrderedDict([('HOSTNAME', 'ubuntu'), ('LD_LIBRARY_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/lib:/workspace/roarm_ws/install/roarm_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('SHLVL', '1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('OLDPWD', '/workspace/roarm_ws'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('https_proxy', 'http://172.50.1.50:7897'), ('COLCON_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install:/workspace/roarm_ws/install'), ('LOGNAME', 'root'), ('ROARM_MODEL', 'roarm_m3'), ('http_proxy', 'http://172.50.1.50:7897'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DEBIAN_FRONTEND', ''), ('AMENT_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/workspace/roarm_ws/install/roarm_msgs:/workspace/roarm_ws/install/roarm_driver:/workspace/roarm_ws/install/roarm_description:/opt/ros/humble'), ('CXX', '/usr/bin/clang++-18'), ('CMAKE_MODULE_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('PWD', '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_servo'), ('PYTHONPATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs/local/lib/python3.10/dist-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/lib/python3.10/site-packages:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/workspace/roarm_ws/install/roarm_msgs/local/lib/python3.10/dist-packages:/workspace/roarm_ws/build/roarm_driver:/workspace/roarm_ws/install/roarm_driver/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('TZ', 'Asia/Shanghai'), ('CC', '/usr/bin/clang-18'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_visualization:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_capabilities:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_core:/workspace/roarm_ws/roarm_ws-ros2-humble/install/rviz_marker_tools:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_servo:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:/workspace/roarm_ws/roarm_ws-ros2-humble/install/moveit_task_constructor_msgs:/workspace/roarm_ws/install/roarm_msgs:/workspace/roarm_ws/install/roarm_description:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/workspace/roarm_ws/install/roarm_driver:/opt/ros/humble')]), 'shell': False}
+[14.050192] (roarm_moveit_servo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.050650] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/lib/roarm_moveit_servo/keyboardcontrol\n'}
+[14.053680] (roarm_moveit_servo) StdoutLine: {'line': b'-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/lib/roarm_moveit_servo/keyboardcontrol" to ""\n'}
+[14.054037] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/launch\n'}
+[14.054291] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/launch/servo_control.launch.py\n'}
+[14.054752] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/config\n'}
+[14.055048] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/config/servo_parameters.yaml\n'}
+[14.055341] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/config/roarm_config.yaml\n'}
+[14.055635] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/rviz\n'}
+[14.055904] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/rviz/servo_control.rviz\n'}
+[14.056163] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/ament_index/resource_index/package_run_dependencies/roarm_moveit_servo\n'}
+[14.056464] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/ament_index/resource_index/parent_prefix_path/roarm_moveit_servo\n'}
+[14.056729] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/environment/ament_prefix_path.sh\n'}
+[14.057000] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/environment/ament_prefix_path.dsv\n'}
+[14.057265] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/environment/path.sh\n'}
+[14.057570] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/environment/path.dsv\n'}
+[14.057859] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/local_setup.bash\n'}
+[14.058145] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/local_setup.sh\n'}
+[14.058415] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/local_setup.zsh\n'}
+[14.058678] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/local_setup.dsv\n'}
+[14.058972] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/package.dsv\n'}
+[14.059225] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/ament_index/resource_index/packages/roarm_moveit_servo\n'}
+[14.059701] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.059949] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.060169] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/cmake/roarm_moveit_servoConfig.cmake\n'}
+[14.060385] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/cmake/roarm_moveit_servoConfig-version.cmake\n'}
+[14.060623] (roarm_moveit_servo) StdoutLine: {'line': b'-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_servo/share/roarm_moveit_servo/package.xml\n'}
+[14.063416] (roarm_moveit_servo) CommandEnded: {'returncode': 0}
+[14.092981] (-) TimerEvent: {}
+[14.121914] (roarm_moveit_servo) JobEnded: {'identifier': 'roarm_moveit_servo', 'rc': 0}
+[14.123408] (-) EventReactorShutdown: {}

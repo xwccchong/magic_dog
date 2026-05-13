@@ -1,0 +1,24 @@
+[1.238s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver': PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver/build --no-deps symlink_data
+[1.697s] running develop
+[1.980s] running egg_info
+[1.981s] creating roarm_driver.egg-info
+[1.982s] writing roarm_driver.egg-info/PKG-INFO
+[1.982s] writing dependency_links to roarm_driver.egg-info/dependency_links.txt
+[1.983s] writing entry points to roarm_driver.egg-info/entry_points.txt
+[1.983s] writing requirements to roarm_driver.egg-info/requires.txt
+[1.983s] writing top-level names to roarm_driver.egg-info/top_level.txt
+[1.985s] writing manifest file 'roarm_driver.egg-info/SOURCES.txt'
+[1.986s] reading manifest file 'roarm_driver.egg-info/SOURCES.txt'
+[1.986s] writing manifest file 'roarm_driver.egg-info/SOURCES.txt'
+[1.989s] running build_ext
+[1.989s] Creating /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/lib/python3.10/site-packages/roarm-driver.egg-link (link to .)
+[1.990s] Installing roarm_driver script to /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/lib/roarm_driver
+[1.992s] 
+[1.992s] Installed /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver
+[1.993s] running symlink_data
+[1.993s] creating /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/share/ament_index
+[1.995s] creating /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/share/ament_index/resource_index
+[1.995s] creating /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/share/ament_index/resource_index/packages
+[1.996s] symbolically linking /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver/resource/roarm_driver -> /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/share/ament_index/resource_index/packages
+[1.996s] symbolically linking /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver/package.xml -> /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/share/roarm_driver
+[2.072s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver' returned '0': PYTHONPATH=/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_driver/build --no-deps symlink_data

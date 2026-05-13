@@ -1,0 +1,30 @@
+[ 25%] Built target getposecmd_tf
+[ 50%] Built target roarmserver
+[ 75%] Built target setgrippercmd
+[100%] Built target getposecmd_moveit
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/getposecmd_moveit
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/getposecmd_tf
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/setgrippercmd
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/roarmserver
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/launch/command_control.launch.py
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/launch/command_control.launch_origin.py
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/rviz/command_control.rviz
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/ament_index/resource_index/package_run_dependencies/roarm_moveit_cmd
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/ament_index/resource_index/parent_prefix_path/roarm_moveit_cmd
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/environment/path.sh
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/environment/path.dsv
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/local_setup.bash
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/local_setup.sh
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/local_setup.zsh
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/local_setup.dsv
+-- Symlinking: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/package.dsv
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/ament_index/resource_index/packages/roarm_moveit_cmd
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/cmake/roarm_moveit_cmdConfig.cmake
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/cmake/roarm_moveit_cmdConfig-version.cmake
+-- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/package.xml

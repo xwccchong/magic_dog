@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/unitree/unitree_sdk2_python/agent/utils/subscribe_pointcloud.cpp
+unitree/robot/channel/channel_subscriber.hpp
+-
+unitree/common/time/time_tool.hpp
+-
+unitree/idl/ros2/PointCloud2_.hpp
+-
+

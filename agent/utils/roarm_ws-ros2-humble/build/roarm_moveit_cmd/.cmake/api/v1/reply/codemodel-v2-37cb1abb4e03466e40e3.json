@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0131cd7ba93419713a12.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "roarm_moveit_cmd",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "getposecmd_moveit::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-getposecmd_moveit-12191903e229d26f5304.json",
+					"name" : "getposecmd_moveit",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "getposecmd_tf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-getposecmd_tf-cbcf4a55b1b724e2f802.json",
+					"name" : "getposecmd_tf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarm_moveit_cmd_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarm_moveit_cmd_uninstall-fe22fb1bf4b3a88b5326.json",
+					"name" : "roarm_moveit_cmd_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roarmserver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roarmserver-4f5ea5c7c86388d516c4.json",
+					"name" : "roarmserver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "setgrippercmd::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-setgrippercmd-234c8b55088cd789dec9.json",
+					"name" : "setgrippercmd",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f461c3c3a44633e2a078.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_cmd",
+		"source" : "/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

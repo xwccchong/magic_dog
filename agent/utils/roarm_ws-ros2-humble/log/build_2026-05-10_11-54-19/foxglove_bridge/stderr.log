@@ -1,0 +1,8 @@
+[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:163 (message):
+  ament_cmake_symlink_install_files() can't find
+  '/workspace/roarm_ws/roarm_ws-ros2-humble/src/foxglove-sdk/ros/src/foxglove_bridge/$<TARGET_FILE:foxglove_cpp_shared>'
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:325 (ament_cmake_symlink_install_files)
+  cmake_install.cmake:46 (include)
+
+[0m

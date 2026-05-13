@@ -1,0 +1,4 @@
+Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools -- -j8 -l8
+Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools -- -j8 -l8
+Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools
+Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/rviz_marker_tools

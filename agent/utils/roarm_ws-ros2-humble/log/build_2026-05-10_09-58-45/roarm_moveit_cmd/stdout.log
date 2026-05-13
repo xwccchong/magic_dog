@@ -1,0 +1,40 @@
+[35m[1mConsolidate compiler generated dependencies of target setgrippercmd[0m
+[35m[1mConsolidate compiler generated dependencies of target getposecmd_tf[0m
+[35m[1mConsolidate compiler generated dependencies of target getposecmd_moveit[0m
+[35m[1mConsolidate compiler generated dependencies of target roarmserver[0m
+[ 50%] Built target setgrippercmd
+[ 50%] Built target getposecmd_tf
+[ 87%] Built target getposecmd_moveit
+[ 87%] [32mBuilding CXX object CMakeFiles/roarmserver.dir/src/roarmserver.cpp.o[0m
+[100%] [32m[1mLinking CXX executable roarmserver[0m
+[100%] Built target roarmserver
+-- Install configuration: ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/getposecmd_moveit
+-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/getposecmd_moveit" to ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/getposecmd_tf
+-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/getposecmd_tf" to ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/setgrippercmd
+-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/setgrippercmd" to ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/roarmserver
+-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/roarmserver" to ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/launch
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/launch/command_control.launch.py
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/rviz
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/rviz/command_control.rviz
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/ament_index/resource_index/package_run_dependencies/roarm_moveit_cmd
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/ament_index/resource_index/parent_prefix_path/roarm_moveit_cmd
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/environment/ament_prefix_path.sh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/environment/ament_prefix_path.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/environment/path.sh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/environment/path.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/local_setup.bash
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/local_setup.sh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/local_setup.zsh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/local_setup.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/package.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/ament_index/resource_index/packages/roarm_moveit_cmd
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/cmake/roarm_moveit_cmdConfig.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/cmake/roarm_moveit_cmdConfig-version.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/package.xml

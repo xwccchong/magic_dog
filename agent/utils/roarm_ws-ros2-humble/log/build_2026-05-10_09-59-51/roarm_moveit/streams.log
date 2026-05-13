@@ -1,0 +1,43 @@
+[0.012s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:/opt/ros/humble /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit -- -j8 -l8
+[0.071s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit' returned '0': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:/opt/ros/humble /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit -- -j8 -l8
+[0.074s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:/opt/ros/humble /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit
+[0.086s] -- Install configuration: ""
+[0.086s] -- Execute custom install script
+[0.087s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/ament_index/resource_index/package_run_dependencies/roarm_moveit
+[0.087s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/ament_index/resource_index/parent_prefix_path/roarm_moveit
+[0.087s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/environment/ament_prefix_path.sh
+[0.088s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/environment/ament_prefix_path.dsv
+[0.088s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/environment/path.sh
+[0.088s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/environment/path.dsv
+[0.088s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/local_setup.bash
+[0.088s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/local_setup.sh
+[0.089s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/local_setup.zsh
+[0.089s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/local_setup.dsv
+[0.089s] -- Symlinking: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/package.dsv
+[0.104s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/ament_index/resource_index/packages/roarm_moveit
+[0.104s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/cmake/roarm_moveitConfig.cmake
+[0.104s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/cmake/roarm_moveitConfig-version.cmake
+[0.104s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/package.xml
+[0.105s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/launch/roarm_moveit.launch.py
+[0.105s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/rviz/interact.rviz
+[0.106s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m2/initial_positions.yaml
+[0.106s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m2/joint_limits.yaml
+[0.106s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m2/kinematics.yaml
+[0.106s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m2/moveit_controllers.yaml
+[0.106s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m2/pilz_cartesian_limits.yaml
+[0.107s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m2/roarm_m2.ros2_control.xacro
+[0.107s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m2/roarm_m2.srdf
+[0.107s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m2/roarm_m2.urdf.xacro
+[0.107s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m2/ros2_controllers.yaml
+[0.107s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m2/sensors_3d.yaml
+[0.107s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m3/initial_positions.yaml
+[0.108s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m3/joint_limits.yaml
+[0.108s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m3/kinematics.yaml
+[0.108s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m3/moveit_controllers.yaml
+[0.108s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m3/pilz_cartesian_limits.yaml
+[0.108s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m3/roarm_m3.ros2_control.xacro
+[0.109s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m3/roarm_m3.srdf
+[0.109s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m3/roarm_m3.urdf.xacro
+[0.109s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m3/ros2_controllers.yaml
+[0.109s] -- Up-to-date symlink: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit/share/roarm_moveit/config/roarm_m3/sensors_3d.yaml
+[0.114s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit' returned '0': AMENT_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_description:/opt/ros/humble /usr/bin/cmake --install /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit

@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target roarm_moveit_mtc_demo_cartesian[0m
+[35m[1mConsolidate compiler generated dependencies of target roarm_moveit_mtc_demo_cartesian_modular[0m
+[ 20%] Built target pick_place_parameters
+[35m[1mConsolidate compiler generated dependencies of target roarm_moveit_mtc_demo_pick_place_task[0m
+[ 60%] Built target roarm_moveit_mtc_demo_cartesian_modular
+[ 60%] Built target roarm_moveit_mtc_demo_cartesian
+[ 80%] Built target roarm_moveit_mtc_demo_pick_place_task
+[35m[1mConsolidate compiler generated dependencies of target roarm_moveit_mtc_demo_pick_place[0m
+[100%] Built target roarm_moveit_mtc_demo_pick_place
+-- Install configuration: "Release"
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib/libroarm_moveit_mtc_demo_pick_place_task.so
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib/roarm_moveit_mtc_demo/cartesian
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib/roarm_moveit_mtc_demo/cartesian_modular
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/include/roarm_moveit_mtc_demo
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/include/roarm_moveit_mtc_demo/pick_place_parameters.hpp
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/lib/roarm_moveit_mtc_demo/pick_place
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/launch
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/launch/demo.launch.py
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/launch/run.launch.py
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/config
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/config/roarm_config.yaml
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/rviz
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/rviz/mtc.rviz
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/ament_index/resource_index/package_run_dependencies/roarm_moveit_mtc_demo
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/ament_index/resource_index/parent_prefix_path/roarm_moveit_mtc_demo
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/environment/ament_prefix_path.sh
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/environment/ament_prefix_path.dsv
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/environment/path.sh
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/environment/path.dsv
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/local_setup.bash
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/local_setup.sh
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/local_setup.zsh
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/local_setup.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/package.dsv
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/ament_index/resource_index/packages/roarm_moveit_mtc_demo
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/cmake/roarm_moveit_mtc_demoConfig.cmake
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/cmake/roarm_moveit_mtc_demoConfig-version.cmake
+-- Up-to-date: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_mtc_demo/share/roarm_moveit_mtc_demo/package.xml

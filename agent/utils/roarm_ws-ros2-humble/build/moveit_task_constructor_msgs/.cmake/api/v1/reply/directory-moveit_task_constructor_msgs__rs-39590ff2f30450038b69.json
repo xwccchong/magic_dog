@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "moveit_task_constructor_msgs__rs",
+		"source" : "/workspace/roarm_ws/roarm_ws-ros2-humble/build/moveit_task_constructor_msgs/moveit_task_constructor_msgs__rs"
+	}
+}

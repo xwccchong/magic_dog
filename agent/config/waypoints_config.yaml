@@ -1,0 +1,53 @@
+# 机械臂位姿配置文件
+# 单位: 位置为米(m), 姿态为弧度(rad)
+
+# RoArm-M2: 只需要 x, y, z (3自由度)
+# RoArm-M3: 可额外设置 roll, pitch, yaw (5自由度)
+
+waypoints:
+  # 位姿点1: down
+  - name: "pose_1"
+    x: 0.15
+    y: 0.09
+    z: 0.35
+    roll: 0.0
+    pitch: -0.25
+    yaw: 0.0
+
+  # 位姿点2: up
+  - name: "pose_2"
+    x: 0.15
+    y: -0.09
+    z: 0.35
+    roll: 0.0
+    pitch: -0.25
+    yaw: 0.0
+
+  # 位姿点3: left
+  - name: "pose_3"
+    x: 0.15
+    y: 0.09
+    z: 0.30
+    roll: 0.0
+    pitch: 0.25
+    yaw: 0.0
+
+  # 位姿点4: right
+  - name: "pose_4"
+    x: 0.15
+    y: -0.09
+    z: 0.30
+    roll: 0.0
+    pitch: 0.25
+    yaw: 0.0
+
+# 可选配置
+settings:
+  # 每次移动后的等待时间(秒)
+  delay_between_moves: 2.0
+
+  # 失败时是否继续执行下一个点
+  continue_on_failure: true
+
+  # 是否在开始前打印所有位姿
+  print_waypoints: true

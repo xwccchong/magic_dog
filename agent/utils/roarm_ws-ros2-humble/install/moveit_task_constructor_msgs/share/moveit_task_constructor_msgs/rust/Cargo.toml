@@ -1,0 +1,29 @@
+[package]
+name = "moveit_task_constructor_msgs"
+version = "0.1.3"
+edition = "2021"
+
+[dependencies]
+rosidl_runtime_rs = "0.6"
+serde = { version = "1", optional = true, features = ["derive"] }
+serde-big-array = { version = "0.5.1", optional = true }
+
+# ROS Dependencies
+action_msgs = "*"
+geometry_msgs = "*"
+sensor_msgs = "*"
+std_msgs = "*"
+visualization_msgs = "*"
+unique_identifier_msgs = "*"
+shape_msgs = "*"
+object_recognition_msgs = "*"
+builtin_interfaces = "*"
+trajectory_msgs = "*"
+moveit_msgs = "*"
+octomap_msgs = "*"
+
+[features]
+serde = ['dep:serde', 'dep:serde-big-array', 'rosidl_runtime_rs/serde', 'action_msgs/serde', 'geometry_msgs/serde', 'sensor_msgs/serde', 'std_msgs/serde', 'visualization_msgs/serde', 'unique_identifier_msgs/serde', 'shape_msgs/serde', 'object_recognition_msgs/serde', 'builtin_interfaces/serde', 'trajectory_msgs/serde', 'moveit_msgs/serde', 'octomap_msgs/serde']
+
+[package.metadata.rclrs]
+reexport = true

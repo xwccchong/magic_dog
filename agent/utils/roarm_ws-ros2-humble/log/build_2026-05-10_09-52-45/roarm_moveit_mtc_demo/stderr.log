@@ -1,0 +1,13 @@
+[0mroarm_moveit_mtc_demo: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_mtc_demo/src/pick_place_task.cpp:38:
+In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_mtc_demo/include/roarm_moveit_mtc_demo/pick_place_task.h:61:
+[1m/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo/include/pick_place_parameters.hpp:1:9: [0m[0;1;35mwarning: [0m[1m#include "pick_place_parameters.hpp" is deprecated. Use #include <roarm_moveit_mtc_demo/pick_place_parameters.hpp> instead. [-W#pragma-messages][0m
+    1 | #pragma message("#include \"pick_place_parameters.hpp\" is deprecated. Use #include <roarm_moveit_mtc_demo/pick_place_parameters.hpp> instead.")[0m
+      | [0;1;32m        ^
+[0m1 warning generated.
+In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_mtc_demo/src/pick_place.cpp:41:
+In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_mtc_demo/include/roarm_moveit_mtc_demo/pick_place_task.h:61:
+[1m/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_mtc_demo/include/pick_place_parameters.hpp:1:9: [0m[0;1;35mwarning: [0m[1m#include "pick_place_parameters.hpp" is deprecated. Use #include <roarm_moveit_mtc_demo/pick_place_parameters.hpp> instead. [-W#pragma-messages][0m
+    1 | #pragma message("#include \"pick_place_parameters.hpp\" is deprecated. Use #include <roarm_moveit_mtc_demo/pick_place_parameters.hpp> instead.")[0m
+      | [0;1;32m        ^
+[0m1 warning generated.

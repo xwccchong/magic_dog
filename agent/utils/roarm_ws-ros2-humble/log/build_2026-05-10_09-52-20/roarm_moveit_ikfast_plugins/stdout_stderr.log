@@ -1,0 +1,93 @@
+-- The C compiler identification is Clang 18.1.8
+-- The CXX compiler identification is Clang 18.1.8
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang-18 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++-18 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)
+-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+-- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found Threads: TRUE  
+-- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+-- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Looking for sgemm_
+-- Looking for sgemm_ - not found
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /usr/lib/aarch64-linux-gnu/libblas.so  
+-- Looking for cheev_
+-- Looking for cheev_ - not found
+-- Looking for cheev_
+-- Looking for cheev_ - not found
+-- Looking for cheev_
+-- Looking for cheev_ - found
+-- Found LAPACK: /usr/lib/aarch64-linux-gnu/liblapack.so;/usr/lib/aarch64-linux-gnu/libblas.so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_moveit_ikfast_plugins
+[ 50%] [32mBuilding CXX object CMakeFiles/roarm_m2_hand_moveit_ikfast_plugin.dir/src/roarm_m2_hand_moveit_ikfast_plugin.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/roarm_m3_hand_moveit_ikfast_plugin.dir/src/roarm_m3_hand_moveit_ikfast_plugin.cpp.o[0m
+[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m2_hand_moveit_ikfast_plugin.cpp:803:17: [0m[0;1;35mwarning: [0m[1mvariable length arrays in C++ are a Clang extension [-Wvla-cxx-extension][0m
+  803 |   IkReal angles[num_joints_];[0m
+      | [0;1;32m                ^~~~~~~~~~~
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m2_hand_moveit_ikfast_plugin.cpp:803:17: [0m[0;1;36mnote: [0mimplicit use of 'this' pointer is only allowed within the evaluation of a call to a 'constexpr' member function[0m
+[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m3_hand_moveit_ikfast_plugin.cpp:803:17: [0m[0;1;35mwarning: [0m[1mvariable length arrays in C++ are a Clang extension [-Wvla-cxx-extension][0m
+  803 |   IkReal angles[num_joints_];[0m
+      | [0;1;32m                ^~~~~~~~~~~
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_m3_hand_moveit_ikfast_plugin.cpp:803:17: [0m[0;1;36mnote: [0mimplicit use of 'this' pointer is only allowed within the evaluation of a call to a 'constexpr' member function[0m
+1 warning generated.
+[ 75%] [32m[1mLinking CXX shared library libroarm_m2_hand_moveit_ikfast_plugin.so[0m
+[ 75%] Built target roarm_m2_hand_moveit_ikfast_plugin
+1 warning generated.
+[100%] [32m[1mLinking CXX shared library libroarm_m3_hand_moveit_ikfast_plugin.so[0m
+[100%] Built target roarm_m3_hand_moveit_ikfast_plugin
+-- Install configuration: ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib/libroarm_m2_hand_moveit_ikfast_plugin.so
+-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib/libroarm_m2_hand_moveit_ikfast_plugin.so" to ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib/libroarm_m3_hand_moveit_ikfast_plugin.so
+-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/lib/libroarm_m3_hand_moveit_ikfast_plugin.so" to ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/roarm_m2_hand_moveit_ikfast_plugin.xml
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/roarm_m3_hand_moveit_ikfast_plugin.xml
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/library_path.sh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/library_path.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/ament_index/resource_index/package_run_dependencies/roarm_moveit_ikfast_plugins
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/ament_index/resource_index/parent_prefix_path/roarm_moveit_ikfast_plugins
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/ament_prefix_path.sh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/ament_prefix_path.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/path.sh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/environment/path.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/local_setup.bash
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/local_setup.sh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/local_setup.zsh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/local_setup.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/package.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/ament_index/resource_index/packages/roarm_moveit_ikfast_plugins
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/ament_index/resource_index/moveit_core__pluginlib__plugin/roarm_moveit_ikfast_plugins
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/export_roarm_moveit_ikfast_pluginsExport.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/export_roarm_moveit_ikfast_pluginsExport-noconfig.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/roarm_moveit_ikfast_pluginsConfig.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/cmake/roarm_moveit_ikfast_pluginsConfig-version.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_ikfast_plugins/share/roarm_moveit_ikfast_plugins/package.xml

@@ -1,0 +1,97 @@
+[35m[1mConsolidate compiler generated dependencies of target setgrippercmd[0m
+[35m[1mConsolidate compiler generated dependencies of target getposecmd_tf[0m
+[35m[1mConsolidate compiler generated dependencies of target getposecmd_moveit[0m
+[35m[1mConsolidate compiler generated dependencies of target roarmserver[0m
+[ 50%] Built target setgrippercmd
+[ 50%] Built target getposecmd_tf
+[ 87%] Built target getposecmd_moveit
+[ 87%] [32mBuilding CXX object CMakeFiles/roarmserver.dir/src/roarmserver.cpp.o[0m
+In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/src/roarmserver.cpp:1:
+In file included from /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/include/roarm_moveit_cmd/roarm_server.hpp:7:
+[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/include/roarm_moveit_cmd/solver.hpp:168:9: [0m[0;1;35mwarning: [0m[1m'ARM_L3_LENGTH_MM_A_0' macro redefined [-Wmacro-redefined][0m
+  168 | #define ARM_L3_LENGTH_MM_A_0    144.49[0m
+      | [0;1;32m        ^
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/include/roarm_moveit_cmd/solver.hpp:11:9: [0m[0;1;36mnote: [0mprevious definition is here[0m
+   11 | #define ARM_L3_LENGTH_MM_A_0  280.15 //214 [0m
+      | [0;1;32m        ^
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/include/roarm_moveit_cmd/solver.hpp:169:9: [0m[0;1;35mwarning: [0m[1m'ARM_L3_LENGTH_MM_B_0' macro redefined [-Wmacro-redefined][0m
+  169 | #define ARM_L3_LENGTH_MM_B_0    0[0m
+      | [0;1;32m        ^
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/include/roarm_moveit_cmd/solver.hpp:12:9: [0m[0;1;36mnote: [0mprevious definition is here[0m
+   12 | #define ARM_L3_LENGTH_MM_B_0  1.73[0m
+      | [0;1;32m        ^
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/include/roarm_moveit_cmd/solver.hpp:172:9: [0m[0;1;35mwarning: [0m[1m'ARM_L4_LENGTH_MM_A' macro redefined [-Wmacro-redefined][0m
+  172 | #define ARM_L4_LENGTH_MM_A      171.67[0m
+      | [0;1;32m        ^
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/include/roarm_moveit_cmd/solver.hpp:13:9: [0m[0;1;36mnote: [0mprevious definition is here[0m
+   13 | #define ARM_L4_LENGTH_MM_A  67.85[0m
+      | [0;1;32m        ^
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/include/roarm_moveit_cmd/solver.hpp:173:9: [0m[0;1;35mwarning: [0m[1m'ARM_L4_LENGTH_MM_B' macro redefined [-Wmacro-redefined][0m
+  173 | #define ARM_L4_LENGTH_MM_B  13.69[0m
+      | [0;1;32m        ^
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/include/roarm_moveit_cmd/solver.hpp:14:9: [0m[0;1;36mnote: [0mprevious definition is here[0m
+   14 | #define ARM_L4_LENGTH_MM_B  5.98[0m
+      | [0;1;32m        ^
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/src/roarmserver.cpp:92:87: [0m[0;1;35mwarning: [0m[1m'MoveItErrorCode' is deprecated: Use moveit::core::MoveItErrorCode [-Wdeprecated-declarations][0m
+   92 |   bool success = (move_group.plan(plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);[0m
+      | [0;1;32m                                                                                      ^
+[0m[1m/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:71:25: [0m[0;1;36mnote: [0m'MoveItErrorCode' has been explicitly marked deprecated here[0m
+   71 | using MoveItErrorCode [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;[0m
+      | [0;1;32m                        ^
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/src/roarmserver.cpp:128:103: [0m[0;1;35mwarning: [0m[1m'MoveItErrorCode' is deprecated: Use moveit::core::MoveItErrorCode [-Wdeprecated-declarations][0m
+  128 |       bool roarm_m2_success = (move_group.plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);[0m
+      | [0;1;32m                                                                                                      ^
+[0m[1m/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:71:25: [0m[0;1;36mnote: [0m'MoveItErrorCode' has been explicitly marked deprecated here[0m
+   71 | using MoveItErrorCode [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;[0m
+      | [0;1;32m                        ^
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/src/roarmserver.cpp:145:103: [0m[0;1;35mwarning: [0m[1m'MoveItErrorCode' is deprecated: Use moveit::core::MoveItErrorCode [-Wdeprecated-declarations][0m
+  145 |       bool roarm_m3_success = (move_group.plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);[0m
+      | [0;1;32m                                                                                                      ^
+[0m[1m/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:71:25: [0m[0;1;36mnote: [0m'MoveItErrorCode' has been explicitly marked deprecated here[0m
+   71 | using MoveItErrorCode [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;[0m
+      | [0;1;32m                        ^
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/src/roarmserver.cpp:183:103: [0m[0;1;35mwarning: [0m[1m'MoveItErrorCode' is deprecated: Use moveit::core::MoveItErrorCode [-Wdeprecated-declarations][0m
+  183 |       bool roarm_m2_success = (move_group.plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);[0m
+      | [0;1;32m                                                                                                      ^
+[0m[1m/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:71:25: [0m[0;1;36mnote: [0m'MoveItErrorCode' has been explicitly marked deprecated here[0m
+   71 | using MoveItErrorCode [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;[0m
+      | [0;1;32m                        ^
+[0m[1m/workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_moveit_cmd/src/roarmserver.cpp:200:103: [0m[0;1;35mwarning: [0m[1m'MoveItErrorCode' is deprecated: Use moveit::core::MoveItErrorCode [-Wdeprecated-declarations][0m
+  200 |       bool roarm_m3_success = (move_group.plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);[0m
+      | [0;1;32m                                                                                                      ^
+[0m[1m/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:71:25: [0m[0;1;36mnote: [0m'MoveItErrorCode' has been explicitly marked deprecated here[0m
+   71 | using MoveItErrorCode [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;[0m
+      | [0;1;32m                        ^
+[0m9 warnings generated.
+[100%] [32m[1mLinking CXX executable roarmserver[0m
+[100%] Built target roarmserver
+-- Install configuration: ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/getposecmd_moveit
+-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/getposecmd_moveit" to ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/getposecmd_tf
+-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/getposecmd_tf" to ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/setgrippercmd
+-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/setgrippercmd" to ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/roarmserver
+-- Set runtime path of "/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/lib/roarm_moveit_cmd/roarmserver" to ""
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/launch
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/launch/command_control.launch.py
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/rviz
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/rviz/command_control.rviz
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/ament_index/resource_index/package_run_dependencies/roarm_moveit_cmd
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/ament_index/resource_index/parent_prefix_path/roarm_moveit_cmd
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/environment/ament_prefix_path.sh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/environment/ament_prefix_path.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/environment/path.sh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/environment/path.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/local_setup.bash
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/local_setup.sh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/local_setup.zsh
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/local_setup.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/package.dsv
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/ament_index/resource_index/packages/roarm_moveit_cmd
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/cmake/roarm_moveit_cmdConfig.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/cmake/roarm_moveit_cmdConfig-version.cmake
+-- Installing: /workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_moveit_cmd/share/roarm_moveit_cmd/package.xml

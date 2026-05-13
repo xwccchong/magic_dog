@@ -1,0 +1,78 @@
+{
+    "comment": "Unitree Go2 Server 配置文件",
+
+    "websocket": {
+        "host": "0.0.0.0",
+        "port": 8765
+    },
+
+    "microphone": {
+        "chunk": 1024,
+        "format": "paInt16",
+        "channels": 2,
+        "rate": 48000,
+        "target_channels": 1,
+        "target_rate": 16000
+    },
+
+    "voice_recognition": {
+        "APPId": "1cdb467f",
+        "APISecret": "NzcwNDRkMDZhZjlmMzgxM2Y5Y2I0ZmJl",
+        "APIKey": "f541032a89013a462483cd9ef40f806f",
+        "groupId": "go2_groupId1",
+        "score_threshold": 0.1,
+        "known_speakers": {
+            "lc": {
+                "audio_file": "/home/unitree/dky/go2_python_sdk2/data/wav_files/hello_lc.wav",
+                "name": "lc"
+            },
+            "lsl": {
+                "audio_file": "/home/unitree/dky/go2_python_sdk2/data/wav_files/hello_lsl.wav",
+                "name": "lsl"
+            }
+        }
+    },
+
+    "llm": {
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "api_key": "sk-10c321e6f4ee425095605a75cb4aa3ec",
+        "model": "qwen-turbo"
+    },
+
+    "timing": {
+        "idle_timeout": 500.0,
+        "wake_audio_buffer_size": 80,
+        "mid_text_timeout": 1.0,
+        "vad_silence_time": 1500,
+        "exhibition_interval": 40
+    },
+
+    "wake_words": ["考拉一号", "考拉1号", "考拉壹号", "1号", "一号", "1 号", "壹号"],
+
+    "quit_words": ["退下", "休息吧", "没事了", "拜拜", "再见", "跪安"],
+
+    "exhibition_phrases": [
+        "小伙伴儿们，我是来自上海码极客可爱的考拉一号，快来找我玩儿吧～",
+        "好无聊呀，有人找我聊聊天吗？快来陪陪我～",
+        "哥哥姐姐们，快来看我表演呀！我超厉害的～",
+        "哈喽哈喽～我是可爱的考拉一号，见到你们真开心！",
+        "你们好呀～有没有人想和我一起玩呀？",
+        "我是码极客的小考拉，快来和我打个招呼吧～",
+        "哇！好多好朋友～快来和我一起互动吧！",
+        "嘿嘿～我在这里等你们好久啦，快来找我玩～",
+        "大家好呀！我是超萌的考拉一号，喜欢我就陪陪我吧～",
+        "有没有小伙伴想和我聊天、一起做游戏呀？",
+        "我是来自上海码极客的小考拉，快来和我交朋友吧～"
+    ],
+
+    "greetings": {
+        "wake_up": "考拉来啦，有什么吩咐！...",
+        "sleep": "您没什么要吩咐的话，那我先去休息啦，有事随时叫我哦。..."
+    },
+
+    "paths": {
+        "voice_wav_dir": "/home/unitree/dky/go2_python_sdk2/data/wav_files",
+        "sdk_path": "/home/unitree/dky/go2_python_sdk2",
+        "arm_example_path": "/home/unitree/unitree_sdk2_python/example/go2/high_level/go2_arm"
+    }
+}

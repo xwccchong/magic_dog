@@ -1,0 +1,28 @@
+[0.064s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/opt/ros/humble /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs
+[0.633s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.633s] -- Found ament_cmake_core: 1.3.14 (/opt/ros/humble/share/ament_cmake_core/cmake)
+[0.634s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.634s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.634s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.634s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.634s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[0.635s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.280s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.797s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.568s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.662s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.680s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.680s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.680s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[2.928s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.987s] -- Configuring done
+[3.120s] -- Generating done
+[3.143s] -- Build files have been written to: /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs
+[3.170s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/opt/ros/humble /usr/bin/cmake /workspace/roarm_ws/roarm_ws-ros2-humble/src/roarm_main/roarm_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_msgs
+[3.170s] Invoking command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/opt/ros/humble /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs -- -j8 -l8
+[3.308s] [  1%] Built target roarm_msgs__rs
+[3.360s] failed to create symbolic link '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs/ament_cmake_python/roarm_msgs/roarm_msgs' because existing path cannot be removed: Is a directory
+[3.362s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_roarm_msgs.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_roarm_msgs] Error 1
+[3.364s] gmake[1]: *** [CMakeFiles/Makefile2:440: CMakeFiles/ament_cmake_python_symlink_roarm_msgs.dir/all] Error 2
+[3.368s] gmake: *** [Makefile:146: all] Error 2
+[3.379s] Invoked command in '/workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/roarm_ws/roarm_ws-ros2-humble/install/roarm_driver:/opt/ros/humble /usr/bin/cmake --build /workspace/roarm_ws/roarm_ws-ros2-humble/build/roarm_msgs -- -j8 -l8
