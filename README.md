@@ -3,14 +3,29 @@
 本文记录在与当前控制盒相同的系统上，从零部署一台新的 Livox MID360S，包括 SDK 和 ROS 2
 驱动编译、雷达出厂地址识别、使用 SDK 修改雷达 IP、ROS 配置、启动验证和常见故障排查。
 
+1. **需要注意的是，不同设备的网口ID不一样，需要通过`ifconfig`查看具体的网络接口名称**
+2. **需要重新安装SDK**
+
+```bash
+source /opt/ros/humble/setup.bash
+sudo apt update
+sudo apt install -y build-essential cmake git libapr1-dev libpcl-dev \
+  python3-colcon-common-extensions python3-rosdep
+sudo apt install -y ros-humble-foxglove-bridge
+
+cd /home/nvidia/ws_mid360/Livox-SDK2/build
+sudo make install
+sudo ldconfig
+```
+
 ## 1. 最终网络规划
 
 | 设备 | 接口 | 静态地址 | 子网掩码 | 网关 |
 | --- | --- | --- | --- | --- |
-| ARM 控制盒 | `eno1` | `192.168.123.50` | `255.255.255.0` | 可留空 |
-| MID360S | 雷达网口 | `192.168.123.20` | `255.255.255.0` | `192.168.123.1` |
+| ARM 控制盒 | `enx00e04c680d45` | `192.168.200.1` | `255.255.255.0` | 可留空 |
+| MID360S | 雷达网口 | `192.168.200.20` | `255.255.255.0` | `192.168.200.1` |
 
-每次只连接一台尚未配置的新雷达。如果多台雷达都使用 `192.168.123.20`，不能同时接入同一网络，
+每次只连接一台尚未配置的新雷达。如果多台雷达都使用 `192.168.200.20`，不能同时接入同一网络，
 否则会发生 IP 冲突。多雷达场景必须为每台雷达分配不同地址。
 
 根据《Livox Mid-360S 用户手册》第 3.3 节：
@@ -140,6 +155,8 @@ ros2 pkg executables livox_ros_driver2
 
 ## 6. 编译 SDK 改 IP 工具
 
+- 注意：  关于 IP 持久化方案，Livox SDK 的 WorkModeControl 命令帧中 key_num 后面有 2 字节保留字段（rsvd），当前为 0（只写 RAM）。根据 Livox 协议约定，将此字段设为 1 可触发 Flash 写入。 现在修改为1以实现永久修改ip
+
 本工作区已在 `Livox-SDK2/samples/set_lidar_ip` 中加入定向改 IP 工具。它与 SDK 共用
 `Livox-SDK2/build`，ROS 驱动重新编译时不会将它清除：
 
@@ -147,6 +164,8 @@ ros2 pkg executables livox_ros_driver2
 cd /home/nvidia/ws_mid360/Livox-SDK2/build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make set_lidar_ip -j2
+sudo make install
+sudo ldconfig
 ```
 
 生成文件：
@@ -161,7 +180,7 @@ Livox 设备。
 ## 7. 连接新雷达并确认出厂 IP
 
 1. 只连接这一台新 MID360S；
-2. 将雷达 RJ-45 接到控制盒 `eno1`；
+2. 将雷达 RJ-45 接到控制盒 `enx00e04c680d45`；
 3. 按手册要求正确供电，等待启动完成；
 4. 不要连接 PoE；
 5. 查看雷达标签上的 SN，按最后两位推算出厂 IP。
@@ -169,7 +188,8 @@ Livox 设备。
 也可以不依赖 SN，直接观察雷达广播：
 
 ```bash
-sudo tcpdump -ni eno1 'udp port 56000 or udp port 56200'
+sudo apt install tcpdump
+sudo tcpdump -ni enx00e04c680d45 'udp port 56000 or udp port 56200'
 ```
 
 可能看到：
@@ -193,10 +213,10 @@ sudo tcpdump -ni eno1 'udp port 56000 or udp port 56200'
 sudo pkill -f livox_ros_driver2_node || true
 ```
 
-给 `eno1` 增加手册推荐的临时地址：
+给 `enx00e04c680d45` 增加手册推荐的临时地址：
 
 ```bash
-sudo ip addr add 192.168.1.50/32 dev eno1
+sudo ip addr add 192.168.1.50/32 dev enx00e04c680d45
 ```
 
 如果返回 `RTNETLINK answers: File exists`，表示地址已经存在，不是故障。
@@ -204,14 +224,14 @@ sudo ip addr add 192.168.1.50/32 dev eno1
 当 Wi-Fi 也使用 `192.168.1.0/24` 时，必须增加到雷达的专用路由，否则数据可能走 Wi-Fi：
 
 ```bash
-sudo ip route replace 192.168.1.139/32 dev eno1 src 192.168.1.50
+sudo ip route replace 192.168.1.139/32 dev enx00e04c680d45 src 192.168.1.50
 ip route get 192.168.1.139
 ```
 
 正确结果应包含：
 
 ```text
-192.168.1.139 dev eno1 src 192.168.1.50
+192.168.1.139 dev enx00e04c680d45 src 192.168.1.50
 ```
 
 改 IP 工具使用的主机配置文件是：
@@ -222,7 +242,7 @@ Livox-SDK2/samples/set_lidar_ip/mid360s_config.json
 
 其中 `host_ip` 应保持为 `192.168.1.50`。
 
-## 9. 将雷达改为 192.168.123.20
+## 9. 将雷达改为 192.168.200.20
 
 这是一次性配置操作。确认网络里只有目标雷达后执行：
 
@@ -231,9 +251,9 @@ cd /home/nvidia/ws_mid360
 sudo ./Livox-SDK2/build/samples/set_lidar_ip/set_lidar_ip \
   Livox-SDK2/samples/set_lidar_ip/mid360s_config.json \
   192.168.1.139 \
-  192.168.123.20 \
+  192.168.200.20 \
   255.255.255.0 \
-  192.168.123.1
+  192.168.200.1
 ```
 
 成功输出应包含：
@@ -242,16 +262,16 @@ sudo ./Livox-SDK2/build/samples/set_lidar_ip/set_lidar_ip \
 Discovered LiDAR: type=35
 Matched MID360s at 192.168.1.139
 Set-IP response: ret_code=0, error_key=0
-IP configuration accepted: 192.168.123.20
+IP configuration accepted: 192.168.200.20
 Reboot request accepted
 ```
 
 如果重启请求没有被确认，断开雷达电源，等待 5 秒后重新上电。等待约 15 秒，再检查新地址：
 
 ```bash
-ping -I eno1 -c 3 192.168.123.20
-ip neigh show dev eno1
-sudo timeout 10 tcpdump -ni eno1 'host 192.168.123.20'
+ping -I enx00e04c680d45 -c 3 192.168.200.20
+ip neigh show dev enx00e04c680d45
+sudo timeout 10 tcpdump -ni enx00e04c680d45 'host 192.168.200.20'
 ```
 
 部分设备可能不响应 ping；邻居表中出现雷达 MAC，或者抓到 `.20` 发出的 UDP 数据，都能证明
@@ -260,35 +280,35 @@ sudo timeout 10 tcpdump -ni eno1 'host 192.168.123.20'
 确认成功后删除临时出厂网段配置：
 
 ```bash
-sudo ip route del 192.168.1.139/32 dev eno1
-sudo ip addr del 192.168.1.50/32 dev eno1
+sudo ip route del 192.168.1.139/32 dev enx00e04c680d45
+sudo ip addr del 192.168.1.50/32 dev enx00e04c680d45
 ```
 
-## 10. 配置控制盒有线网口
+## 10. 配置控制盒有线网口（连接机器狗）
 
-控制盒 `eno1` 最终应为：
+控制盒 `enx00e04c680d45` 最终应为：
 
 ```text
-192.168.123.50/24
+192.168.200.1/24
 ```
 
 检查：
 
 ```bash
-ip -br addr show eno1
-ip route get 192.168.123.20
+ip -br addr show enx00e04c680d45
+ip route get 192.168.200.20
 ```
 
 正确路由应包含：
 
 ```text
-192.168.123.20 dev eno1 src 192.168.123.50
+192.168.200.20 dev enx00e04c680d45 src 192.168.200.1
 ```
 
 如果尚未配置，可以在 Ubuntu“设置 → 网络 → 有线 → IPv4”中选择“手动”，填写：
 
 ```text
-地址：192.168.123.50
+地址：192.168.200.1
 掩码：255.255.255.0
 网关：留空
 ```
@@ -306,13 +326,13 @@ ip route get 192.168.123.20
 关键内容为：
 
 ```json
-"host_ip": "192.168.123.50"
+"host_ip": "192.168.200.1"
 ```
 
 以及：
 
 ```json
-"ip": "192.168.123.20"
+"ip": "192.168.200.20"
 ```
 
 需要标准 ROS 2 点云消息时，检查：
@@ -393,10 +413,10 @@ ros2 launch livox_ros_driver2 rviz_MID360s_launch.py
 通常表示 SDK 没有发现配置文件指定的雷达。依次检查：
 
 ```bash
-ip -br addr show eno1
-ip route get 192.168.123.20
-ip neigh show dev eno1
-sudo tcpdump -ni eno1 'host 192.168.123.20'
+ip -br addr show enx00e04c680d45
+ip route get 192.168.200.20
+ip neigh show dev enx00e04c680d45
+sudo tcpdump -ni enx00e04c680d45 'host 192.168.200.20'
 ```
 
 JSON 中的 `"ip"` 表示“雷达当前 IP”，不会自动修改雷达 IP。
@@ -445,11 +465,11 @@ Livox MID360S 使用 UDP 广播和配置文件中 `56000` 至 `56501` 一组端�
 1. 安装并编译 SDK、ROS 驱动；
 2. 编译 `set_lidar_ip`；
 3. 单独连接新雷达，通过 SN 或 `tcpdump` 找到出厂 IP；
-4. 为 `eno1` 添加 `192.168.1.50/32` 和到雷达的 `/32` 路由；
-5. 使用 `set_lidar_ip` 将雷达改为 `192.168.123.20`；
+4. 为 `enx00e04c680d45` 添加 `192.168.1.50/32` 和到雷达的 `/32` 路由；
+5. 使用 `set_lidar_ip` 将雷达改为 `192.168.200.20`；
 6. 重启雷达并确认 `.20` UDP 数据；
 7. 删除临时 `.1.x` 地址和路由；
-8. 确认控制盒为 `192.168.123.50/24`；
+8. 确认控制盒为 `192.168.200.1/24`；
 9. 配置 `MID360s_config.json`；
 10. 启动驱动并检查 `/livox/lidar` 和 `/livox/imu`。
 
