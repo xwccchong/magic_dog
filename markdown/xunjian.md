@@ -25,6 +25,29 @@
 
 ## 一些基础配置
 
+### docker 容器配置
+前提：系统已经安装好了docker
+
+参考`https://github.com/unitreerobotics/unitree_ros2/blob/master/README%20_zh.md`, git 宇树对应的ros仓库
+
+需要给docker内部配置代理，才能从docker源拉取包
+
+```bash
+sudo mkdir -p /etc/systemd/system/docker.service.d
+sudo nano /etc/systemd/system/docker.service.d/http-proxy.conf
+
+# 写入以下配置（请将 127.0.0.1:7890 替换为你实际的代理 IP 和端口）
+[Service]
+Environment="HTTP_PROXY=http://127.0.0.1:7890"
+Environment="HTTPS_PROXY=http://127.0.0.1:7890"
+Environment="NO_PROXY=localhost,127.0.0.1"
+
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
+docker build -t unitree_ros2:humble -f .devcontainer/Dockerfile-humble .
+```
+
 ### 网卡网络配置
 
 查看当前连接名称：nmcli con show
