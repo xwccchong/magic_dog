@@ -1,0 +1,4388 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Nexus readme">
+      
+      
+        <meta name="author" content="hahaha">
+      
+      
+        <link rel="canonical" href="https://xwccchong.github.io/magic_dog/utils/config/">
+      
+      
+        <link rel="prev" href="../../data_stream/zenoh/">
+      
+      
+        <link rel="next" href="../cortex/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Config - Nexus Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#configpy" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Nexus Docs" class="md-header__button md-logo" aria-label="Nexus Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nexus Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Config
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/xwccchong/magic_dog" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    xwccchong/magic_dog
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introduction/start/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  项目介绍
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../set_up/mid360s/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  环境配置
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../level1/arx/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  L1 抽象层
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../level2/asr/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  L2 内核层
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../level3/nav/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  L3 技能层
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../level4/llm/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  L4 决策层
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../level5/front/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  L5 表示层
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../data_stream/background/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  数据流
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Utils 工具模块
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Nexus Docs" class="md-nav__button md-logo" aria-label="Nexus Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Nexus Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/xwccchong/magic_dog" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    xwccchong/magic_dog
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    项目介绍
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    项目介绍
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    运行说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/struction.jpg" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    系统架构图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配置示例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    环境配置
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    环境配置
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../set_up/mid360s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mid360s 驱动安装
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../set_up/piper_dabai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Piper 机械臂
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../set_up/unitree_sdk_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unitree SDK
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    L1 抽象层
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    L1 抽象层
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level1/arx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ARX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level1/go2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level1/hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level1/hardware_preflight/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Preflight
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level1/robotics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Robotics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    L2 内核层
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    L2 内核层
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level2/asr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASR 语音识别
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level2/tts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TTS 语音合成
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level2/nav/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    导航系统
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level2/grasp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    抓取系统
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    L3 技能层
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    L3 技能层
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level3/nav/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    导航技能
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level3/speak/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    语音技能
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level3/arm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    机械臂
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level3/excute_action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    动作执行
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    L4 决策层
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    L4 决策层
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level4/llm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM 推理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level4/memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    记忆系统
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    L5 表示层
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    L5 表示层
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../level5/front/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前端
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据流
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数据流
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_stream/background/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_stream/data_collection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据采集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_stream/input/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Input 输入
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_stream/provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Provider
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_stream/provider_example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Provider 示例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_stream/zenoh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zenoh
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utils 工具模块
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Utils 工具模块
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="本页目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      本页目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        数据类
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据类">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#runtimeconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RuntimeConfig
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modeconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ModeConfig
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modesystemconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ModeSystemConfig
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitionrule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TransitionRule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitiontype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TransitionType
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心函数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_load_schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _load_schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validate_config_schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        validate_config_schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_read_system_prompt_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _read_system_prompt_path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_apply_system_prompt_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _apply_system_prompt_path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply_system_prompt_paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        apply_system_prompt_paths
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_meta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        add_meta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load_mode_config" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        load_mode_config
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_load_mode_components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _load_mode_components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mode_config_to_dict" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mode_config_to_dict
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        辅助模块
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="辅助模块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#envpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        env.py — 环境变量加载
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#converterpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        converter.py — 单模式转多模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versionpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        version.py — 版本校验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hookpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hook.py — 生命周期钩子
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware_preflightpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hardware_preflight.py — 硬件自检
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        函数调用关系图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心设计理念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心设计理念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 延迟加载
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 配置继承
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Schema 验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 环境变量支持
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 模式切换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 硬件自检
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 单模式向后兼容
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        典型使用示例
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关文件
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cortex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cortex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../env/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Env
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fuser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fuser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hook_example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hook 示例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../io_provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IO Provider
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mcp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orchestrator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orchestrator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cortex_example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cortex 示例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hold_last_vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hold Last Vision
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="本页目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      本页目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        数据类
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据类">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#runtimeconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RuntimeConfig
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modeconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ModeConfig
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modesystemconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ModeSystemConfig
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitionrule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TransitionRule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitiontype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TransitionType
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心函数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_load_schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _load_schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validate_config_schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        validate_config_schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_read_system_prompt_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _read_system_prompt_path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_apply_system_prompt_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _apply_system_prompt_path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply_system_prompt_paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        apply_system_prompt_paths
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_meta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        add_meta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load_mode_config" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        load_mode_config
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_load_mode_components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _load_mode_components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mode_config_to_dict" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mode_config_to_dict
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        辅助模块
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="辅助模块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#envpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        env.py — 环境变量加载
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#converterpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        converter.py — 单模式转多模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versionpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        version.py — 版本校验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hookpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hook.py — 生命周期钩子
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware_preflightpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hardware_preflight.py — 硬件自检
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        函数调用关系图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心设计理念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心设计理念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 延迟加载
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 配置继承
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Schema 验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 环境变量支持
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 模式切换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 硬件自检
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 单模式向后兼容
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        典型使用示例
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关文件
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="导航栏" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    首页
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Utils 工具模块
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="configpy">config.py 文件详解<a class="headerlink" href="#configpy" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>文件路径：<code>src/runtime/config.py</code></p>
+</blockquote>
+<p>这个文件是 MAGIC 系统的运行时配置管理模块，负责加载、验证和管理 Agent 的配置。</p>
+<hr />
+<h2 id="_1">目录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#数据类">数据类</a></li>
+<li><a href="#runtimeconfig">RuntimeConfig</a></li>
+<li><a href="#modeconfig">ModeConfig</a></li>
+<li><a href="#modesystemconfig">ModeSystemConfig</a></li>
+<li><a href="#transitionrule">TransitionRule</a></li>
+<li><a href="#transitiontype">TransitionType</a></li>
+<li><a href="#核心函数">核心函数</a></li>
+<li><a href="#_load_schema">_load_schema</a></li>
+<li><a href="#validate_config_schema">validate_config_schema</a></li>
+<li><a href="#_read_system_prompt_path">_read_system_prompt_path</a></li>
+<li><a href="#_apply_system_prompt_path">_apply_system_prompt_path</a></li>
+<li><a href="#apply_system_prompt_paths">apply_system_prompt_paths</a></li>
+<li><a href="#add_meta">add_meta</a></li>
+<li><a href="#load_mode_config">load_mode_config</a></li>
+<li><a href="#_load_mode_components">_load_mode_components</a></li>
+<li><a href="#mode_config_to_dict">mode_config_to_dict</a></li>
+<li><a href="#辅助模块">辅助模块</a></li>
+<li><a href="#envpy--环境变量加载">env.py — 环境变量加载</a></li>
+<li><a href="#converterpy--单模式转多模式">converter.py — 单模式转多模式</a></li>
+<li><a href="#versionpy--版本校验">version.py — 版本校验</a></li>
+<li><a href="#hookpy--生命周期钩子">hook.py — 生命周期钩子</a></li>
+<li><a href="#hardware_preflightpy--硬件自检">hardware_preflight.py — 硬件自检</a></li>
+<li><a href="#函数调用关系图">函数调用关系图</a></li>
+<li><a href="#核心设计理念">核心设计理念</a></li>
+</ul>
+<hr />
+<h2 id="_2">数据类<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="runtimeconfig">RuntimeConfig<a class="headerlink" href="#runtimeconfig" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 118-197 行</p>
+<p>单个模式的运行时配置数据结构。包含了 Agent 运行所需的所有核心配置。</p>
+<p><strong>核心字段</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>字段类型</th>
+<th>字段名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基础信息</td>
+<td><code>version</code>, <code>name</code>, <code>hertz</code></td>
+<td>版本、名称、执行频率</td>
+</tr>
+<tr>
+<td>系统提示词</td>
+<td><code>system_prompt_base</code>, <code>system_governance</code>, <code>system_prompt_examples</code></td>
+<td>基础提示词、治理规则、示例</td>
+</tr>
+<tr>
+<td>组件</td>
+<td><code>agent_inputs</code>, <code>cortex_llm</code>, <code>simulators</code>, <code>agent_actions</code>, <code>backgrounds</code></td>
+<td>输入传感器、LLM、模拟器、动作、后台进程</td>
+</tr>
+<tr>
+<td>可选参数</td>
+<td><code>api_key</code>, <code>robot_ip</code>, <code>URID</code>, <code>unitree_ethernet</code>, <code>mode</code></td>
+<td>API密钥、机器人配置、模式名</td>
+</tr>
+<tr>
+<td>动作控制</td>
+<td><code>action_execution_mode</code>, <code>action_dependencies</code>, <code>action_gate</code></td>
+<td>动作执行模式、依赖关系、安全门控</td>
+</tr>
+<tr>
+<td>语音规划</td>
+<td><code>voice_planner_llm</code>, <code>voice_planner_runtime</code></td>
+<td>语音任务分解 LLM 及运行时配置</td>
+</tr>
+<tr>
+<td>硬件自检</td>
+<td><code>hardware_preflight</code></td>
+<td>启动时硬件探测配置</td>
+</tr>
+<tr>
+<td>知识库</td>
+<td><code>knowledge_base</code></td>
+<td>文档检索知识库配置</td>
+</tr>
+<tr>
+<td>MCP</td>
+<td><code>mcp_servers</code></td>
+<td>MCP 服务器实例</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="modeconfig">ModeConfig<a class="headerlink" href="#modeconfig" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 295-490 行</p>
+<p>单个模式的详细配置。</p>
+<p><strong>核心字段</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>version</code></td>
+<td>str</td>
+<td>模式配置版本</td>
+</tr>
+<tr>
+<td><code>name</code> / <code>display_name</code> / <code>description</code></td>
+<td>str</td>
+<td>模式标识与描述</td>
+</tr>
+<tr>
+<td><code>system_prompt_base</code></td>
+<td>str</td>
+<td>模式系统提示词</td>
+</tr>
+<tr>
+<td><code>hertz</code></td>
+<td>float</td>
+<td>执行频率，默认 1.0</td>
+</tr>
+<tr>
+<td><code>timeout_seconds</code></td>
+<td>Optional[float]</td>
+<td>模式超时时间</td>
+</tr>
+<tr>
+<td><code>remember_locations</code></td>
+<td>bool</td>
+<td>是否记住位置</td>
+</tr>
+<tr>
+<td><code>save_interactions</code></td>
+<td>bool</td>
+<td>是否保存交互记录</td>
+</tr>
+<tr>
+<td><code>lifecycle_hooks</code></td>
+<td>List[LifecycleHook]</td>
+<td>模式生命周期钩子</td>
+</tr>
+<tr>
+<td><code>agent_inputs</code></td>
+<td>List[Sensor]</td>
+<td>已加载的输入传感器实例</td>
+</tr>
+<tr>
+<td><code>cortex_llm</code></td>
+<td>Optional[LLM]</td>
+<td>模式 LLM</td>
+</tr>
+<tr>
+<td><code>agent_actions</code></td>
+<td>List[AgentAction]</td>
+<td>已加载的动作实例</td>
+</tr>
+<tr>
+<td><code>backgrounds</code></td>
+<td>List[Background]</td>
+<td>已加载的后台进程实例</td>
+</tr>
+<tr>
+<td><code>action_execution_mode</code></td>
+<td>Optional[str]</td>
+<td>动作执行模式（concurrent/sequential/dependencies）</td>
+</tr>
+<tr>
+<td><code>action_dependencies</code></td>
+<td>Optional[Dict]</td>
+<td>动作依赖关系</td>
+</tr>
+<tr>
+<td><code>action_gate</code></td>
+<td>Optional[Dict]</td>
+<td>模式级安全门控</td>
+</tr>
+<tr>
+<td><code>hardware_preflight</code></td>
+<td>Optional[Dict]</td>
+<td>硬件自检配置</td>
+</tr>
+<tr>
+<td><code>voice_planner_llm</code></td>
+<td>Optional[LLM]</td>
+<td>模式级语音规划 LLM</td>
+</tr>
+<tr>
+<td><code>voice_planner_runtime</code></td>
+<td>Optional[Dict]</td>
+<td>语音规划运行时配置</td>
+</tr>
+<tr>
+<td><code>mcp_servers</code></td>
+<td>Optional[Any]</td>
+<td>MCP 服务器实例</td>
+</tr>
+</tbody>
+</table>
+<p><strong>原始配置字段</strong>（用于延迟加载与序列化）：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_raw_inputs</code></td>
+<td>原始输入配置列表</td>
+</tr>
+<tr>
+<td><code>_raw_llm</code></td>
+<td>原始 LLM 配置</td>
+</tr>
+<tr>
+<td><code>_raw_voice_planner_llm</code></td>
+<td>原始语音规划 LLM 配置</td>
+</tr>
+<tr>
+<td><code>_raw_simulators</code></td>
+<td>原始模拟器配置列表</td>
+</tr>
+<tr>
+<td><code>_raw_actions</code></td>
+<td>原始动作配置列表</td>
+</tr>
+<tr>
+<td><code>_raw_backgrounds</code></td>
+<td>原始后台进程配置列表</td>
+</tr>
+<tr>
+<td><code>_raw_lifecycle_hooks</code></td>
+<td>原始生命周期钩子配置列表</td>
+</tr>
+<tr>
+<td><code>_raw_mcp_servers</code></td>
+<td>原始 MCP 服务器配置列表</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键方法</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>to_runtime_config(global_config)</code></td>
+<td>将模式配置转换为运行时配置，合并全局治理规则、api_key 等</td>
+</tr>
+<tr>
+<td><code>load_components(system_config)</code></td>
+<td>加载模式所需的实际组件实例（延迟加载）</td>
+</tr>
+<tr>
+<td><code>execute_lifecycle_hooks(hook_type, context)</code></td>
+<td>异步执行该模式的生命周期钩子</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="modesystemconfig">ModeSystemConfig<a class="headerlink" href="#modesystemconfig" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 493-618 行</p>
+<p>完整的模式系统配置，管理多个模式及其切换规则。</p>
+<p><strong>核心字段</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>version</code> / <code>name</code></td>
+<td>str</td>
+<td>系统版本与名称</td>
+</tr>
+<tr>
+<td><code>default_mode</code></td>
+<td>str</td>
+<td>默认启动模式</td>
+</tr>
+<tr>
+<td><code>config_name</code></td>
+<td>str</td>
+<td>配置文件名</td>
+</tr>
+<tr>
+<td><code>allow_manual_switching</code></td>
+<td>bool</td>
+<td>是否允许手动切换模式，默认 True</td>
+</tr>
+<tr>
+<td><code>mode_memory_enabled</code></td>
+<td>bool</td>
+<td>是否启用模式记忆，默认 True</td>
+</tr>
+<tr>
+<td><code>api_key</code> / <code>robot_ip</code> / <code>URID</code> / <code>unitree_ethernet</code></td>
+<td>Optional[str]</td>
+<td>全局参数</td>
+</tr>
+<tr>
+<td><code>system_governance</code> / <code>system_prompt_examples</code></td>
+<td>str</td>
+<td>全局治理规则和示例</td>
+</tr>
+<tr>
+<td><code>knowledge_base</code></td>
+<td>Optional[Dict]</td>
+<td>知识库配置</td>
+</tr>
+<tr>
+<td><code>mode_router_llm</code></td>
+<td>Optional[LLM]</td>
+<td>模式路由 LLM（决定何时切换模式）</td>
+</tr>
+<tr>
+<td><code>mode_router</code></td>
+<td>Optional[Dict]</td>
+<td>模式路由运行时配置</td>
+</tr>
+<tr>
+<td><code>voice_task_planner_llm</code></td>
+<td>Optional[LLM]</td>
+<td>全局语音任务分解 LLM</td>
+</tr>
+<tr>
+<td><code>voice_task_planner</code></td>
+<td>Optional[Dict]</td>
+<td>语音任务规划运行时配置</td>
+</tr>
+<tr>
+<td><code>global_cortex_llm</code></td>
+<td>Optional[Dict]</td>
+<td>全局默认 LLM 配置（模式未覆盖时使用）</td>
+</tr>
+<tr>
+<td><code>global_lifecycle_hooks</code></td>
+<td>List[LifecycleHook]</td>
+<td>全局生命周期钩子（所有模式共享）</td>
+</tr>
+<tr>
+<td><code>modes</code></td>
+<td>Dict[str, ModeConfig]</td>
+<td>模式名 → ModeConfig 映射</td>
+</tr>
+<tr>
+<td><code>transition_rules</code></td>
+<td>List[TransitionRule]</td>
+<td>模式切换规则列表</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键方法</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>execute_global_lifecycle_hooks(hook_type, context)</code></td>
+<td>执行全局生命周期钩子</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="transitionrule">TransitionRule<a class="headerlink" href="#transitionrule" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 260-292 行</p>
+<p>定义模式间切换规则的数据类。</p>
+<p><strong>核心字段</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>from_mode</code></td>
+<td>str</td>
+<td>源模式名称</td>
+</tr>
+<tr>
+<td><code>to_mode</code></td>
+<td>str</td>
+<td>目标模式名称</td>
+</tr>
+<tr>
+<td><code>transition_type</code></td>
+<td>TransitionType</td>
+<td>切换类型</td>
+</tr>
+<tr>
+<td><code>trigger_keywords</code></td>
+<td>List[str]</td>
+<td>触发关键词列表</td>
+</tr>
+<tr>
+<td><code>priority</code></td>
+<td>int</td>
+<td>优先级（数字越大优先级越高）</td>
+</tr>
+<tr>
+<td><code>cooldown_seconds</code></td>
+<td>float</td>
+<td>冷却时间（秒）</td>
+</tr>
+<tr>
+<td><code>timeout_seconds</code></td>
+<td>Optional[float]</td>
+<td>超时时间（秒）</td>
+</tr>
+<tr>
+<td><code>context_conditions</code></td>
+<td>Dict</td>
+<td>上下文条件</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="transitiontype">TransitionType<a class="headerlink" href="#transitiontype" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 244-258 行</p>
+<p>枚举类，定义四种模式切换类型。</p>
+<table>
+<thead>
+<tr>
+<th>枚举值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>INPUT_TRIGGERED</code></td>
+<td>基于输入关键词触发</td>
+</tr>
+<tr>
+<td><code>TIME_BASED</code></td>
+<td>基于时间触发</td>
+</tr>
+<tr>
+<td><code>CONTEXT_AWARE</code></td>
+<td>基于上下文触发</td>
+</tr>
+<tr>
+<td><code>MANUAL</code></td>
+<td>手动触发</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_3">核心函数<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_load_schema">_load_schema<a class="headerlink" href="#_load_schema" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 34-59 行</p>
+<p><strong>作用</strong>：加载并缓存 JSON Schema 文件用于配置验证。</p>
+<p><strong>流程</strong>：
+1. 从 <code>../../config/schema/</code> 目录加载指定的 schema 文件
+2. 文件不存在时抛出 <code>FileNotFoundError</code>
+3. 返回解析后的 schema 字典</p>
+<hr />
+<h3 id="validate_config_schema">validate_config_schema<a class="headerlink" href="#validate_config_schema" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 62-87 行</p>
+<p><strong>作用</strong>：验证配置字典是否符合预定义的 Schema。</p>
+<p><strong>流程</strong>：
+1. 根据配置中是否包含 <code>modes</code> 和 <code>default_mode</code> 字段，选择多模式或单模式 schema
+2. 调用 <code>_load_schema</code> 加载对应 schema
+3. 使用 <code>jsonschema.validate()</code> 进行验证
+4. 验证失败时，记录详细的错误字段路径并抛出异常</p>
+<hr />
+<h3 id="_read_system_prompt_path">_read_system_prompt_path<a class="headerlink" href="#_read_system_prompt_path" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 90-97 行</p>
+<p><strong>作用</strong>：读取系统提示词文件内容。</p>
+<p><strong>流程</strong>：
+1. 展开路径中的环境变量和用户目录符号（<code>~</code>）
+2. 如果是相对路径，转换为相对于配置文件的绝对路径
+3. 读取文件内容并去除尾部换行符</p>
+<hr />
+<h3 id="_apply_system_prompt_path">_apply_system_prompt_path<a class="headerlink" href="#_apply_system_prompt_path" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 100-104 行</p>
+<p><strong>作用</strong>：将配置段中的 <code>system_prompt_path</code> 字段转换为 <code>system_prompt_base</code> 字段。</p>
+<hr />
+<h3 id="apply_system_prompt_paths">apply_system_prompt_paths<a class="headerlink" href="#apply_system_prompt_paths" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 107-115 行</p>
+<p><strong>作用</strong>：递归处理所有系统提示词路径。对多模式配置遍历所有 mode，对单模式配置直接处理。</p>
+<hr />
+<h3 id="add_meta">add_meta<a class="headerlink" href="#add_meta" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 199-241 行</p>
+<p><strong>作用</strong>：将全局元数据（API密钥、机器人配置、模式名等）注入到组件配置中。</p>
+<p><strong>处理字段</strong>：<code>api_key</code>、<code>unitree_ethernet</code>、<code>URID</code>、<code>robot_ip</code>、<code>mode</code></p>
+<p><strong>特点</strong>：仅在配置中不存在对应字段时才添加全局值（不覆盖已有配置）。</p>
+<hr />
+<h3 id="load_mode_config">load_mode_config<a class="headerlink" href="#load_mode_config" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 621-761 行</p>
+<p><strong>作用</strong>：<strong>主入口函数</strong>，从 JSON5 文件加载完整的模式系统配置。</p>
+<p><strong>参数</strong>：
+- <code>config_name: str</code> — 配置文件名（不含 <code>.json5</code> 扩展名）
+- <code>mode_source_path: Optional[str]</code> — 自定义配置文件路径（可选）</p>
+<p><strong>返回值</strong>：
+- <code>ModeSystemConfig</code> — 完整的模式系统配置对象</p>
+<p><strong>流程</strong>：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>1. 构建配置文件路径（默认为 ../../config/&lt;name&gt;.json5）
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>   ↓
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>2. 解析 JSON5 文件
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>   ↓
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>3. 验证运行时版本 (verify_runtime_version)
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>   ↓
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>4. 加载环境变量 (load_env_vars)
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>   ↓
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>5. 应用系统提示词路径 (apply_system_prompt_paths)
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>   ↓
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>6. 验证配置 schema (validate_config_schema)
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>   ↓
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>7. 转换为多模式格式 (convert_to_multi_mode)
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>   ↓
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>8. 提取全局参数（api_key, robot_ip, URID, unitree_ethernet）
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>   ↓
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>9. 初始化 Unitree 机器人 (load_unitree)
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>   ↓
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>10. 创建 ModeSystemConfig 对象，包含：
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    - 全局字段（name, default_mode, system_governance 等）
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    - knowledge_base, mode_router, voice_task_planner 配置
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    - global_cortex_llm 默认 LLM 配置
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    - 解析 global_lifecycle_hooks
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    ↓
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>11. 加载全局 mode_router_llm（如果配置）
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    ↓
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>12. 加载全局 voice_task_planner_llm（如果配置）
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    ↓
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>13. 遍历 modes 创建所有 ModeConfig 对象，包含：
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>    - lifecycle_hooks 解析
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>    - hardware_preflight 配置
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>    - voice_planner_runtime 配置
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>    - 所有 _raw_* 原始配置字段
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>    ↓
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>14. 解析所有 TransitionRule 规则
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    ↓
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>15. 返回完整的 ModeSystemConfig 对象
+</span></code></pre></div>
+<p><strong>调用的关键函数</strong>：
+- <code>verify_runtime_version()</code>
+- <code>load_env_vars()</code>
+- <code>apply_system_prompt_paths()</code>
+- <code>validate_config_schema()</code>
+- <code>convert_to_multi_mode()</code>
+- <code>load_unitree()</code>
+- <code>parse_lifecycle_hooks()</code>
+- <code>load_llm()</code></p>
+<hr />
+<h3 id="_load_mode_components">_load_mode_components<a class="headerlink" href="#_load_mode_components" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 764-890 行</p>
+<p><strong>作用</strong>：为特定模式加载实际的组件实例（延迟加载，在模式激活时调用）。</p>
+<p><strong>加载的组件</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>组件类型</th>
+<th>加载函数</th>
+<th>存储字段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>输入传感器</td>
+<td><code>load_input()</code></td>
+<td><code>agent_inputs</code></td>
+</tr>
+<tr>
+<td>模拟器</td>
+<td><code>load_simulator()</code></td>
+<td><code>simulators</code></td>
+</tr>
+<tr>
+<td>动作</td>
+<td><code>load_action()</code></td>
+<td><code>agent_actions</code></td>
+</tr>
+<tr>
+<td>后台进程</td>
+<td><code>load_background()</code></td>
+<td><code>backgrounds</code></td>
+</tr>
+<tr>
+<td>主 LLM</td>
+<td><code>load_llm()</code></td>
+<td><code>cortex_llm</code></td>
+</tr>
+<tr>
+<td>语音规划器 LLM (模式级)</td>
+<td><code>load_llm()</code></td>
+<td><code>voice_planner_llm</code></td>
+</tr>
+<tr>
+<td>MCP 服务器</td>
+<td><code>load_mcp()</code></td>
+<td><code>mcp_servers</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>特点</strong>：
+- 每个组件加载时都会调用 <code>add_meta</code> 注入全局元数据（api_key, unitree_ethernet, URID, robot_ip, mode）
+- 主 LLM 优先使用模式级 <code>_raw_llm</code>，回退到全局 <code>global_cortex_llm</code>
+- 语音规划 LLM 优先使用模式级 <code>_raw_voice_planner_llm</code></p>
+<hr />
+<h3 id="mode_config_to_dict">mode_config_to_dict<a class="headerlink" href="#mode_config_to_dict" title="Permanent link">&para;</a></h3>
+<p><strong>定义位置</strong>：第 893-971 行</p>
+<p><strong>作用</strong>：将 <code>ModeSystemConfig</code> 对象序列化回字典格式（用于持久化和调试）。</p>
+<p><strong>序列化内容</strong>：
+- 全局字段（version, name, default_mode 等）
+- knowledge_base, mode_router, voice_task_planner 配置
+- 每个 mode 的完整配置（包括 name, display_name, system_prompt_base, action_gate, hardware_preflight, voice_planner_llm, voice_planner_runtime 等）
+- 所有 transition_rules</p>
+<hr />
+<h2 id="_4">辅助模块<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="envpy">env.py — 环境变量加载<a class="headerlink" href="#envpy" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>文件路径：<code>src/runtime/env.py</code></p>
+</blockquote>
+<p><code>EnvLoader</code> 类提供配置中 <code>${ENV_VAR}</code> 和 <code>${ENV_VAR:-default}</code> 模式的环境变量替换。</p>
+<p><strong>核心方法</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>load_env_vars(config)</code></td>
+<td>递归处理整个配置 dict/list/str，替换其中的环境变量模式</td>
+</tr>
+<tr>
+<td><code>load_value(value)</code></td>
+<td>对单个字符串进行替换，支持 <code>${VAR}</code> 和 <code>${VAR:-default}</code> 语法</td>
+</tr>
+</tbody>
+</table>
+<p><strong>实现细节</strong>：
+- 正则模式：<code>\$\{([^}:]+)(?::-([^}]*))?\}</code>
+- 先查环境变量，若不存在则用默认值，若都没有则保留原字符串并警告
+- 对外暴露 <code>load_env_vars = EnvLoader.load_env_vars</code> 模块级函数</p>
+<hr />
+<h3 id="converterpy">converter.py — 单模式转多模式<a class="headerlink" href="#converterpy" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>文件路径：<code>src/runtime/converter.py</code></p>
+</blockquote>
+<p><code>ConfigConverter</code> 类将旧版单模式 JSON5 配置自动转换为多模式格式，实现向后兼容。</p>
+<p><strong>核心方法</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>is_single_mode(raw_config)</code></td>
+<td>检测是否缺少 <code>modes</code> 或 <code>default_mode</code> 字段</td>
+</tr>
+<tr>
+<td><code>convert_to_multi_mode(raw_config)</code></td>
+<td>主转换入口，已多模式则直接返回</td>
+</tr>
+<tr>
+<td><code>_build_global_section(raw_config, mode_name)</code></td>
+<td>构建全局字段（version, name, api_key, system_governance, knowledge_base, mode_router, voice_task_planner, cortex_llm 等）</td>
+</tr>
+<tr>
+<td><code>_build_mode_section(raw_config)</code></td>
+<td>构建模式字段（display_name, hertz, agent_inputs, agent_actions, backgrounds, action_gate, hardware_preflight, mcp_servers 等）</td>
+</tr>
+<tr>
+<td><code>_validate(converted_config, mode_name)</code></td>
+<td>验证转换后的结构完整性</td>
+</tr>
+</tbody>
+</table>
+<p><strong>转换逻辑</strong>：
+- 原 <code>name</code> → <code>default_mode</code> + mode key
+- 原顶层 LLM → 全局 <code>cortex_llm</code>（模式无覆盖时作为默认）
+- <code>allow_manual_switching</code> 和 <code>mode_memory_enabled</code> 默认设为 False（保持单模式行为）
+- 对外暴露 <code>convert_to_multi_mode = ConfigConverter.convert_to_multi_mode</code></p>
+<hr />
+<h3 id="versionpy">version.py — 版本校验<a class="headerlink" href="#versionpy" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>文件路径：<code>src/runtime/version.py</code></p>
+</blockquote>
+<p>定义了运行时版本管理与兼容性校验逻辑。</p>
+<p><strong>当前运行时版本</strong>：<code>v1.0.3</code></p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>get_runtime_version()</code></td>
+<td>返回当前运行时版本字符串</td>
+</tr>
+<tr>
+<td><code>is_version_supported(version)</code></td>
+<td>检查配置版本是否兼容（主版本号必须一致，次版本号不一致仅警告）</td>
+</tr>
+<tr>
+<td><code>verify_runtime_version(config_version, config_name)</code></td>
+<td>包装 <code>is_version_supported</code>，提供日志和错误上下文</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="hookpy">hook.py — 生命周期钩子<a class="headerlink" href="#hookpy" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>文件路径：<code>src/runtime/hook.py</code></p>
+</blockquote>
+<p>定义了生命周期钩子的配置模型、解析逻辑和执行引擎。</p>
+<p><strong>LifecycleHookType 枚举</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>枚举值</th>
+<th>触发时机</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ON_ENTRY</code></td>
+<td>进入模式时</td>
+</tr>
+<tr>
+<td><code>ON_EXIT</code></td>
+<td>退出模式时</td>
+</tr>
+<tr>
+<td><code>ON_STARTUP</code></td>
+<td>系统启动时</td>
+</tr>
+<tr>
+<td><code>ON_SHUTDOWN</code></td>
+<td>系统关闭时</td>
+</tr>
+<tr>
+<td><code>ON_TIMEOUT</code></td>
+<td>模式超时时</td>
+</tr>
+</tbody>
+</table>
+<p><strong>LifecycleHook 数据类字段</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hook_type</code></td>
+<td>LifecycleHookType</td>
+<td>钩子类型</td>
+</tr>
+<tr>
+<td><code>handler_type</code></td>
+<td>str</td>
+<td>处理器类型：<code>message</code>、<code>command</code>、<code>function</code>、<code>action</code></td>
+</tr>
+<tr>
+<td><code>handler_config</code></td>
+<td>Dict</td>
+<td>处理器配置</td>
+</tr>
+<tr>
+<td><code>async_execution</code></td>
+<td>bool</td>
+<td>是否异步执行，默认 True</td>
+</tr>
+<tr>
+<td><code>timeout_seconds</code></td>
+<td>Optional[float]</td>
+<td>超时时间，默认 5.0s</td>
+</tr>
+<tr>
+<td><code>on_failure</code></td>
+<td>str</td>
+<td>失败策略：<code>ignore</code>（默认）或 <code>abort</code></td>
+</tr>
+<tr>
+<td><code>priority</code></td>
+<td>int</td>
+<td>同类型钩子的执行优先级（高优先执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>四种 Handler</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>Handler</th>
+<th>配置类</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MessageHookHandler</code></td>
+<td><code>MessageHookConfig</code></td>
+<td>日志记录或 TTS 语音播报消息，支持 <code>{variable}</code> 格式化。TTS 支持 elevenlabs、kokoro、riva、qwen 四种后端</td>
+</tr>
+<tr>
+<td><code>CommandHookHandler</code></td>
+<td><code>CommandHookConfig</code></td>
+<td>执行 shell 命令，通过 <code>asyncio.create_subprocess_shell</code> 运行</td>
+</tr>
+<tr>
+<td><code>FunctionHookHandler</code></td>
+<td><code>FunctionHookConfig</code></td>
+<td>调用 <code>hooks/</code> 目录下 Python 模块中的函数，支持异步和同步函数</td>
+</tr>
+<tr>
+<td><code>ActionHookHandler</code></td>
+<td><code>ActionHookConfig</code></td>
+<td>动态加载并执行 Agent 动作</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键函数</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>parse_lifecycle_hooks(raw_hooks, api_key)</code></td>
+<td>将 JSON5 原始配置解析为 <code>List[LifecycleHook]</code>，自动注入 api_key</td>
+</tr>
+<tr>
+<td><code>execute_lifecycle_hooks(hooks, hook_type, context)</code></td>
+<td>按 priority 降序执行同类型钩子，处理超时和 abort 策略</td>
+</tr>
+<tr>
+<td><code>create_hook_handler(hook)</code></td>
+<td>根据 <code>handler_type</code> 创建对应的 handler 实例</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="hardware_preflightpy">hardware_preflight.py — 硬件自检<a class="headerlink" href="#hardware_preflightpy" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>文件路径：<code>src/runtime/hardware_preflight.py</code></p>
+</blockquote>
+<p>启动时探测硬件可用性，自动禁用缺失硬件对应的 input、background 和 action。</p>
+<p><strong>核心数据结构</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>类</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>HardwareCheck</code></td>
+<td>单次硬件探测结果（name, passed, detail）</td>
+</tr>
+<tr>
+<td><code>HardwarePreflightReport</code></td>
+<td>自检汇总（checks, available_capabilities, disabled_inputs, disabled_backgrounds, disabled_actions）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心函数</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>apply_hardware_preflight(mode_config, probe)</code></td>
+<td>主入口：探测硬件 → 从 <code>_raw_inputs</code>/<code>_raw_backgrounds</code>/<code>_raw_actions</code> 中移除对应组件 → 返回 report</td>
+</tr>
+<tr>
+<td><code>format_hardware_preflight_report(report)</code></td>
+<td>将报告格式化为中文 LLM 提示词文本</td>
+</tr>
+</tbody>
+</table>
+<p><strong>硬件探测逻辑</strong>（<code>HardwarePreflightProbe</code> 类）：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>has_realsense_device(serial_number)</code></td>
+<td>通过 <code>pyrealsense2</code> 库查询 D435/D435i 相机是否在线，支持按序列号精确匹配</td>
+</tr>
+<tr>
+<td><code>has_fresh_arx_state(topic, timeout_seconds, max_age_seconds)</code></td>
+<td>通过 Zenoh 订阅 ARX X5 机械臂状态 topic，判断是否有新鲜数据</td>
+</tr>
+</tbody>
+</table>
+<p><strong>探测来源</strong>：</p>
+<ol>
+<li><strong>显式 capabilities 配置</strong>：JSON5 中 <code>hardware_preflight.capabilities</code> 声明的能力及其 probe 类型（<code>realsense</code>、<code>zenoh_state</code>）</li>
+<li><strong>D435 Background 自动探测</strong>：遍历 <code>backgrounds</code> 中的 <code>D435</code> 类型，按 <code>enable_realsense_capture</code> 和 serial_number 探测</li>
+<li><strong>ARX X5 运动探测</strong>：检测 action 中是否有 <code>arm_x5_reset</code>、<code>arm_x5_joint_nudge</code>、<code>hello</code> 或 <code>grasp_object</code> 标签，若有则自动探测 ARX 状态</li>
+</ol>
+<p><strong>组件过滤规则</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>组件类型</th>
+<th>过滤条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>D435RealSenseInput</code></td>
+<td>camera_id 对应的 D435 不可用则移除</td>
+</tr>
+<tr>
+<td>其他 Input</td>
+<td>检查 <code>requires_capabilities</code> 字段</td>
+</tr>
+<tr>
+<td><code>D435</code> Background</td>
+<td>camera_id 对应的 D435 不可用则移除</td>
+</tr>
+<tr>
+<td><code>ARXX5YoloGraspExecutor</code> Background</td>
+<td>ARX 不可用则移除</td>
+</tr>
+<tr>
+<td><code>grasp_object</code> Action</td>
+<td>ARX 不可用或 grasp camera 不可用则移除</td>
+</tr>
+<tr>
+<td><code>arm_x5_*</code> / <code>hello</code> Action</td>
+<td>ARX 不可用则移除</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_5">函数调用关系图<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>load_mode_config()  [主入口]
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├── verify_runtime_version()
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>│   └── is_version_supported()
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>├── load_env_vars()                    ← env.py
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>│   └── EnvLoader._process_load_value()
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>│       └── EnvLoader.load_value()
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>├── apply_system_prompt_paths()
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>│   └── _apply_system_prompt_path()
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>│       └── _read_system_prompt_path()
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>├── validate_config_schema()
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│   └── _load_schema()
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>├── convert_to_multi_mode()            ← converter.py
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>│   └── ConfigConverter._build_global_section()
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>│   └── ConfigConverter._build_mode_section()
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>│   └── ConfigConverter._validate()
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>├── load_unitree()
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>├── parse_lifecycle_hooks()            ← hook.py
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>├── load_llm()  [mode_router_llm]
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>├── load_llm()  [voice_task_planner_llm]
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>└── [创建 ModeSystemConfig + ModeConfig 列表]
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    └── [转换 TransitionRule 列表]
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    └── _load_mode_components()  [延迟加载，模式激活时调用]
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>        ├── load_input()
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>        ├── load_simulator()
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>        ├── load_action()
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>        ├── load_background()
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>        ├── load_llm()  [cortex_llm]
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>        ├── load_llm()  [voice_planner_llm, 模式级]
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>        └── load_mcp()
+</span></code></pre></div>
+<hr />
+<h2 id="_6">核心设计理念<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 延迟加载<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>组件实例不在配置解析时立即加载，而是在模式激活时通过 <code>load_components()</code> 调用 <code>_load_mode_components()</code> 加载，避免单例冲突。</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 配置解析阶段：只存储原始配置 (_raw_* 字段)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">mode_config</span> <span class="o">=</span> <span class="n">ModeConfig</span><span class="p">(</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="n">_raw_inputs</span><span class="o">=</span><span class="n">mode_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;agent_inputs&quot;</span><span class="p">,</span> <span class="p">[]),</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="n">_raw_llm</span><span class="o">=</span><span class="n">mode_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;cortex_llm&quot;</span><span class="p">),</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">_raw_actions</span><span class="o">=</span><span class="n">mode_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;agent_actions&quot;</span><span class="p">,</span> <span class="p">[]),</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="o">...</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1"># 模式激活阶段：加载实际组件</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">mode_config</span><span class="o">.</span><span class="n">load_components</span><span class="p">(</span><span class="n">system_config</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="2">2. 配置继承<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>模式可使用全局默认配置，也可覆盖。</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># LLM 配置优先级：模式级 &gt; 全局默认</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">llm_config</span> <span class="o">=</span> <span class="n">mode_config</span><span class="o">.</span><span class="n">_raw_llm</span> <span class="ow">or</span> <span class="n">system_config</span><span class="o">.</span><span class="n">global_cortex_llm</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># 语音规划器 LLM：模式级覆盖全局级</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">if</span> <span class="n">mode_config</span><span class="o">.</span><span class="n">_raw_voice_planner_llm</span><span class="p">:</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">mode_config</span><span class="o">.</span><span class="n">voice_planner_llm</span> <span class="o">=</span> <span class="n">load_llm</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="3-schema">3. Schema 验证<a class="headerlink" href="#3-schema" title="Permanent link">&para;</a></h3>
+<p>确保配置文件格式正确，在运行前捕获配置错误。</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">validate_config_schema</span><span class="p">(</span><span class="n">raw_config</span><span class="p">)</span>  <span class="c1"># 使用 JSON Schema 验证</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># 自动选择 single_mode_schema.json 或 multi_mode_schema.json</span>
+</span></code></pre></div>
+<h3 id="4">4. 环境变量支持<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p>通过 <code>EnvLoader</code> 递归处理所有字符串值，支持 <code>${VAR}</code> 和 <code>${VAR:-default}</code> 语法。</p>
+<h3 id="5">5. 模式切换<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<p>支持多种切换触发机制和优先级规则：
+- <code>INPUT_TRIGGERED</code>：关键词触发
+- <code>TIME_BASED</code>：定时触发
+- <code>CONTEXT_AWARE</code>：上下文感知
+- <code>MANUAL</code>：手动切换</p>
+<h3 id="6">6. 硬件自检<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<p>启动时自动探测硬件（D435 相机、ARX 机械臂），不可用时自动禁用相关组件，避免运行时崩溃。</p>
+<h3 id="7">7. 单模式向后兼容<a class="headerlink" href="#7" title="Permanent link">&para;</a></h3>
+<p>旧版单模式 JSON5 配置通过 <code>ConfigConverter</code> 自动转换为多模式格式，无需手动迁移。</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">raw_config</span> <span class="o">=</span> <span class="n">convert_to_multi_mode</span><span class="p">(</span><span class="n">raw_config</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># 原单模式: {name: &quot;xxx&quot;, agent_inputs: [...], ...}</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># 转换后: {default_mode: &quot;xxx&quot;, modes: {&quot;xxx&quot;: {...}}, ...}</span>
+</span></code></pre></div>
+<hr />
+<h2 id="_7">典型使用示例<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">runtime.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_mode_config</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># 加载配置</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">config</span> <span class="o">=</span> <span class="n">load_mode_config</span><span class="p">(</span><span class="s2">&quot;unitree_go2_koala_nav_vision_no_arm&quot;</span><span class="p">)</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="c1"># 访问配置信息</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Default mode: </span><span class="si">{</span><span class="n">config</span><span class="o">.</span><span class="n">default_mode</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Available modes: </span><span class="si">{</span><span class="nb">list</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">modes</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="c1"># 激活某个模式时加载组件</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">mode</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">modes</span><span class="p">[</span><span class="n">config</span><span class="o">.</span><span class="n">default_mode</span><span class="p">]</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="n">mode</span><span class="o">.</span><span class="n">load_components</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="c1"># 转换为运行时配置</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="n">runtime_config</span> <span class="o">=</span> <span class="n">mode</span><span class="o">.</span><span class="n">to_runtime_config</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="_8">相关文件<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<ul>
+<li>配置 Schema：<code>config/schema/</code></li>
+<li>环境变量处理：<code>src/runtime/env.py</code></li>
+<li>版本验证：<code>src/runtime/version.py</code></li>
+<li>模式转换：<code>src/runtime/converter.py</code></li>
+<li>生命周期钩子：<code>src/runtime/hook.py</code></li>
+<li>硬件自检：<code>src/runtime/hardware_preflight.py</code></li>
+<li>机器人初始化：<code>src/runtime/robotics.py</code></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.indexes", "toc.follow", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
