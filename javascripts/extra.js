@@ -1,5 +1,5 @@
 /**
- * Nexus Docs — Subtle page interactions.
+ * GeekMind Docs — Subtle page interactions.
  *
  * Principles:
  * - Scroll-reveal cards/images only
